@@ -7,6 +7,7 @@
 
 #include <QObject>
 #include <QRegExp>
+#include <iostream>
 
 namespace Version {
 
@@ -57,6 +58,9 @@ QString toString(Version::full_t v) {
 	}
 	Version::component_t major, minor, patch;
 	Version::getComponents(major, minor, patch, v);
+
+
+
 	return QString::fromLatin1("%1.%2.%3").arg(major).arg(minor).arg(patch);
 }
 

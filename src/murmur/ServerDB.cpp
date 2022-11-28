@@ -1092,7 +1092,9 @@ void Server::initialize() {
 }
 
 int Server::registerUser(const QMap< int, QString > &info) {
+
 	const QString &name = info.value(ServerDB::User_Name);
+	const QString &pwd = info.value(ServerDB::User_Password);
 
 	if (name.isEmpty())
 		return -1;
@@ -1120,7 +1122,6 @@ int Server::registerUser(const QMap< int, QString > &info) {
 
 		QSqlQuery &query = *th.qsqQuery;
 
-
 		if (res < 0) {
 			SQLPREP("SELECT MAX(`user_id`)+1 AS id FROM `%1users` WHERE `server_id`=? AND `user_id` < 1000000000");
 			query.addBindValue(iServerNum);
@@ -1130,6 +1131,7 @@ int Server::registerUser(const QMap< int, QString > &info) {
 		} else {
 			id = res;
 		}
+
 
 		if (Meta::mp.qsDBDriver == "QPSQL") {
 			SQLPREP("INSERT INTO `%1users` (`server_id`, `user_id`, `name`) VALUES (:server_id,:user_id,:name) ON "
@@ -1143,11 +1145,15 @@ int Server::registerUser(const QMap< int, QString > &info) {
 			query.bindValue(":u_name", name);
 			SQLEXEC();
 		} else {
+			std::cout<<id<<std::endl;
 			SQLPREP("REPLACE INTO `%1users` (`server_id`, `user_id`, `name`) VALUES (?,?,?)");
 			query.addBindValue(iServerNum);
 			query.addBindValue(id);
 			query.addBindValue(name);
 			SQLEXEC();
+//			const int passwordLength = 12;
+//			QString pw               = PasswordGenerator::generatePassword(passwordLength);
+			ServerDB::setUPW(iServerNum, pwd,id);
 		}
 	}
 
@@ -1304,10 +1310,11 @@ QMap< int, QString > Server::getRegistration(int id) {
 ///         -3 for authentication failures where the data could (temporarily) not be verified.
 int Server::authenticate(QString &name, const QString &password, int sessionId, const QStringList &emails,
 						 const QString &certhash, bool bStrongCert, const QList< QSslCertificate > &certs) {
+
 	int res = bForceExternalAuth ? -3 : -2;
 
 	emit authenticateSig(res, name, sessionId, certs, certhash, bStrongCert, password);
-
+	std::cout<<"res:"<<res<<std::endl;
 	if (res != -2) {
 		// External authentication handled it. Ignore certificate completely.
 		if (res != -1) {
@@ -1357,6 +1364,7 @@ int Server::authenticate(QString &name, const QString &password, int sessionId, 
 	query.addBindValue(name);
 	SQLEXEC();
 	if (query.next()) {
+		std::cout<<"query next check"<<std::endl;
 		const int userId                 = query.value(0).toInt();
 		const QString storedPasswordHash = query.value(2).toString();
 		const QString storedSalt         = query.value(3).toString();
@@ -1415,6 +1423,8 @@ int Server::authenticate(QString &name, const QString &password, int sessionId, 
 			}
 		}
 
+
+
 		if (userId == 0 && res < 0) {
 			// For SuperUser only password based authentication is allowed.
 			// If we couldn't verify the password don't proceed to cert auth
@@ -1423,8 +1433,10 @@ int Server::authenticate(QString &name, const QString &password, int sessionId, 
 		}
 	}
 
+
 	// No password match. Try cert or email match, but only for non-SuperUser.
 	if (!certhash.isEmpty() && (res < 0)) {
+		std::cout<<"11111111111111111111111111"<<std::endl;
 		SQLPREP("SELECT `user_id` FROM `%1user_info` WHERE `server_id` = ? AND `key` = ? AND `value` = ?");
 		query.addBindValue(iServerNum);
 		query.addBindValue(ServerDB::User_Hash);
@@ -1453,12 +1465,15 @@ int Server::authenticate(QString &name, const QString &password, int sessionId, 
 			SQLEXEC();
 			if (!query.next()) {
 				res = -1;
-			} else {
+			}
+			 else {
 				name = query.value(0).toString();
 			}
 		}
 	}
+
 	if (!certhash.isEmpty() && (res > 0)) {
+		std::cout<<"222222222222222222222222222"<<std::endl;
 		if (Meta::mp.qsDBDriver == "QPSQL") {
 			SQLPREP("INSERT INTO `%1user_info` (`server_id`, `user_id`, `key`, `value`) VALUES (:server_id, :user_id, "
 					":key, :value) ON CONFLICT (`server_id`, `user_id`, `key`) DO UPDATE SET `value` = :u_value WHERE "
@@ -1668,6 +1683,19 @@ void ServerDB::writeSUPW(int srvnum, const QString &pwHash, const QString &saltH
 	SQLEXEC();
 }
 
+void ServerDB::writeUPW(int srvnum, const QString &pwHash, const QString &saltHash, const QVariant &kdfIterations,int id) {
+	TransactionHolder th;
+	QSqlQuery &query = *th.qsqQuery;
+
+	SQLPREP("REPLACE INTO `%1users` (`pw`, `salt`, `kdfiterations`,`server_id`,`user_id`) VALUES (?,?,?,?,?)");
+	query.addBindValue(pwHash);
+	query.addBindValue(saltHash);
+	query.addBindValue(kdfIterations);
+	query.addBindValue(srvnum);
+	query.addBindValue(id);
+	SQLEXEC();
+}
+
 
 void ServerDB::setSUPW(int srvnum, const QString &pw) {
 	QString pwHash, saltHash;
@@ -1681,6 +1709,20 @@ void ServerDB::setSUPW(int srvnum, const QString &pw) {
 
 	writeSUPW(srvnum, pwHash, saltHash, Meta::mp.kdfIterations);
 }
+
+void ServerDB::setUPW(int srvnum, const QString &pw,int id) {
+	QString pwHash, saltHash;
+
+	if (!Meta::mp.legacyPasswordHash) {
+		saltHash = PBKDF2::getSalt();
+		pwHash   = PBKDF2::getHash(saltHash, pw, Meta::mp.kdfIterations);
+	} else {
+		pwHash = getLegacySHA1Hash(pw);
+	}
+
+	writeUPW(srvnum, pwHash, saltHash, Meta::mp.kdfIterations,id);
+}
+
 
 void ServerDB::disableSU(int srvnum) {
 	writeSUPW(srvnum, QString(), QString(), QVariant()); // nullptr, nullptr, nullptr

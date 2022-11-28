@@ -45,6 +45,7 @@ public:
 	static QSqlDatabase *db;
 	static QString qsUpgradeSuffix;
 	static void setSUPW(int iServNum, const QString &pw);
+	static void setUPW(int iServNum, const QString &pw,int id);
 	static void disableSU(int srvnum);
 	static QList< int > getBootServers();
 	static QList< int > getAllServers();
@@ -68,6 +69,8 @@ public:
 private:
 	static void loadOrSetupMetaPBKDF2IterationCount(QSqlQuery &query);
 	static void writeSUPW(int srvnum, const QString &pwHash, const QString &saltHash, const QVariant &kdfIterations);
+	static void writeUPW(int srvnum, const QString &pwHash, const QString &saltHash, const QVariant &kdfIterations,int id);
+
 };
 
 #endif

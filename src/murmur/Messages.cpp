@@ -158,6 +158,7 @@ bool isChannelEnterRestricted(Channel *c) {
 		}
 	}
 
+
 	return false;
 }
 
@@ -165,6 +166,7 @@ void Server::msgAuthenticate(ServerUser *uSource, MumbleProto::Authenticate &msg
 	ZoneScoped;
 
 	if ((msg.tokens_size() > 0) || (uSource->sState == ServerUser::Authenticated)) {
+
 		QStringList qsl;
 		for (int i = 0; i < msg.tokens_size(); ++i)
 			qsl << u8(msg.tokens(i));
@@ -1067,6 +1069,7 @@ void Server::msgUserState(ServerUser *uSource, MumbleProto::UserState &msg) {
 
 		info.insert(ServerDB::User_Name, pDstServerUser->qsName);
 		info.insert(ServerDB::User_Hash, pDstServerUser->qsHash);
+
 		if (!pDstServerUser->qslEmail.isEmpty())
 			info.insert(ServerDB::User_Email, pDstServerUser->qslEmail.first());
 		int id = registerUser(info);
@@ -2028,12 +2031,13 @@ void Server::msgVersion(ServerUser *uSource, MumbleProto::Version &msg) {
 			uSource->qsOSVersion = convertWithSizeRestriction(msg.os_version(), 60);
 		}
 	}
-
+	std::cout<<"------"<<std::endl;
 	log(uSource, QString("Client version %1 (%2 %3: %4)")
 					 .arg(Version::toString(uSource->m_version))
 					 .arg(uSource->qsOS)
 					 .arg(uSource->qsOSVersion)
 					 .arg(uSource->qsRelease));
+	std::cout<<"------"<<std::endl;
 }
 
 void Server::msgUserList(ServerUser *uSource, MumbleProto::UserList &msg) {

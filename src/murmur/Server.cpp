@@ -1362,6 +1362,7 @@ void Server::processMsg(ServerUser *u, Mumble::Protocol::AudioData audioData, Au
 
 void Server::log(ServerUser *u, const QString &str) const {
 	QString msg = QString("<%1:%2(%3)> %4").arg(QString::number(u->uiSession), u->qsName, QString::number(u->iId), str);
+	printf("%s",str.toStdString().c_str());
 	log(msg);
 }
 
@@ -1371,6 +1372,7 @@ void Server::log(const QString &msg) const {
 }
 
 void Server::newClient() {
+
 	SslServer *ss = qobject_cast< SslServer * >(sender());
 	if (!ss)
 		return;
