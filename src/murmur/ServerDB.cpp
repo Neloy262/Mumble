@@ -1858,26 +1858,32 @@ void Server::removeLink(Channel *c, Channel *l) {
 	SQLEXEC();
 }
 
-void ServerDB::addChannelAccess(int server_id,int user_id, int channel_id){
+void ServerDB::addChannelAccess(int server_id,int user_id, int channel_id,QString &name) {
 	int id = 0;
 
 	TransactionHolder th;
 
 	QSqlQuery &query = *th.qsqQuery;
 
-	SQLPREP("SELECT MAX(`channel_id`)+1 AS id FROM `%1channels` WHERE `server_id`=?");
-	query.addBindValue(server_id);
+	SQLPREP("SELECT `name` from `%1users` WHERE `name`=?");
+	query.addBindValue(name);
 	SQLEXEC();
 
-	if (query.next())
-		id = query.value(0).toInt();
+	if (query.next()){
+		SQLPREP("SELECT MAX(`channel_id`)+1 AS id FROM `%1channels` WHERE `server_id`=?");
+		query.addBindValue(server_id);
+		SQLEXEC();
+
+		if (query.next())
+			id = query.value(0).toInt();
 
 
-	SQLPREP("INSERT INTO `%1channel_access` (`id`,`user_id`, `channel_id`) VALUES (?,?,?)");
-	query.addBindValue(id);
-	query.addBindValue(user_id);
-	query.addBindValue(channel_id);
-	SQLEXEC();
+		SQLPREP("INSERT INTO `%1channel_access` (`id`,`user_id`, `channel_id`) VALUES (?,?,?)");
+		query.addBindValue(id);
+		query.addBindValue(user_id);
+		query.addBindValue(channel_id);
+		SQLEXEC();
+	}
 
 }
 

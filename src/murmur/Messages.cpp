@@ -1287,7 +1287,7 @@ void Server::msgChannelState(ServerUser *uSource, MumbleProto::ChannelState &msg
 
 		if (!p->bTemporary) {
 
-			ServerDB::addChannelAccess(iServerNum,uSource->iId,c->iId);
+			ServerDB::addChannelAccess(iServerNum,uSource->iId,c->iId,qsName);
 		}
 
 		hashAssign(c->qsDesc, c->qbaDescHash, qsDesc);
