@@ -432,7 +432,7 @@ public:
 					 const QString &certhash = QString(), bool bStrongCert = false,
 					 const QList< QSslCertificate > & = QList< QSslCertificate >());
 	Channel *addChannel(Channel *c, const QString &name, bool temporary = false, int position = 0,
-						unsigned int maxUsers = 0);
+						unsigned int maxUsers = 0,int user_id = -1);
 	void removeChannelDB(const Channel *c);
 	void readChannels(Channel *p = nullptr);
 	void readLinks();

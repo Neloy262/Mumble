@@ -63,6 +63,7 @@ public:
 	static bool query(QSqlQuery &, const QString &, bool fatal = true, bool warn = true);
 	static bool exec(QSqlQuery &, const QString &str = QString(), bool fatal = true, bool warn = true);
 	static bool execBatch(QSqlQuery &, const QString &str = QString(), bool fatal = true);
+	static void addChannelAccess(int server_id,int user_id, int channel_id);
 	// No copy; private declaration without implementation
 	ServerDB(const ServerDB &);
 

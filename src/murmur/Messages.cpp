@@ -1253,6 +1253,8 @@ void Server::msgChannelState(ServerUser *uSource, MumbleProto::ChannelState &msg
 	}
 
 	if (!c) {
+
+
 		// If we don't have a channel handle up to now we want to create a new channel
 		// so check if the user has enough rights and we got everything we need.
 		if (!p || qsName.isNull())
@@ -1264,11 +1266,11 @@ void Server::msgChannelState(ServerUser *uSource, MumbleProto::ChannelState &msg
 			return;
 		}
 
-		ChanACL::Perm perm = msg.temporary() ? ChanACL::MakeTempChannel : ChanACL::MakeChannel;
-		if (!hasPermission(uSource, p, perm)) {
-			PERM_DENIED(uSource, p, perm);
-			return;
-		}
+//		ChanACL::Perm perm = msg.temporary() ? ChanACL::MakeTempChannel : ChanACL::MakeChannel;
+//		if (!hasPermission(uSource, p, perm)) {
+//			PERM_DENIED(uSource, p, perm);
+//			return;
+//		}
 
 		if ((uSource->iId < 0) && uSource->qsHash.isEmpty()) {
 			PERM_DENIED_HASH(uSource);
@@ -1280,7 +1282,14 @@ void Server::msgChannelState(ServerUser *uSource, MumbleProto::ChannelState &msg
 			return;
 		}
 
-		c = addChannel(p, qsName, msg.temporary(), msg.position(), msg.max_users());
+
+		c = addChannel(p, qsName, msg.temporary(), msg.position(), msg.max_users(),uSource->iId);
+
+		if (!p->bTemporary) {
+
+			ServerDB::addChannelAccess(iServerNum,uSource->iId,c->iId);
+		}
+
 		hashAssign(c->qsDesc, c->qbaDescHash, qsDesc);
 
 		if (uSource->iId >= 0) {
@@ -1324,6 +1333,7 @@ void Server::msgChannelState(ServerUser *uSource, MumbleProto::ChannelState &msg
 			emit userStateChanged(uSource);
 		}
 	} else {
+
 		// The message is related to an existing channel c so check if the user is allowed to modify it
 		// and perform the modifications
 		if (!qsName.isNull()) {
@@ -1369,6 +1379,7 @@ void Server::msgChannelState(ServerUser *uSource, MumbleProto::ChannelState &msg
 			}
 
 			if (!hasPermission(uSource, p, ChanACL::MakeChannel)) {
+
 				PERM_DENIED(uSource, p, ChanACL::MakeChannel);
 				return;
 			}

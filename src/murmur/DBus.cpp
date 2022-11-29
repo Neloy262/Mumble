@@ -400,6 +400,7 @@ void MurmurDBus::sendMessageChannel(int id, bool tree, const QString &text, cons
 }
 
 void MurmurDBus::addChannel(const QString &name, int chanparent, const QDBusMessage &msg, int &newid) {
+//	std::cout<<"ADD CHANNEL"<<std::endl;
 	CHANNEL_SETUP_VAR(chanparent);
 
 	Channel *nc;

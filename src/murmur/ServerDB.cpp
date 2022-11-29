@@ -1858,7 +1858,31 @@ void Server::removeLink(Channel *c, Channel *l) {
 	SQLEXEC();
 }
 
-Channel *Server::addChannel(Channel *p, const QString &name, bool temporary, int position, unsigned int maxUsers) {
+void ServerDB::addChannelAccess(int server_id,int user_id, int channel_id){
+	int id = 0;
+
+	TransactionHolder th;
+
+	QSqlQuery &query = *th.qsqQuery;
+
+	SQLPREP("SELECT MAX(`channel_id`)+1 AS id FROM `%1channels` WHERE `server_id`=?");
+	query.addBindValue(server_id);
+	SQLEXEC();
+
+	if (query.next())
+		id = query.value(0).toInt();
+
+
+	SQLPREP("INSERT INTO `%1channel_access` (`id`,`user_id`, `channel_id`) VALUES (?,?,?)");
+	query.addBindValue(id);
+	query.addBindValue(user_id);
+	query.addBindValue(channel_id);
+	SQLEXEC();
+
+}
+
+Channel *Server::addChannel(Channel *p, const QString &name, bool temporary, int position, unsigned int maxUsers,int user_id) {
+
 	TransactionHolder th;
 
 	QSqlQuery &query = *th.qsqQuery;
@@ -1875,13 +1899,24 @@ Channel *Server::addChannel(Channel *p, const QString &name, bool temporary, int
 		++id;
 
 	if (!temporary) {
-		SQLPREP("INSERT INTO `%1channels` (`server_id`, `parent_id`, `channel_id`, `name`) VALUES (?,?,?,?)");
-		query.addBindValue(iServerNum);
-		query.addBindValue(p->iId);
-		query.addBindValue(id);
-		query.addBindValue(name);
-		SQLEXEC();
+		if (user_id!=-1) {
+			SQLPREP("INSERT INTO `%1channels` (`server_id`, `parent_id`, `channel_id`, `name`,`user_id`) VALUES (?,?,?,?,?)");
+			query.addBindValue(iServerNum);
+			query.addBindValue(p->iId);
+			query.addBindValue(id);
+			query.addBindValue(name);
+			query.addBindValue(user_id);
+			SQLEXEC();
+		}
+		else{
+			SQLPREP("INSERT INTO `%1channels` (`server_id`, `parent_id`, `channel_id`, `name`) VALUES (?,?,?,?)");
+			query.addBindValue(iServerNum);
+			query.addBindValue(p->iId);
+			query.addBindValue(id);
+			query.addBindValue(name);
+			SQLEXEC();
 
+		}
 		// Delete old channel_info rows
 		SQLPREP("DELETE FROM `%1channel_info` WHERE `server_id` = ? AND `channel_id` = ?");
 		query.addBindValue(iServerNum);
