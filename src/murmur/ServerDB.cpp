@@ -1914,6 +1914,7 @@ Channel *Server::addChannel(Channel *p, const QString &name, bool temporary, int
 			query.addBindValue(p->iId);
 			query.addBindValue(id);
 			query.addBindValue(name);
+
 			SQLEXEC();
 
 		}
