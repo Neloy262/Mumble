@@ -998,10 +998,13 @@ void Server::msgUserState(ServerUser *uSource, MumbleProto::UserState &msg) {
 
 	if (msg.has_channel_id()) {
 		Channel *c = qhChannels.value(msg.channel_id());
+		bool has_access = ServerDB::hasChannelAccess(uSource->iId,c->iId);
+		if (has_access){
+			userEnterChannel(pDstServerUser, c, msg);
+			log(uSource, QString("Moved %1 to %2").arg(QString(*pDstServerUser), QString(*c)));
+			bBroadcast = true;
+		}
 
-		userEnterChannel(pDstServerUser, c, msg);
-		log(uSource, QString("Moved %1 to %2").arg(QString(*pDstServerUser), QString(*c)));
-		bBroadcast = true;
 	}
 
 	// Handle channel listening
@@ -1285,9 +1288,9 @@ void Server::msgChannelState(ServerUser *uSource, MumbleProto::ChannelState &msg
 
 		c = addChannel(p, qsName, msg.temporary(), msg.position(), msg.max_users(),uSource->iId);
 
-		if (!p->bTemporary) {
+		if (!c->bTemporary) {
 
-			ServerDB::addChannelAccess(iServerNum,uSource->iId,c->iId,qsName);
+			ServerDB::addChannelAccess(iServerNum,uSource->iId,c->iId);
 		}
 
 		hashAssign(c->qsDesc, c->qbaDescHash, qsDesc);

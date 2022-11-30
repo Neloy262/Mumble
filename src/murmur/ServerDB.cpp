@@ -1314,7 +1314,7 @@ int Server::authenticate(QString &name, const QString &password, int sessionId, 
 	int res = bForceExternalAuth ? -3 : -2;
 
 	emit authenticateSig(res, name, sessionId, certs, certhash, bStrongCert, password);
-	std::cout<<"res:"<<res<<std::endl;
+
 	if (res != -2) {
 		// External authentication handled it. Ignore certificate completely.
 		if (res != -1) {
@@ -1436,7 +1436,7 @@ int Server::authenticate(QString &name, const QString &password, int sessionId, 
 
 	// No password match. Try cert or email match, but only for non-SuperUser.
 	if (!certhash.isEmpty() && (res < 0)) {
-		std::cout<<"11111111111111111111111111"<<std::endl;
+
 		SQLPREP("SELECT `user_id` FROM `%1user_info` WHERE `server_id` = ? AND `key` = ? AND `value` = ?");
 		query.addBindValue(iServerNum);
 		query.addBindValue(ServerDB::User_Hash);
@@ -1467,13 +1467,12 @@ int Server::authenticate(QString &name, const QString &password, int sessionId, 
 				res = -1;
 			}
 			 else {
-				name = query.value(0).toString();
+//				name = query.value(0).toString();
 			}
 		}
 	}
 
 	if (!certhash.isEmpty() && (res > 0)) {
-		std::cout<<"222222222222222222222222222"<<std::endl;
 		if (Meta::mp.qsDBDriver == "QPSQL") {
 			SQLPREP("INSERT INTO `%1user_info` (`server_id`, `user_id`, `key`, `value`) VALUES (:server_id, :user_id, "
 					":key, :value) ON CONFLICT (`server_id`, `user_id`, `key`) DO UPDATE SET `value` = :u_value WHERE "
@@ -1858,32 +1857,45 @@ void Server::removeLink(Channel *c, Channel *l) {
 	SQLEXEC();
 }
 
-void ServerDB::addChannelAccess(int server_id,int user_id, int channel_id,QString &name) {
+void ServerDB::addChannelAccess(int server_id,int user_id, int channel_id) {
 	int id = 0;
 
 	TransactionHolder th;
 
 	QSqlQuery &query = *th.qsqQuery;
 
-	SQLPREP("SELECT `name` from `%1users` WHERE `name`=?");
-	query.addBindValue(name);
+	SQLPREP("SELECT MAX(`id`)+1 AS id FROM `%1channel_access`");
+	query.addBindValue(server_id);
 	SQLEXEC();
 
-	if (query.next()){
-		SQLPREP("SELECT MAX(`channel_id`)+1 AS id FROM `%1channels` WHERE `server_id`=?");
-		query.addBindValue(server_id);
-		SQLEXEC();
-
-		if (query.next())
-			id = query.value(0).toInt();
+	if (query.next())
+		id = query.value(0).toInt();
 
 
-		SQLPREP("INSERT INTO `%1channel_access` (`id`,`user_id`, `channel_id`) VALUES (?,?,?)");
-		query.addBindValue(id);
-		query.addBindValue(user_id);
-		query.addBindValue(channel_id);
-		SQLEXEC();
+	SQLPREP("INSERT INTO `%1channel_access` (`id`,`user_id`, `channel_id`) VALUES (?,?,?)");
+	query.addBindValue(id);
+	query.addBindValue(user_id);
+	query.addBindValue(channel_id);
+	SQLEXEC();
+
+
+}
+bool ServerDB::hasChannelAccess(int user_id, int channel_id) {
+	TransactionHolder th;
+
+	QSqlQuery &query = *th.qsqQuery;
+
+	SQLPREP("SELECT `id` FROM `%1channel_access` WHERE `channel_id`=? AND `user_id`=?");
+	query.addBindValue(channel_id);
+	query.addBindValue(user_id);
+	SQLEXEC();
+
+	if(query.next()){
+		return true;
 	}
+
+	return false;
+
 
 }
 
@@ -1948,6 +1960,7 @@ Channel *Server::addChannel(Channel *p, const QString &name, bool temporary, int
 
 	Channel *c    = new Channel(id, name, p);
 	c->bTemporary = temporary;
+
 	c->iPosition  = position;
 	c->uiMaxUsers = maxUsers;
 	qhChannels.insert(id, c);
