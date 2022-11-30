@@ -378,8 +378,14 @@ void Server::msgAuthenticate(ServerUser *uSource, MumbleProto::Authenticate &msg
 
 		sendMessage(uSource, mpcs);
 
-		foreach (c, c->qlChannels)
-			q.enqueue(c);
+		foreach (c, c->qlChannels) {
+			bool has_access = ServerDB::hasChannelAccess(uSource->iId, c->iId);
+			if (has_access)
+			{
+				q.enqueue(c);
+			}
+
+		}
 	}
 
 	// Transmit links
@@ -998,12 +1004,11 @@ void Server::msgUserState(ServerUser *uSource, MumbleProto::UserState &msg) {
 
 	if (msg.has_channel_id()) {
 		Channel *c = qhChannels.value(msg.channel_id());
-		bool has_access = ServerDB::hasChannelAccess(uSource->iId,c->iId);
-		if (has_access){
-			userEnterChannel(pDstServerUser, c, msg);
-			log(uSource, QString("Moved %1 to %2").arg(QString(*pDstServerUser), QString(*c)));
-			bBroadcast = true;
-		}
+
+		userEnterChannel(pDstServerUser, c, msg);
+		log(uSource, QString("Moved %1 to %2").arg(QString(*pDstServerUser), QString(*c)));
+		bBroadcast = true;
+
 
 	}
 
@@ -1319,11 +1324,13 @@ void Server::msgChannelState(ServerUser *uSource, MumbleProto::ChannelState &msg
 		log(uSource, QString("Added channel %1 under %2").arg(QString(*c), QString(*p)));
 		emit channelCreated(c);
 
-		sendAll(msg, Version::fromComponents(1, 2, 2), Version::CompareMode::LessThan);
+//		sendAll(msg, Version::fromComponents(1, 2, 2), Version::CompareMode::LessThan);
+		sendMessage(uSource,msg);
 		if (!c->qbaDescHash.isEmpty()) {
 			msg.clear_description();
 			msg.set_description_hash(blob(c->qbaDescHash));
 		}
+
 		sendAll(msg, Version::fromComponents(1, 2, 2), Version::CompareMode::AtLeast);
 
 		if (c->bTemporary) {
