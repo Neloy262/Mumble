@@ -1,0 +1,891 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"plugins/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/liblink.so"
+			],
+			"targetId" : "link::@01f24e0e4d78f8711653",
+			"targetIndex" : 40,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libtestPlugin.so"
+			],
+			"targetId" : "testPlugin::@85281219d2b306ea9f71",
+			"targetIndex" : 62,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libdeadLockPlugin.so"
+			],
+			"targetId" : "deadLockPlugin::@c967a0eb4a2131a943d5",
+			"targetIndex" : 23,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libamongus.so"
+			],
+			"targetId" : "amongus::@4e91fd7273c45441f0a0",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libaoc.so"
+			],
+			"targetId" : "aoc::@efad9cd27da3e3e0b57d",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libarma2.so"
+			],
+			"targetId" : "arma2::@01b8c0a9028858dea7c7",
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libbf1.so"
+			],
+			"targetId" : "bf1::@c3584d4fde2998523280",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libbf1942.so"
+			],
+			"targetId" : "bf1942::@7a587f66d165b5f1a7cb",
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libbf2.so"
+			],
+			"targetId" : "bf2::@38bdb9c0be6ffa585375",
+			"targetIndex" : 6,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libbf2142.so"
+			],
+			"targetId" : "bf2142::@a8da4859e97e613bd9bf",
+			"targetIndex" : 7,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libbf3.so"
+			],
+			"targetId" : "bf3::@1d6debd5a9ce76052cb2",
+			"targetIndex" : 8,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libbf4.so"
+			],
+			"targetId" : "bf4::@21cdab51bbf203bcfccf",
+			"targetIndex" : 9,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libbf4_x86.so"
+			],
+			"targetId" : "bf4_x86::@0594d048b6a0bf800c74",
+			"targetIndex" : 10,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libbfbc2.so"
+			],
+			"targetId" : "bfbc2::@d9f7e45a9fb9ee1a9e76",
+			"targetIndex" : 11,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libbfheroes.so"
+			],
+			"targetId" : "bfheroes::@02f4778ebb400bb7cf9e",
+			"targetIndex" : 12,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libblacklight.so"
+			],
+			"targetId" : "blacklight::@d3c462ec1da524f3d1be",
+			"targetIndex" : 13,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 17,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libborderlands.so"
+			],
+			"targetId" : "borderlands::@048585fd79c24e2d6edb",
+			"targetIndex" : 14,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 18,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libborderlands2.so"
+			],
+			"targetId" : "borderlands2::@07e7f096d6ee2cf69c98",
+			"targetIndex" : 15,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libbreach.so"
+			],
+			"targetId" : "breach::@27cb173890795c3a6aae",
+			"targetIndex" : 16,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 20,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libcod2.so"
+			],
+			"targetId" : "cod2::@d153f83d27e602bf2ea7",
+			"targetIndex" : 17,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 21,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libcod4.so"
+			],
+			"targetId" : "cod4::@828c3ea613eed62a86a8",
+			"targetIndex" : 18,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 22,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libcod5.so"
+			],
+			"targetId" : "cod5::@63c1fc8be9e2c307266b",
+			"targetIndex" : 19,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 23,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libcodmw2.so"
+			],
+			"targetId" : "codmw2::@f03655c9a9e882465d80",
+			"targetIndex" : 20,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 24,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libcodmw2so.so"
+			],
+			"targetId" : "codmw2so::@9b64f23e657ef16a6263",
+			"targetIndex" : 21,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 25,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libcs.so"
+			],
+			"targetId" : "cs::@0b5161d6a49e3e06e07d",
+			"targetIndex" : 22,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 26,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libdys.so"
+			],
+			"targetId" : "dys::@d172623bacc458d6c416",
+			"targetIndex" : 27,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 27,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libetqw.so"
+			],
+			"targetId" : "etqw::@0f42d8dc8f7984335508",
+			"targetIndex" : 28,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 28,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libffxiv.so"
+			],
+			"targetId" : "ffxiv::@5704954a4831f0c496d5",
+			"targetIndex" : 29,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 29,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libffxiv_x64.so"
+			],
+			"targetId" : "ffxiv_x64::@3df90a966ba2d83a5473",
+			"targetIndex" : 30,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 30,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libgmod.so"
+			],
+			"targetId" : "gmod::@b8991de47eddf3ecb316",
+			"targetIndex" : 33,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 31,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libgtaiv.so"
+			],
+			"targetId" : "gtaiv::@a518fee5de84ec67bee2",
+			"targetIndex" : 34,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 32,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libgtasa.so"
+			],
+			"targetId" : "gtasa::@dab98c19f5d8eca6a7eb",
+			"targetIndex" : 35,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 33,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libgtav.so"
+			],
+			"targetId" : "gtav::@ff0c169244d50401ce14",
+			"targetIndex" : 36,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 34,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libgw.so"
+			],
+			"targetId" : "gw::@260885332e49f522417e",
+			"targetIndex" : 37,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 35,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libinsurgency.so"
+			],
+			"targetId" : "insurgency::@42c2a1c380e3e4a79d2b",
+			"targetIndex" : 38,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 36,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libjc2.so"
+			],
+			"targetId" : "jc2::@67fc1a8ef5c1fa4d054e",
+			"targetIndex" : 39,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 37,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/liblol.so"
+			],
+			"targetId" : "lol::@6d4c6a5adf0576b7b50e",
+			"targetIndex" : 42,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 38,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/liblotro.so"
+			],
+			"targetId" : "lotro::@5f1aff7192268dd6b2a3",
+			"targetIndex" : 43,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 39,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libql.so"
+			],
+			"targetId" : "ql::@598c99ea36b9fb321d7d",
+			"targetIndex" : 54,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 40,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/librl.so"
+			],
+			"targetId" : "rl::@04495c265d31bde2bff0",
+			"targetIndex" : 55,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 41,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libse.so"
+			],
+			"targetId" : "se::@316b3b81885bf3227ad1",
+			"targetIndex" : 57,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 42,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libsr.so"
+			],
+			"targetId" : "sr::@41c07f31b935143489cb",
+			"targetIndex" : 61,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 43,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libut2004.so"
+			],
+			"targetId" : "ut2004::@b7537f9dd6b6c32182fa",
+			"targetIndex" : 63,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 44,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libut3.so"
+			],
+			"targetId" : "ut3::@4f7779b65b53233d7a3e",
+			"targetIndex" : 64,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 45,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libut99.so"
+			],
+			"targetId" : "ut99::@3f26d5f348f587bf7ebb",
+			"targetIndex" : 65,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 46,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libwolfet.so"
+			],
+			"targetId" : "wolfet::@ada955ed850eaecb9f44",
+			"targetIndex" : 66,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 47,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libwow.so"
+			],
+			"targetId" : "wow::@d03987756b58457de050",
+			"targetIndex" : 67,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 48,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble/plugins",
+			"paths" : 
+			[
+				"plugins/libwow_x64.so"
+			],
+			"targetId" : "wow_x64::@5a323e8776a20fe7a827",
+			"targetIndex" : 68,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "plugins",
+		"source" : "plugins"
+	}
+}

@@ -1,0 +1,264 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/mumble/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "mumble_client_object_lib::@971cf0db317f6a48c17c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "link::@01f24e0e4d78f8711653"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "testPlugin::@85281219d2b306ea9f71"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "deadLockPlugin::@c967a0eb4a2131a943d5"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "amongus::@4e91fd7273c45441f0a0"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "aoc::@efad9cd27da3e3e0b57d"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "arma2::@01b8c0a9028858dea7c7"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "bf1::@c3584d4fde2998523280"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "bf1942::@7a587f66d165b5f1a7cb"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "bf2::@38bdb9c0be6ffa585375"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "bf2142::@a8da4859e97e613bd9bf"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "bf3::@1d6debd5a9ce76052cb2"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "bf4::@21cdab51bbf203bcfccf"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "bf4_x86::@0594d048b6a0bf800c74"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "bfbc2::@d9f7e45a9fb9ee1a9e76"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "bfheroes::@02f4778ebb400bb7cf9e"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "blacklight::@d3c462ec1da524f3d1be"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "borderlands::@048585fd79c24e2d6edb"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "borderlands2::@07e7f096d6ee2cf69c98"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "breach::@27cb173890795c3a6aae"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "cod2::@d153f83d27e602bf2ea7"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "cod4::@828c3ea613eed62a86a8"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "cod5::@63c1fc8be9e2c307266b"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "codmw2::@f03655c9a9e882465d80"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "codmw2so::@9b64f23e657ef16a6263"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "cs::@0b5161d6a49e3e06e07d"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "dys::@d172623bacc458d6c416"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "etqw::@0f42d8dc8f7984335508"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "ffxiv::@5704954a4831f0c496d5"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "ffxiv_x64::@3df90a966ba2d83a5473"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "gmod::@b8991de47eddf3ecb316"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "gtaiv::@a518fee5de84ec67bee2"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "gtasa::@dab98c19f5d8eca6a7eb"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "gtav::@ff0c169244d50401ce14"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "gw::@260885332e49f522417e"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "insurgency::@42c2a1c380e3e4a79d2b"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "jc2::@67fc1a8ef5c1fa4d054e"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "lol::@6d4c6a5adf0576b7b50e"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "lotro::@5f1aff7192268dd6b2a3"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "ql::@598c99ea36b9fb321d7d"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "rl::@04495c265d31bde2bff0"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "se::@316b3b81885bf3227ad1"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "sr::@41c07f31b935143489cb"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "ut2004::@b7537f9dd6b6c32182fa"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "ut3::@4f7779b65b53233d7a3e"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "ut99::@3f26d5f348f587bf7ebb"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "wolfet::@ada955ed850eaecb9f44"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "wow::@d03987756b58457de050"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "wow_x64::@5a323e8776a20fe7a827"
+		}
+	],
+	"id" : "mumble_autogen::@971cf0db317f6a48c17c",
+	"isGeneratorProvided" : true,
+	"name" : "mumble_autogen",
+	"paths" : 
+	{
+		"build" : "src/mumble",
+		"source" : "src/mumble"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/ApplicationPalette.h.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

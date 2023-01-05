@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/mumble_client_object_lib_autogen",
+	"CMAKE_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble",
+	"CMAKE_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code",
+	"INCLUDE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/mumble_client_object_lib_autogen/include",
+	"INPUTS" : [],
+	"LOCK_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib_autogen.dir/AutoRcc_mumble_flags_QDNKOH6XJF_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "mumble_flags" ],
+	"OUTPUT_CHECKSUM" : "QDNKOH6XJF",
+	"OUTPUT_NAME" : "qrc_mumble_flags.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib_autogen.dir/AutoRcc_mumble_flags_QDNKOH6XJF_Used.txt",
+	"SOURCE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/mumble_flags.qrc",
+	"VERBOSITY" : 0
+}

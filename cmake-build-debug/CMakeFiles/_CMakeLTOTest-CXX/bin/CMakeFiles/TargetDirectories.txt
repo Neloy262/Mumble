@@ -1,0 +1,4 @@
+/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir
+/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir
+/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/edit_cache.dir
+/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/rebuild_cache.dir

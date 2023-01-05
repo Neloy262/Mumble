@@ -1,0 +1,91 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"overlay_gl/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 100,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 130,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/mumble",
+			"paths" : 
+			[
+				"libmumbleoverlay.x86.so.1.5.0"
+			],
+			"targetId" : "overlay_gl_x86::@068ad100e2d00f64883b",
+			"targetIndex" : 53,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/mumble",
+			"paths" : 
+			[
+				"libmumbleoverlay.x86.so"
+			],
+			"targetId" : "overlay_gl_x86::@068ad100e2d00f64883b",
+			"targetIndex" : 53,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/mumble",
+			"paths" : 
+			[
+				"libmumbleoverlay.x86_64.so.1.5.0"
+			],
+			"targetId" : "overlay_gl::@068ad100e2d00f64883b",
+			"targetIndex" : 52,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/mumble",
+			"paths" : 
+			[
+				"libmumbleoverlay.x86_64.so"
+			],
+			"targetId" : "overlay_gl::@068ad100e2d00f64883b",
+			"targetIndex" : 52,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "overlay_gl",
+		"source" : "overlay_gl"
+	}
+}

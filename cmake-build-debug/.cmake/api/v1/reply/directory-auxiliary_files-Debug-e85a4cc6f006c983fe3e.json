@@ -1,0 +1,238 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"auxiliary_files/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 57,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 109,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 110,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 112,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 114,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 116,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 117,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 118,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 119,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "share/metainfo",
+			"paths" : 
+			[
+				"cmake-build-debug/auxiliary_files/info.mumble.Mumble.appdata.xml"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "share/applications",
+			"paths" : 
+			[
+				"cmake-build-debug/auxiliary_files/info.mumble.Mumble.desktop"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "doc",
+			"destination" : "share/man/man1",
+			"paths" : 
+			[
+				"auxiliary_files/man_files/mumble.1"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"cmake-build-debug/auxiliary_files/mumble-overlay"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "doc",
+			"destination" : "share/man/man1",
+			"paths" : 
+			[
+				"auxiliary_files/man_files/mumble-overlay.1"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "doc",
+			"destination" : "share/man/man1",
+			"paths" : 
+			[
+				"auxiliary_files/man_files/mumble-server.1"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "doc",
+			"destination" : "share/man/man1",
+			"paths" : 
+			[
+				"auxiliary_files/man_files/mumble-server-user-wrapper.1"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "mumble_server",
+			"destination" : "etc/mumble",
+			"paths" : 
+			[
+				"auxiliary_files/mumble-server.ini"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "mumble_server",
+			"destination" : "etc/sysconfig.d",
+			"paths" : 
+			[
+				{
+					"from" : "auxiliary_files/config_files/mumble-server.sysusers",
+					"to" : "mumble-server.conf"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "mumble_server",
+			"destination" : "etc/systemd/system",
+			"paths" : 
+			[
+				"cmake-build-debug/auxiliary_files/mumble-server.service"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "mumble_server",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"cmake-build-debug/auxiliary_files/mumble-server-user-wrapper"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "mumble_server",
+			"destination" : "share/dbus-1/system.d",
+			"paths" : 
+			[
+				"auxiliary_files/config_files/mumble-server.conf"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "mumble_server",
+			"destination" : "etc/mumble",
+			"paths" : 
+			[
+				"src/murmur/MumbleServer.ice"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "auxiliary_files",
+		"source" : "auxiliary_files"
+	}
+}

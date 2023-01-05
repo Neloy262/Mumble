@@ -1,0 +1,77 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/mumble/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "shared::@145eef247bfb46b6828c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opus::@550994a9106de0f03e5f"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "speexdsp::@6ed70537f24dd7d41bf3"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "rnnoise::@c07d66f05410065ebe5d"
+		}
+	],
+	"id" : "mumble_client_object_lib_autogen::@971cf0db317f6a48c17c",
+	"isGeneratorProvided" : true,
+	"name" : "mumble_client_object_lib_autogen",
+	"paths" : 
+	{
+		"build" : "src/mumble",
+		"source" : "src/mumble"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

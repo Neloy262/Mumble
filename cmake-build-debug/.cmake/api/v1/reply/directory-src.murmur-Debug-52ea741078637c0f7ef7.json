@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/murmur/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 282,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "mumble_server",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"mumble-server"
+			],
+			"targetId" : "mumble-server::@89b03462b871049f2039",
+			"targetIndex" : 45,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/murmur",
+		"source" : "src/murmur"
+	}
+}

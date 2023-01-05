@@ -1,0 +1,69 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/murmur/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "shared::@145eef247bfb46b6828c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "generate_murmur_ice_wrapper::@89b03462b871049f2039"
+		}
+	],
+	"id" : "mumble-server_autogen::@89b03462b871049f2039",
+	"isGeneratorProvided" : true,
+	"name" : "mumble-server_autogen",
+	"paths" : 
+	{
+		"build" : "src/murmur",
+		"source" : "src/murmur"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

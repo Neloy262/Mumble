@@ -1,0 +1,86 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"install_library"
+		],
+		"files" : 
+		[
+			"src/mumble/CMakeLists.txt",
+			"cmake/install-library.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 417,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 722,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "mumble_client",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"mumble"
+			],
+			"targetId" : "mumble::@971cf0db317f6a48c17c",
+			"targetIndex" : 44,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble",
+			"paths" : 
+			[
+				"libopus.so.0.8.0",
+				"libopus.so.0"
+			],
+			"targetId" : "opus::@550994a9106de0f03e5f",
+			"targetIndex" : 51,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "mumble_client",
+			"destination" : "lib/mumble",
+			"paths" : 
+			[
+				"libopus.so"
+			],
+			"targetId" : "opus::@550994a9106de0f03e5f",
+			"targetIndex" : 51,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/mumble",
+		"source" : "src/mumble"
+	}
+}

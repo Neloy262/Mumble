@@ -1,0 +1,38 @@
+{
+	"BUILD_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/mumble_client_object_lib_autogen",
+	"CMAKE_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble",
+	"CMAKE_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code",
+	"INCLUDE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/mumble_client_object_lib_autogen/include",
+	"INPUTS" : 
+	[
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/on.ogg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/Critical.ogg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/TextMessage.ogg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/UserLeftChannel.ogg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/wb_male.oga",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/off.ogg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/ServerConnected.ogg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/icons/rec.svg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/ServerDisconnected.ogg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/icons/mumble.svg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/UserJoinedChannel.ogg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/icons/mumble.icns",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/UserKickedYouOrByYou.ogg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/UserMutedYouOrByYou.ogg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/SelfMutedDeafened.ogg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/PermissionDenied.ogg",
+		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/samples/RecordingStateChanged.ogg"
+	],
+	"LOCK_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib_autogen.dir/AutoRcc_mumble_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "mumble" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_mumble.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib_autogen.dir/AutoRcc_mumble_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/mumble.qrc",
+	"VERBOSITY" : 0
+}
