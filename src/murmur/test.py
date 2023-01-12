@@ -6,7 +6,14 @@ with Ice.initialize(sys.argv) as communicator:
 
     meta = MumbleServer.MetaPrx.checkedCast(base)
     server = meta.getAllServers()[0]
-    print(meta.getVersion())
-    print(server.getRegisteredUsers(""))
-    # print(server.())
+    # print(meta.getVersion())
+    
+    user_list = list(server.getUsers().values())
+    
+    channel_list = list(server.getChannels().values())
 
+    channelids = [24,27]
+
+    server.AddUserToChannel(user_list,channel_list,channelids,6)
+    # print(type(users[1]))
+    # print(server.())

@@ -1,4 +1,4 @@
-# Install script for directory: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src
+# Install script for directory: /media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

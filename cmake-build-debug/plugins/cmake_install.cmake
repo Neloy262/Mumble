@@ -1,4 +1,4 @@
-# Install script for directory: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/plugins
+# Install script for directory: /media/nybsysml/New Volume/Niloy/Neloy_mumble/plugins
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/link/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/link/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/liblink.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/liblink.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/liblink.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/liblink.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/liblink.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -68,7 +68,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/testPlugin/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/testPlugin/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -78,7 +78,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libtestPlugin.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libtestPlugin.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libtestPlugin.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libtestPlugin.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libtestPlugin.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -92,7 +92,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/deadLockPlugin/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/deadLockPlugin/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -102,7 +102,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libdeadLockPlugin.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libdeadLockPlugin.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libdeadLockPlugin.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libdeadLockPlugin.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libdeadLockPlugin.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -116,7 +116,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/amongus/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/amongus/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -126,7 +126,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libamongus.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libamongus.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libamongus.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libamongus.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libamongus.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -140,7 +140,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/aoc/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/aoc/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -150,7 +150,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libaoc.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libaoc.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libaoc.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libaoc.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libaoc.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -164,7 +164,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/arma2/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/arma2/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -174,7 +174,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libarma2.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libarma2.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libarma2.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libarma2.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libarma2.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -188,7 +188,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/bf1/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/bf1/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -198,7 +198,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf1.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libbf1.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libbf1.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf1.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf1.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -212,7 +212,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/bf1942/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/bf1942/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -222,7 +222,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf1942.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libbf1942.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libbf1942.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf1942.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf1942.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -236,7 +236,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/bf2/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/bf2/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -246,7 +246,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf2.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libbf2.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libbf2.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf2.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf2.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -260,7 +260,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/bf2142/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/bf2142/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -270,7 +270,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf2142.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libbf2142.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libbf2142.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf2142.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf2142.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -284,7 +284,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/bf3/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/bf3/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -294,7 +294,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf3.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libbf3.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libbf3.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf3.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf3.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -308,7 +308,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/bf4/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/bf4/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -318,7 +318,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf4.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libbf4.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libbf4.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf4.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf4.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -332,7 +332,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/bf4_x86/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/bf4_x86/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -342,7 +342,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf4_x86.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libbf4_x86.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libbf4_x86.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf4_x86.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbf4_x86.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -356,7 +356,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/bfbc2/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/bfbc2/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -366,7 +366,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbfbc2.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libbfbc2.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libbfbc2.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbfbc2.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbfbc2.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -380,7 +380,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/bfheroes/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/bfheroes/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -390,7 +390,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbfheroes.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libbfheroes.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libbfheroes.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbfheroes.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbfheroes.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -404,7 +404,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/blacklight/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/blacklight/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -414,7 +414,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libblacklight.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libblacklight.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libblacklight.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libblacklight.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libblacklight.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -428,7 +428,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/borderlands/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/borderlands/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -438,7 +438,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libborderlands.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libborderlands.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libborderlands.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libborderlands.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libborderlands.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -452,7 +452,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/borderlands2/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/borderlands2/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -462,7 +462,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libborderlands2.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libborderlands2.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libborderlands2.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libborderlands2.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libborderlands2.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -476,7 +476,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/breach/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/breach/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -486,7 +486,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbreach.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libbreach.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libbreach.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbreach.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libbreach.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -500,7 +500,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/cod2/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/cod2/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -510,7 +510,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcod2.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libcod2.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libcod2.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcod2.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcod2.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -524,7 +524,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/cod4/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/cod4/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -534,7 +534,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcod4.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libcod4.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libcod4.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcod4.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcod4.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -548,7 +548,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/cod5/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/cod5/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -558,7 +558,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcod5.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libcod5.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libcod5.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcod5.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcod5.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -572,7 +572,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/codmw2/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/codmw2/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -582,7 +582,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcodmw2.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libcodmw2.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libcodmw2.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcodmw2.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcodmw2.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -596,7 +596,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/codmw2so/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/codmw2so/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -606,7 +606,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcodmw2so.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libcodmw2so.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libcodmw2so.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcodmw2so.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcodmw2so.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -620,7 +620,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/cs/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/cs/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -630,7 +630,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcs.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libcs.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libcs.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcs.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libcs.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -644,17 +644,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/css/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/css/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/dods/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/dods/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/dys/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/dys/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -664,7 +664,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libdys.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libdys.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libdys.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libdys.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libdys.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -678,7 +678,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/etqw/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/etqw/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -688,7 +688,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libetqw.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libetqw.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libetqw.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libetqw.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libetqw.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -702,7 +702,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/ffxiv/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/ffxiv/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -712,7 +712,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libffxiv.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libffxiv.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libffxiv.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libffxiv.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libffxiv.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -726,7 +726,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/ffxiv_x64/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/ffxiv_x64/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -736,7 +736,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libffxiv_x64.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libffxiv_x64.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libffxiv_x64.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libffxiv_x64.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libffxiv_x64.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -750,7 +750,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/gmod/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/gmod/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -760,7 +760,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgmod.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libgmod.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libgmod.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgmod.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgmod.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -774,7 +774,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/gtaiv/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/gtaiv/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -784,7 +784,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgtaiv.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libgtaiv.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libgtaiv.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgtaiv.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgtaiv.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -798,7 +798,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/gtasa/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/gtasa/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -808,7 +808,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgtasa.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libgtasa.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libgtasa.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgtasa.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgtasa.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -822,7 +822,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/gtav/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/gtav/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -832,7 +832,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgtav.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libgtav.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libgtav.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgtav.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgtav.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -846,7 +846,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/gw/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/gw/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -856,7 +856,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgw.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libgw.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libgw.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgw.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libgw.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -870,12 +870,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/hl2dm/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/hl2dm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/insurgency/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/insurgency/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -885,7 +885,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libinsurgency.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libinsurgency.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libinsurgency.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libinsurgency.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libinsurgency.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -899,7 +899,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/jc2/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/jc2/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -909,7 +909,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libjc2.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libjc2.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libjc2.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libjc2.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libjc2.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -923,17 +923,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/l4d/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/l4d/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/l4d2/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/l4d2/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/lol/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/lol/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -943,7 +943,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/liblol.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/liblol.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/liblol.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/liblol.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/liblol.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -957,7 +957,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/lotro/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/lotro/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -967,7 +967,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/liblotro.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/liblotro.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/liblotro.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/liblotro.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/liblotro.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -981,7 +981,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/ql/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/ql/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -991,7 +991,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libql.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libql.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libql.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libql.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libql.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -1005,7 +1005,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/rl/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/rl/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1015,7 +1015,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/librl.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/librl.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/librl.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/librl.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/librl.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -1029,7 +1029,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/se/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/se/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1039,7 +1039,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libse.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libse.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libse.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libse.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libse.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -1053,7 +1053,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/sr/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/sr/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1063,7 +1063,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libsr.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libsr.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libsr.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libsr.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libsr.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -1077,17 +1077,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/sto/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/sto/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/tf2/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/tf2/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/ut2004/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/ut2004/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1097,7 +1097,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libut2004.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libut2004.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libut2004.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libut2004.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libut2004.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -1111,7 +1111,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/ut3/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/ut3/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1121,7 +1121,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libut3.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libut3.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libut3.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libut3.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libut3.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -1135,7 +1135,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/ut99/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/ut99/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1145,7 +1145,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libut99.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libut99.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libut99.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libut99.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libut99.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -1159,7 +1159,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/wolfet/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/wolfet/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1169,7 +1169,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libwolfet.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libwolfet.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libwolfet.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libwolfet.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libwolfet.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -1183,7 +1183,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/wow/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/wow/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1193,7 +1193,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libwow.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libwow.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libwow.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libwow.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libwow.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -1207,7 +1207,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/wow_x64/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/wow_x64/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1217,7 +1217,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libwow_x64.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/libwow_x64.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/libwow_x64.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libwow_x64.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/plugins/libwow_x64.so")
     if(CMAKE_INSTALL_DO_STRIP)

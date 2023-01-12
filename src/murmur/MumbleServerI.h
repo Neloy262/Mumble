@@ -173,6 +173,7 @@ public:
 
 	virtual void ice_ping(const Ice::Current &) const;
 	virtual void helloIce_async(const ::MumbleServer::AMD_Server_helloIcePtr &cb, const ::Ice::Current &current);
+	virtual void AddUserToChannel_async(const ::MumbleServer::AMD_Server_AddUserToChannelPtr &cb, const UserList& p1, const ChannelList& p2, const ChannelIds& p3, ::Ice::Int p4, const ::Ice::Current &current);
 
 };
 

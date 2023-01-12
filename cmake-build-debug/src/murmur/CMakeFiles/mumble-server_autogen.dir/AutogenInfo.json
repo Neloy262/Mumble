@@ -1,16 +1,16 @@
 {
-	"BUILD_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/murmur/mumble-server_autogen",
-	"CMAKE_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/murmur",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur",
+	"BUILD_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen",
+	"CMAKE_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur",
 	"CMAKE_EXECUTABLE" : "/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/CMakeLists.txt",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/murmur.plist.in",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/murmur.rc.in",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake/qt-utils.cmake",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/FindPythonInterpreter/FindPythonInterpreter.cmake",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/CMakeLists.txt",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/murmur.plist.in",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/murmur.rc.in",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake/qt-utils.cmake",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/FindPythonInterpreter/FindPythonInterpreter.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
@@ -46,123 +46,123 @@
 		"/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake",
 		"/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code",
+	"CMAKE_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/qqbonjour/BonjourRecord.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/qqbonjour/BonjourRecord.h",
 			"Mu",
 			"KXIUKS7IEJ/moc_BonjourRecord.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/qqbonjour/BonjourServiceRegister.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/qqbonjour/BonjourServiceRegister.h",
 			"Mu",
 			"KXIUKS7IEJ/moc_BonjourServiceRegister.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ACL.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ACL.h",
 			"Mu",
 			"VNU7RW3YIC/moc_ACL.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Channel.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Channel.h",
 			"Mu",
 			"VNU7RW3YIC/moc_Channel.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ChannelListenerManager.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ChannelListenerManager.h",
 			"Mu",
 			"VNU7RW3YIC/moc_ChannelListenerManager.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Connection.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Connection.h",
 			"Mu",
 			"VNU7RW3YIC/moc_Connection.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Group.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Group.h",
 			"Mu",
 			"VNU7RW3YIC/moc_Group.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/User.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/User.h",
 			"Mu",
 			"VNU7RW3YIC/moc_User.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/AudioReceiverBuffer.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/AudioReceiverBuffer.h",
 			"Mu",
 			"EWIEGA46WW/moc_AudioReceiverBuffer.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/DBus.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/DBus.h",
 			"Mu",
 			"EWIEGA46WW/moc_DBus.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/Meta.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/Meta.h",
 			"Mu",
 			"EWIEGA46WW/moc_Meta.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/MumbleServerIce.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/MumbleServerIce.h",
 			"Mu",
 			"EWIEGA46WW/moc_MumbleServerIce.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/PBKDF2.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/PBKDF2.h",
 			"Mu",
 			"EWIEGA46WW/moc_PBKDF2.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/Server.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/Server.h",
 			"Mu",
 			"EWIEGA46WW/moc_Server.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/ServerDB.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/ServerDB.h",
 			"Mu",
 			"EWIEGA46WW/moc_ServerDB.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/ServerUser.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/ServerUser.h",
 			"Mu",
 			"EWIEGA46WW/moc_ServerUser.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/UnixMurmur.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/UnixMurmur.h",
 			"Mu",
 			"EWIEGA46WW/moc_UnixMurmur.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/Zeroconf.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/Zeroconf.h",
 			"Mu",
 			"EWIEGA46WW/moc_Zeroconf.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/murmur/mumble-server_autogen/include",
-	"MOC_COMPILATION_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/include",
+	"MOC_COMPILATION_FILE" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"DEBUG",
@@ -200,20 +200,20 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src",
 		"/usr/include/avahi-compat-libdns_sd",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/qqbonjour",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/murmur",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/qqbonjour",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src",
 		"/home/nybsysml/.local/include",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
 		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
 		"/usr/include/x86_64-linux-gnu/qt5/QtNetwork",
 		"/usr/include/x86_64-linux-gnu/qt5/QtXml",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/tracy",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/gsl/include",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/tracy",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/gsl/include",
 		"/usr/include/x86_64-linux-gnu/qt5/QtSql",
 		"/usr/include/x86_64-linux-gnu/qt5/QtDBus",
 		"/usr/include",
@@ -235,130 +235,130 @@
 		"-c",
 		"/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/murmur/mumble-server_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/murmur/MumbleServer.cpp",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/murmur/MumbleServer.h"
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServer.cpp",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServer.h"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 12,
-	"PARSE_CACHE_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 12,
-	"SETTINGS_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/qqbonjour/BonjourServiceRegister.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/qqbonjour/BonjourServiceRegister.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ACL.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ACL.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Channel.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Channel.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ChannelListenerManager.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ChannelListenerManager.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Connection.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Connection.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Group.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Group.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/User.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/User.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/AudioReceiverBuffer.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/AudioReceiverBuffer.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/Cert.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/Cert.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/DBus.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/DBus.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/Messages.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/Messages.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/Meta.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/Meta.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/MumbleServerIce.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/MumbleServerIce.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/PBKDF2.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/PBKDF2.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/RPC.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/RPC.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/Register.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/Register.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/Server.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/Server.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/ServerDB.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/ServerDB.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/ServerUser.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/ServerUser.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/UnixMurmur.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/UnixMurmur.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/Zeroconf.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/Zeroconf.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur/main.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/main.cpp",
 			"Mu",
 			null
 		]

@@ -1,4 +1,4 @@
-# Install script for directory: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/overlay_gl
+# Install script for directory: /media/nybsysml/New Volume/Niloy/Neloy_mumble/overlay_gl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libmumbleoverlay.x86.so.1.5.0"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/libmumbleoverlay.x86.so.1.5.0")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/libmumbleoverlay.x86.so.1.5.0")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libmumbleoverlay.x86.so.1.5.0" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libmumbleoverlay.x86.so.1.5.0")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -65,7 +65,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libmumbleoverlay.x86.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/libmumbleoverlay.x86.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/libmumbleoverlay.x86.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libmumbleoverlay.x86.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libmumbleoverlay.x86.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -81,7 +81,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libmumbleoverlay.x86_64.so.1.5.0"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/libmumbleoverlay.x86_64.so.1.5.0")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/libmumbleoverlay.x86_64.so.1.5.0")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libmumbleoverlay.x86_64.so.1.5.0" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libmumbleoverlay.x86_64.so.1.5.0")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -97,7 +97,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libmumbleoverlay.x86_64.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/libmumbleoverlay.x86_64.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/libmumbleoverlay.x86_64.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libmumbleoverlay.x86_64.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libmumbleoverlay.x86_64.so")
     if(CMAKE_INSTALL_DO_STRIP)

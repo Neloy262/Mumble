@@ -469,7 +469,8 @@ module MumbleServer
 
 		/** Start server. */
 		void start() throws ServerBootedException, ServerFailureException, InvalidSecretException;
-
+		void helloIce();
+		void abc();
 		/** Stop server.
 		 * Note: Server will be restarted on Murmur restart unless explicitly disabled
 		 *       with setConf("boot", false)

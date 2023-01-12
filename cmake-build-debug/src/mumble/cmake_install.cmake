@@ -1,4 +1,4 @@
-# Install script for directory: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble
+# Install script for directory: /media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/mumble"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/mumble")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/mumble")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/mumble" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/mumble")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -71,8 +71,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble" TYPE SHARED_LIBRARY FILES
-    "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/libopus.so.0.8.0"
-    "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/libopus.so.0"
+    "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/libopus.so.0.8.0"
+    "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/libopus.so.0"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libopus.so.0.8.0"
@@ -94,7 +94,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_clientx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libopus.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/libopus.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mumble" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/libopus.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libopus.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mumble/libopus.so")
     if(CMAKE_INSTALL_DO_STRIP)

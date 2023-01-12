@@ -1,4 +1,4 @@
-# Install script for directory: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code
+# Install script for directory: /media/nybsysml/New Volume/Niloy/Neloy_mumble
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,22 +44,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/overlay_gl/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/overlay_gl/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/plugins/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/plugins/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/auxiliary_files/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/auxiliary_files/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -70,5 +70,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

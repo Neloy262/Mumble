@@ -1,4 +1,4 @@
-# Install script for directory: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/speexdsp-build
+# Install script for directory: /media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/speexdsp-build
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

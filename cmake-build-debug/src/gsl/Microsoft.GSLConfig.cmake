@@ -51,7 +51,7 @@ add_library(Microsoft.GSL::GSL INTERFACE IMPORTED)
 set_target_properties(Microsoft.GSL::GSL PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "\$<\$<CXX_COMPILER_ID:MSVC>:;_SCL_SECURE_NO_WARNINGS;_SILENCE_CXX17_UNCAUGHT_EXCEPTION_DEPRECATION_WARNING;>"
   INTERFACE_COMPILE_FEATURES "cxx_std_14"
-  INTERFACE_INCLUDE_DIRECTORIES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/gsl/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/gsl/include"
 )
 
 # This file does not depend on other imported targets which have

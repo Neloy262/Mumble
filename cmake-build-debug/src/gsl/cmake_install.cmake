@@ -1,4 +1,4 @@
-# Install script for directory: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/gsl
+# Install script for directory: /media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/gsl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,14 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/gsl/include/gsl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/gsl/include/gsl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL/Microsoft.GSLConfig.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL/Microsoft.GSLConfig.cmake"
-         "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/gsl/CMakeFiles/Export/share/cmake/Microsoft.GSL/Microsoft.GSLConfig.cmake")
+         "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/gsl/CMakeFiles/Export/share/cmake/Microsoft.GSL/Microsoft.GSLConfig.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL/Microsoft.GSLConfig-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -59,10 +59,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/gsl/CMakeFiles/Export/share/cmake/Microsoft.GSL/Microsoft.GSLConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/gsl/CMakeFiles/Export/share/cmake/Microsoft.GSL/Microsoft.GSLConfig.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/gsl/Microsoft.GSLConfigVersion.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/gsl/Microsoft.GSLConfigVersion.cmake")
 endif()
 

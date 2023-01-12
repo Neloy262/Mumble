@@ -1,0 +1,2872 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "mumble"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"add_link_options",
+			"include",
+			"target_link_libraries",
+			"set_target_properties",
+			"find_package",
+			"find_pkg",
+			"find_dependency",
+			"set_property",
+			"_populate_Svg_target_properties",
+			"add_dependencies",
+			"add_compile_options",
+			"add_definitions",
+			"add_compile_definitions",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"src/mumble/CMakeLists.txt",
+			"cmake/compiler.cmake",
+			"CMakeLists.txt",
+			"/usr/lib/cmake/Poco/PocoZipTargets.cmake",
+			"/usr/lib/cmake/Poco/PocoZipConfig.cmake",
+			"/usr/lib/cmake/Poco/PocoConfig.cmake",
+			"cmake/pkg-utils.cmake",
+			"/usr/lib/cmake/Poco/PocoXMLTargets.cmake",
+			"/usr/lib/cmake/Poco/PocoXMLConfig.cmake",
+			"/usr/lib/cmake/Poco/PocoUtilTargets.cmake",
+			"/usr/lib/cmake/Poco/PocoUtilConfig.cmake",
+			"/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeFindDependencyMacro.cmake",
+			"/usr/lib/cmake/Poco/PocoFoundationTargets.cmake",
+			"/usr/lib/cmake/Poco/PocoFoundationConfig.cmake",
+			"src/CMakeLists.txt",
+			"/home/nybsysml/.local/lib/cmake/protobuf/protobuf-targets.cmake",
+			"/home/nybsysml/.local/lib/cmake/protobuf/protobuf-config.cmake",
+			"/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/FindThreads.cmake",
+			"3rdparty/tracy/CMakeLists.txt",
+			"/usr/lib/x86_64-linux-gnu/cmake/Qt5Svg/Qt5SvgConfig.cmake",
+			"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
+			"/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/FindX11.cmake",
+			"plugins/CMakeLists.txt",
+			"cmake/os.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 352,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 417,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 102,
+				"parent" : 3
+			},
+			{
+				"file" : 1,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 99,
+				"parent" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 123,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 445,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 438,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 77,
+				"parent" : 9
+			},
+			{
+				"file" : 5,
+				"parent" : 10
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 29,
+				"parent" : 11
+			},
+			{
+				"file" : 4,
+				"parent" : 12
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 5,
+				"parent" : 13
+			},
+			{
+				"file" : 3,
+				"parent" : 14
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 65,
+				"parent" : 15
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 77,
+				"parent" : 9
+			},
+			{
+				"file" : 5,
+				"parent" : 17
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 29,
+				"parent" : 18
+			},
+			{
+				"file" : 8,
+				"parent" : 19
+			},
+			{
+				"command" : 3,
+				"file" : 8,
+				"line" : 3,
+				"parent" : 20
+			},
+			{
+				"file" : 7,
+				"parent" : 21
+			},
+			{
+				"command" : 5,
+				"file" : 7,
+				"line" : 65,
+				"parent" : 22
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 3,
+				"parent" : 13
+			},
+			{
+				"command" : 6,
+				"file" : 11,
+				"line" : 47,
+				"parent" : 24
+			},
+			{
+				"file" : 10,
+				"parent" : 25
+			},
+			{
+				"command" : 3,
+				"file" : 10,
+				"line" : 5,
+				"parent" : 26
+			},
+			{
+				"file" : 9,
+				"parent" : 27
+			},
+			{
+				"command" : 5,
+				"file" : 9,
+				"line" : 65,
+				"parent" : 28
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 2,
+				"parent" : 20
+			},
+			{
+				"command" : 6,
+				"file" : 11,
+				"line" : 47,
+				"parent" : 30
+			},
+			{
+				"file" : 13,
+				"parent" : 31
+			},
+			{
+				"command" : 3,
+				"file" : 13,
+				"line" : 1,
+				"parent" : 32
+			},
+			{
+				"file" : 12,
+				"parent" : 33
+			},
+			{
+				"command" : 5,
+				"file" : 12,
+				"line" : 65,
+				"parent" : 34
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 534,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 537,
+				"parent" : 0
+			},
+			{
+				"file" : 14
+			},
+			{
+				"command" : 4,
+				"file" : 14,
+				"line" : 179,
+				"parent" : 38
+			},
+			{
+				"command" : 7,
+				"file" : 14,
+				"line" : 40,
+				"parent" : 38
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 111,
+				"parent" : 40
+			},
+			{
+				"file" : 16,
+				"parent" : 41
+			},
+			{
+				"command" : 3,
+				"file" : 16,
+				"line" : 8,
+				"parent" : 42
+			},
+			{
+				"file" : 15,
+				"parent" : 43
+			},
+			{
+				"command" : 5,
+				"file" : 15,
+				"line" : 64,
+				"parent" : 44
+			},
+			{
+				"command" : 4,
+				"file" : 14,
+				"line" : 215,
+				"parent" : 38
+			},
+			{
+				"file" : 18
+			},
+			{
+				"command" : 6,
+				"file" : 18,
+				"line" : 5,
+				"parent" : 47
+			},
+			{
+				"file" : 17,
+				"parent" : 48
+			},
+			{
+				"command" : 9,
+				"file" : 17,
+				"line" : 250,
+				"parent" : 49
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 77,
+				"parent" : 51
+			},
+			{
+				"file" : 20,
+				"parent" : 52
+			},
+			{
+				"command" : 6,
+				"file" : 20,
+				"line" : 28,
+				"parent" : 53
+			},
+			{
+				"file" : 19,
+				"parent" : 54
+			},
+			{
+				"command" : 10,
+				"file" : 19,
+				"line" : 162,
+				"parent" : 55
+			},
+			{
+				"command" : 5,
+				"file" : 19,
+				"line" : 44,
+				"parent" : 56
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 637,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 657,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 660,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 633,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 79,
+				"parent" : 61
+			},
+			{
+				"file" : 21,
+				"parent" : 62
+			},
+			{
+				"command" : 5,
+				"file" : 21,
+				"line" : 697,
+				"parent" : 63
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 734,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 763,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 803,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 844,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 955,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 991,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 389,
+				"parent" : 0
+			},
+			{
+				"file" : 22
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 11,
+				"file" : 22,
+				"line" : 126,
+				"parent" : 72
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 63,
+				"parent" : 5
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 85,
+				"parent" : 5
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 113,
+				"parent" : 5
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 116,
+				"parent" : 5
+			},
+			{
+				"command" : 13,
+				"file" : 2,
+				"line" : 91,
+				"parent" : 3
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 149,
+				"parent" : 3
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 156,
+				"parent" : 3
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 159,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 103,
+				"parent" : 3
+			},
+			{
+				"file" : 23,
+				"parent" : 129
+			},
+			{
+				"command" : 13,
+				"file" : 23,
+				"line" : 26,
+				"parent" : 130
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 152,
+				"parent" : 3
+			},
+			{
+				"command" : 15,
+				"file" : 0,
+				"line" : 384,
+				"parent" : 0
+			},
+			{
+				"command" : 16,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fPIE"
+				},
+				{
+					"backtrace" : 121,
+					"fragment" : "-fvisibility=hidden"
+				},
+				{
+					"backtrace" : 121,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 121,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 122,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 123,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 124,
+					"fragment" : "-fstack-protector"
+				},
+				{
+					"backtrace" : 71,
+					"fragment" : "-fPIC"
+				},
+				{
+					"fragment" : "-std=gnu++14"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 125,
+					"define" : "DEBUG"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "MUMBLE"
+				},
+				{
+					"backtrace" : 126,
+					"define" : "MUMBLE_BUILD_YEAR=2023"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "MUMBLE_LIBRARY_PATH=/usr/local/lib/mumble"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "MUMBLE_PLUGIN_PATH=/usr/local/lib/mumble/plugins"
+				},
+				{
+					"backtrace" : 127,
+					"define" : "MUMBLE_TARGET_ARCH=\"x64\""
+				},
+				{
+					"backtrace" : 128,
+					"define" : "MUMBLE_TARGET_OS=\"linux\""
+				},
+				{
+					"backtrace" : 71,
+					"define" : "MUMBLE_VERSION=1.5.0"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "MUMBLE_VERSION_MAJOR=1"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "MUMBLE_VERSION_MINOR=5"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "MUMBLE_VERSION_PATCH=0"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "NO_CRASH_REPORT"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "POCO_NO_AUTOMATIC_LIBS"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "QT_CONCURRENT_LIB"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "QT_DBUS_LIB"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "QT_RESTRICTED_CAST_FROM_ASCII"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "QT_SQL_LIB"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "QT_SVG_LIB"
+				},
+				{
+					"backtrace" : 131,
+					"define" : "QT_USE_FAST_CONCATENATION"
+				},
+				{
+					"backtrace" : 131,
+					"define" : "QT_USE_FAST_OPERATOR_PLUS"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "QT_WIDGETS_LIB"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "QT_XML_LIB"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "RESTRICT=__restrict__"
+				},
+				{
+					"backtrace" : 125,
+					"define" : "SNAPSHOT_BUILD"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "TRACY_ON_DEMAND"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "USE_ALSA"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "USE_DBUS"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "USE_JACKAUDIO"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "USE_MANUAL_PLUGIN"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "USE_OVERLAY"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "USE_PIPEWIRE"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "USE_PORTAUDIO"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "USE_PULSEAUDIO"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "USE_QSSLDIFFIEHELLMANPARAMETERS"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "USE_SPEECHD"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "USE_SPEECHD_PKGCONFIG"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "USE_ZEROCONF"
+				},
+				{
+					"backtrace" : 132,
+					"define" : "_USE_MATH_DEFINES"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/mumble_autogen/include"
+				},
+				{
+					"backtrace" : 133,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/src"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/smallft"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/plugins"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/opus/include"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/usr/include/avahi-compat-libdns_sd"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/qqbonjour"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/mumble_client_object_lib_autogen/include"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/nlohmann_json/include"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/speexdsp-build/SYSTEM"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/speexdsp-build/../speexdsp/include"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/speexdsp/include"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/jack"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/pipewire"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/portaudio"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/pulseaudio"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/home/nybsysml/.local/include"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtCore"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtNetwork"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtXml"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/tracy"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/gsl/include"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtConcurrent"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtSql"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtSvg"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtGui"
+				},
+				{
+					"backtrace" : 71,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtDBus"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					71,
+					71,
+					71
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 71,
+			"id" : "shared::@145eef247bfb46b6828c"
+		},
+		{
+			"backtrace" : 71,
+			"id" : "TracyClient::@0f2ded50eca51282338c"
+		},
+		{
+			"backtrace" : 71,
+			"id" : "mumble_client_object_lib::@971cf0db317f6a48c17c"
+		},
+		{
+			"backtrace" : 71,
+			"id" : "speexdsp::@6ed70537f24dd7d41bf3"
+		},
+		{
+			"backtrace" : 71,
+			"id" : "rnnoise::@c07d66f05410065ebe5d"
+		},
+		{
+			"backtrace" : 73,
+			"id" : "link::@01f24e0e4d78f8711653"
+		},
+		{
+			"backtrace" : 74,
+			"id" : "testPlugin::@85281219d2b306ea9f71"
+		},
+		{
+			"backtrace" : 75,
+			"id" : "deadLockPlugin::@c967a0eb4a2131a943d5"
+		},
+		{
+			"backtrace" : 76,
+			"id" : "amongus::@4e91fd7273c45441f0a0"
+		},
+		{
+			"backtrace" : 77,
+			"id" : "aoc::@efad9cd27da3e3e0b57d"
+		},
+		{
+			"backtrace" : 78,
+			"id" : "arma2::@01b8c0a9028858dea7c7"
+		},
+		{
+			"backtrace" : 79,
+			"id" : "bf1::@c3584d4fde2998523280"
+		},
+		{
+			"backtrace" : 80,
+			"id" : "bf1942::@7a587f66d165b5f1a7cb"
+		},
+		{
+			"backtrace" : 81,
+			"id" : "bf2::@38bdb9c0be6ffa585375"
+		},
+		{
+			"backtrace" : 82,
+			"id" : "bf2142::@a8da4859e97e613bd9bf"
+		},
+		{
+			"backtrace" : 83,
+			"id" : "bf3::@1d6debd5a9ce76052cb2"
+		},
+		{
+			"backtrace" : 84,
+			"id" : "bf4::@21cdab51bbf203bcfccf"
+		},
+		{
+			"backtrace" : 85,
+			"id" : "bf4_x86::@0594d048b6a0bf800c74"
+		},
+		{
+			"backtrace" : 86,
+			"id" : "bfbc2::@d9f7e45a9fb9ee1a9e76"
+		},
+		{
+			"backtrace" : 87,
+			"id" : "bfheroes::@02f4778ebb400bb7cf9e"
+		},
+		{
+			"backtrace" : 88,
+			"id" : "blacklight::@d3c462ec1da524f3d1be"
+		},
+		{
+			"backtrace" : 89,
+			"id" : "borderlands::@048585fd79c24e2d6edb"
+		},
+		{
+			"backtrace" : 90,
+			"id" : "borderlands2::@07e7f096d6ee2cf69c98"
+		},
+		{
+			"backtrace" : 91,
+			"id" : "breach::@27cb173890795c3a6aae"
+		},
+		{
+			"backtrace" : 92,
+			"id" : "cod2::@d153f83d27e602bf2ea7"
+		},
+		{
+			"backtrace" : 93,
+			"id" : "cod4::@828c3ea613eed62a86a8"
+		},
+		{
+			"backtrace" : 94,
+			"id" : "cod5::@63c1fc8be9e2c307266b"
+		},
+		{
+			"backtrace" : 95,
+			"id" : "codmw2::@f03655c9a9e882465d80"
+		},
+		{
+			"backtrace" : 96,
+			"id" : "codmw2so::@9b64f23e657ef16a6263"
+		},
+		{
+			"backtrace" : 97,
+			"id" : "cs::@0b5161d6a49e3e06e07d"
+		},
+		{
+			"backtrace" : 98,
+			"id" : "dys::@d172623bacc458d6c416"
+		},
+		{
+			"backtrace" : 99,
+			"id" : "etqw::@0f42d8dc8f7984335508"
+		},
+		{
+			"backtrace" : 100,
+			"id" : "ffxiv::@5704954a4831f0c496d5"
+		},
+		{
+			"backtrace" : 101,
+			"id" : "ffxiv_x64::@3df90a966ba2d83a5473"
+		},
+		{
+			"backtrace" : 102,
+			"id" : "gmod::@b8991de47eddf3ecb316"
+		},
+		{
+			"backtrace" : 103,
+			"id" : "gtaiv::@a518fee5de84ec67bee2"
+		},
+		{
+			"backtrace" : 104,
+			"id" : "gtasa::@dab98c19f5d8eca6a7eb"
+		},
+		{
+			"backtrace" : 105,
+			"id" : "gtav::@ff0c169244d50401ce14"
+		},
+		{
+			"backtrace" : 106,
+			"id" : "gw::@260885332e49f522417e"
+		},
+		{
+			"backtrace" : 107,
+			"id" : "insurgency::@42c2a1c380e3e4a79d2b"
+		},
+		{
+			"backtrace" : 108,
+			"id" : "jc2::@67fc1a8ef5c1fa4d054e"
+		},
+		{
+			"backtrace" : 109,
+			"id" : "lol::@6d4c6a5adf0576b7b50e"
+		},
+		{
+			"backtrace" : 110,
+			"id" : "lotro::@5f1aff7192268dd6b2a3"
+		},
+		{
+			"backtrace" : 111,
+			"id" : "ql::@598c99ea36b9fb321d7d"
+		},
+		{
+			"backtrace" : 112,
+			"id" : "rl::@04495c265d31bde2bff0"
+		},
+		{
+			"backtrace" : 113,
+			"id" : "se::@316b3b81885bf3227ad1"
+		},
+		{
+			"backtrace" : 114,
+			"id" : "sr::@41c07f31b935143489cb"
+		},
+		{
+			"backtrace" : 115,
+			"id" : "ut2004::@b7537f9dd6b6c32182fa"
+		},
+		{
+			"backtrace" : 116,
+			"id" : "ut3::@4f7779b65b53233d7a3e"
+		},
+		{
+			"backtrace" : 117,
+			"id" : "ut99::@3f26d5f348f587bf7ebb"
+		},
+		{
+			"backtrace" : 118,
+			"id" : "wolfet::@ada955ed850eaecb9f44"
+		},
+		{
+			"backtrace" : 119,
+			"id" : "wow::@d03987756b58457de050"
+		},
+		{
+			"backtrace" : 120,
+			"id" : "wow_x64::@5a323e8776a20fe7a827"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "mumble_autogen::@971cf0db317f6a48c17c"
+		}
+	],
+	"id" : "mumble::@971cf0db317f6a48c17c",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-Wl,-z,relro",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-Wl,-z,now",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-Wl,--no-add-needed",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libPocoZip.so.62",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libPocoUtil.so.62",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libPocoXML.so.62",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libexpat.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libPocoJSON.so.62",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libPocoFoundation.so.62",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 35,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libpcre.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 35,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libz.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libsndfile.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "src/libshared.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "/home/nybsysml/.local/lib/libprotobuf.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "-pthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libssl.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Network.so.5.12.8",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Xml.so.5.12.8",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "src/tracy/libTracyClient.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 50,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Concurrent.so.5.12.8",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Sql.so.5.12.8",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Svg.so.5.12.8",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 57,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 58,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libXi.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 59,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/librt.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 60,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libXext.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 64,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libX11.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 65,
+				"fragment" : "src/mumble/speexdsp/libspeexdsp.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 66,
+				"fragment" : "src/mumble/rnnoise/librnnoise.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 67,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libspeechd.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 67,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libglib-2.0.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 68,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5DBus.so.5.12.8",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 69,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libdns_sd.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libasound.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "mumble",
+	"nameOnDisk" : "mumble",
+	"paths" : 
+	{
+		"build" : "src/mumble",
+		"source" : "src/mumble"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				39
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/mumble/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 134,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/ApplicationPalette.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_ACLEditor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_AudioInput.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_AudioOutput.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_AudioStats.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_AudioWizard.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_BanEditor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_Cert.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_ConfigDialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_ConnectDialogEdit.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_ConnectDialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_GlobalShortcut.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_GlobalShortcutButtons.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_GlobalShortcutTarget.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_LCD.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_Log.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_LookConfig.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_MainWindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_NetworkConfig.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_PluginConfig.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_PluginInstaller.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_PluginUpdater.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_PositionalAudioViewer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_PTTButtonWidget.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_RichTextEditorLink.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_RichTextEditor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_SearchDialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_ServerInformation.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_TextMessage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_Tokens.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_UserEdit.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_UserInformation.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_UserLocalNicknameDialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_VoiceRecorderDialog.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_ManualPlugin.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_Overlay.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/mumble_autogen/include/ui_OverlayEditor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/ApplicationPalette.h.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/mumble_client_object_lib_autogen/mocs_compilation.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/About.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/ACLEditor.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/API_v_1_x_x.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/AudioConfigDialog.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Audio.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/AudioOutputCache.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/AudioInput.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/AudioOutput.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/AudioOutputSample.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/AudioOutputSpeech.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/AudioOutputUser.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/AudioStats.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/AudioWizard.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/BanEditor.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Cert.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/ClientUser.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/ConfigDialog.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/ConfigWidget.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/ConnectDialog.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/CustomElements.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Database.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/DeveloperConsole.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/EchoCancelOption.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/EnumStringConversions.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Global.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/GlobalShortcut.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/GlobalShortcutButtons.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/JSONSerialization.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/LCD.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/LegacyPlugin.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/ListenerVolumeSlider.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Log.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/LookConfig.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/MainWindow.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Markdown.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/MenuLabel.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Messages.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/MumbleApplication.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/NetworkConfig.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/OpusCodec.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/PluginConfig.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Plugin.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/PluginInstaller.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/PluginManager.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/PluginManifest.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/PluginUpdater.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/PositionalAudioViewer.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/PositionalData.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/PTTButtonWidget.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/QtWidgetUtils.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/RichTextEditor.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Screen.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/SearchDialog.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/ServerHandler.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/ServerInformation.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/SettingsKeys.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Settings.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/SharedMemory.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/SocketRPC.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/SvgIcon.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/TalkingUI.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/TalkingUIContainer.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/TalkingUIEntry.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/TalkingUISelection.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/TextMessage.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/ThemeInfo.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Themes.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Tokens.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Translations.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Usage.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/UserEdit.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/UserInformation.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/UserListModel.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/UserLocalNicknameDialog.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/UserLocalVolumeSlider.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/UserModel.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/UserView.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/VersionCheck.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/ViewCert.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/VoiceRecorder.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/VoiceRecorderDialog.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/VolumeSliderWidgetAction.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/WebFetch.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/XMLTools.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/widgets/CompletablePage.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/widgets/MUComboBox.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/widgets/MultiStyleWidgetWrapper.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/widgets/RichTextItemDelegate.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/widgets/SearchDialogItemDelegate.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/widgets/SearchDialogTree.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/__/ACL.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/__/Channel.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/__/ChannelListenerManager.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/__/Connection.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/__/Group.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/__/User.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/__/__/3rdparty/smallft/smallft.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/SharedMemory_unix.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/GlobalShortcut_unix.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Log_unix.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/os_unix.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/TextToSpeech_unix.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/ManualPlugin.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/DBus.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Overlay.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/OverlayClient.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/OverlayConfig.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/OverlayEditor.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/OverlayEditorScene.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/OverlayPositionableItem.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/OverlayText.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/OverlayUser.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/OverlayUserGroup.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/PathListWidget.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Overlay_unix.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/Zeroconf.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/__/__/3rdparty/qqbonjour/BonjourServiceBrowser.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/__/__/3rdparty/qqbonjour/BonjourServiceResolver.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/ALSAAudio.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/JackAudio.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/PipeWire.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/PAAudio.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/PulseAudio.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/mumble_client_object_lib_autogen/EWIEGA46WW/qrc_mumble.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/mumble_client_object_lib_autogen/6RJHKKPRHE/qrc_DefaultTheme.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/mumble_client_object_lib_autogen/QDNKOH6XJF/qrc_mumble_flags.cpp.o",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 71,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib.dir/mumble_client_object_lib_autogen/EJRQKI7XPS/qrc_mumble_translations.cpp.o",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "EXECUTABLE"
+}

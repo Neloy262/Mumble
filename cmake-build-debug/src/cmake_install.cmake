@@ -1,4 +1,4 @@
-# Install script for directory: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src
+# Install script for directory: /media/nybsysml/New Volume/Niloy/Neloy_mumble/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,19 +44,19 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/icons/mumble.svg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/icons/mumble.svg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/256x256/apps" TYPE FILE RENAME "mumble.png" FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/icons/mumble_256x256.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/256x256/apps" TYPE FILE RENAME "mumble.png" FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/icons/mumble_256x256.png")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/murmur/cmake_install.cmake")
+  include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/cmake_install.cmake")
 endif()
 

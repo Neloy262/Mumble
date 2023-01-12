@@ -1,18 +1,18 @@
 {
-	"BUILD_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/mumble_client_object_lib_autogen",
-	"CMAKE_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble",
+	"BUILD_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/mumble_client_object_lib_autogen",
+	"CMAKE_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble",
 	"CMAKE_EXECUTABLE" : "/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/CMakeLists.txt",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/mumble.rc.in",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/mumble_dll.rc.in",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/mumble.plist.in",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake/qt-utils.cmake",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/FindPythonInterpreter/FindPythonInterpreter.cmake",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake/install-library.cmake",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/CMakeLists.txt",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/mumble.rc.in",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/mumble_dll.rc.in",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/mumble.plist.in",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake/qt-utils.cmake",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/FindPythonInterpreter/FindPythonInterpreter.cmake",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake/install-library.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
@@ -172,751 +172,751 @@
 		"/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/FindALSA.cmake",
 		"/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake",
 		"/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/mumble.qrc",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/themes/DefaultTheme.qrc",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/mumble_translations.qrc"
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/mumble.qrc",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/themes/DefaultTheme.qrc",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/mumble_translations.qrc"
 	],
-	"CMAKE_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code",
+	"CMAKE_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/qqbonjour/BonjourRecord.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/qqbonjour/BonjourRecord.h",
 			"MU",
 			"KXIUKS7IEJ/moc_BonjourRecord.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/qqbonjour/BonjourServiceBrowser.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/qqbonjour/BonjourServiceBrowser.h",
 			"MU",
 			"KXIUKS7IEJ/moc_BonjourServiceBrowser.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/qqbonjour/BonjourServiceResolver.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/qqbonjour/BonjourServiceResolver.h",
 			"MU",
 			"KXIUKS7IEJ/moc_BonjourServiceResolver.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/smallft/smallft.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/smallft/smallft.h",
 			"MU",
 			"U5RSZUUPGH/moc_smallft.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ACL.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ACL.h",
 			"MU",
 			"VNU7RW3YIC/moc_ACL.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Channel.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Channel.h",
 			"MU",
 			"VNU7RW3YIC/moc_Channel.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ChannelListenerManager.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ChannelListenerManager.h",
 			"MU",
 			"VNU7RW3YIC/moc_ChannelListenerManager.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Connection.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Connection.h",
 			"MU",
 			"VNU7RW3YIC/moc_Connection.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Group.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Group.h",
 			"MU",
 			"VNU7RW3YIC/moc_Group.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/SignalCurry.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/SignalCurry.h",
 			"MU",
 			"VNU7RW3YIC/moc_SignalCurry.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/User.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/User.h",
 			"MU",
 			"VNU7RW3YIC/moc_User.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ACLEditor.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ACLEditor.h",
 			"MU",
 			"EWIEGA46WW/moc_ACLEditor.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ALSAAudio.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ALSAAudio.h",
 			"MU",
 			"EWIEGA46WW/moc_ALSAAudio.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/API.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/API.h",
 			"MU",
 			"EWIEGA46WW/moc_API.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/About.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/About.h",
 			"MU",
 			"EWIEGA46WW/moc_About.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Audio.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Audio.h",
 			"MU",
 			"EWIEGA46WW/moc_Audio.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioConfigDialog.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioConfigDialog.h",
 			"MU",
 			"EWIEGA46WW/moc_AudioConfigDialog.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioInput.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioInput.h",
 			"MU",
 			"EWIEGA46WW/moc_AudioInput.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioOutput.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioOutput.h",
 			"MU",
 			"EWIEGA46WW/moc_AudioOutput.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioOutputCache.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioOutputCache.h",
 			"MU",
 			"EWIEGA46WW/moc_AudioOutputCache.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioOutputSample.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioOutputSample.h",
 			"MU",
 			"EWIEGA46WW/moc_AudioOutputSample.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioOutputSpeech.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioOutputSpeech.h",
 			"MU",
 			"EWIEGA46WW/moc_AudioOutputSpeech.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioOutputUser.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioOutputUser.h",
 			"MU",
 			"EWIEGA46WW/moc_AudioOutputUser.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioStats.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioStats.h",
 			"MU",
 			"EWIEGA46WW/moc_AudioStats.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioWizard.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioWizard.h",
 			"MU",
 			"EWIEGA46WW/moc_AudioWizard.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/BanEditor.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/BanEditor.h",
 			"MU",
 			"EWIEGA46WW/moc_BanEditor.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Cert.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Cert.h",
 			"MU",
 			"EWIEGA46WW/moc_Cert.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ClientUser.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ClientUser.h",
 			"MU",
 			"EWIEGA46WW/moc_ClientUser.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ConfigDialog.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ConfigDialog.h",
 			"MU",
 			"EWIEGA46WW/moc_ConfigDialog.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ConfigWidget.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ConfigWidget.h",
 			"MU",
 			"EWIEGA46WW/moc_ConfigWidget.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ConnectDialog.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ConnectDialog.h",
 			"MU",
 			"EWIEGA46WW/moc_ConnectDialog.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/CustomElements.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/CustomElements.h",
 			"MU",
 			"EWIEGA46WW/moc_CustomElements.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/DBus.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/DBus.h",
 			"MU",
 			"EWIEGA46WW/moc_DBus.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Database.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Database.h",
 			"MU",
 			"EWIEGA46WW/moc_Database.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/DeveloperConsole.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/DeveloperConsole.h",
 			"MU",
 			"EWIEGA46WW/moc_DeveloperConsole.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/EchoCancelOption.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/EchoCancelOption.h",
 			"MU",
 			"EWIEGA46WW/moc_EchoCancelOption.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/EnumStringConversions.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/EnumStringConversions.h",
 			"MU",
 			"EWIEGA46WW/moc_EnumStringConversions.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Global.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Global.h",
 			"MU",
 			"EWIEGA46WW/moc_Global.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/GlobalShortcut.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/GlobalShortcut.h",
 			"MU",
 			"EWIEGA46WW/moc_GlobalShortcut.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/GlobalShortcutButtons.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/GlobalShortcutButtons.h",
 			"MU",
 			"EWIEGA46WW/moc_GlobalShortcutButtons.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/GlobalShortcutTypes.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/GlobalShortcutTypes.h",
 			"MU",
 			"EWIEGA46WW/moc_GlobalShortcutTypes.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/GlobalShortcut_unix.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/GlobalShortcut_unix.h",
 			"MU",
 			"EWIEGA46WW/moc_GlobalShortcut_unix.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/JSONSerialization.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/JSONSerialization.h",
 			"MU",
 			"EWIEGA46WW/moc_JSONSerialization.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/JackAudio.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/JackAudio.h",
 			"MU",
 			"EWIEGA46WW/moc_JackAudio.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/LCD.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/LCD.h",
 			"MU",
 			"EWIEGA46WW/moc_LCD.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/LegacyPlugin.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/LegacyPlugin.h",
 			"MU",
 			"EWIEGA46WW/moc_LegacyPlugin.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ListenerVolumeSlider.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ListenerVolumeSlider.h",
 			"MU",
 			"EWIEGA46WW/moc_ListenerVolumeSlider.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Log.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Log.h",
 			"MU",
 			"EWIEGA46WW/moc_Log.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/LookConfig.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/LookConfig.h",
 			"MU",
 			"EWIEGA46WW/moc_LookConfig.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/MainWindow.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/MainWindow.h",
 			"MU",
 			"EWIEGA46WW/moc_MainWindow.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ManualPlugin.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ManualPlugin.h",
 			"MU",
 			"EWIEGA46WW/moc_ManualPlugin.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Markdown.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Markdown.h",
 			"MU",
 			"EWIEGA46WW/moc_Markdown.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/MenuLabel.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/MenuLabel.h",
 			"MU",
 			"EWIEGA46WW/moc_MenuLabel.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/MumbleApplication.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/MumbleApplication.h",
 			"MU",
 			"EWIEGA46WW/moc_MumbleApplication.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/NetworkConfig.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/NetworkConfig.h",
 			"MU",
 			"EWIEGA46WW/moc_NetworkConfig.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OpusCodec.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OpusCodec.h",
 			"MU",
 			"EWIEGA46WW/moc_OpusCodec.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Overlay.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Overlay.h",
 			"MU",
 			"EWIEGA46WW/moc_Overlay.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayClient.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayClient.h",
 			"MU",
 			"EWIEGA46WW/moc_OverlayClient.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayConfig.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayConfig.h",
 			"MU",
 			"EWIEGA46WW/moc_OverlayConfig.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayEditor.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayEditor.h",
 			"MU",
 			"EWIEGA46WW/moc_OverlayEditor.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayEditorScene.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayEditorScene.h",
 			"MU",
 			"EWIEGA46WW/moc_OverlayEditorScene.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayPositionableItem.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayPositionableItem.h",
 			"MU",
 			"EWIEGA46WW/moc_OverlayPositionableItem.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayText.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayText.h",
 			"MU",
 			"EWIEGA46WW/moc_OverlayText.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayUser.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayUser.h",
 			"MU",
 			"EWIEGA46WW/moc_OverlayUser.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayUserGroup.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayUserGroup.h",
 			"MU",
 			"EWIEGA46WW/moc_OverlayUserGroup.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PAAudio.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PAAudio.h",
 			"MU",
 			"EWIEGA46WW/moc_PAAudio.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PTTButtonWidget.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PTTButtonWidget.h",
 			"MU",
 			"EWIEGA46WW/moc_PTTButtonWidget.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PathListWidget.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PathListWidget.h",
 			"MU",
 			"EWIEGA46WW/moc_PathListWidget.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PipeWire.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PipeWire.h",
 			"MU",
 			"EWIEGA46WW/moc_PipeWire.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Plugin.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Plugin.h",
 			"MU",
 			"EWIEGA46WW/moc_Plugin.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PluginConfig.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PluginConfig.h",
 			"MU",
 			"EWIEGA46WW/moc_PluginConfig.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PluginInstaller.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PluginInstaller.h",
 			"MU",
 			"EWIEGA46WW/moc_PluginInstaller.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PluginManager.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PluginManager.h",
 			"MU",
 			"EWIEGA46WW/moc_PluginManager.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PluginManifest.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PluginManifest.h",
 			"MU",
 			"EWIEGA46WW/moc_PluginManifest.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PluginUpdater.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PluginUpdater.h",
 			"MU",
 			"EWIEGA46WW/moc_PluginUpdater.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PositionalAudioViewer.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PositionalAudioViewer.h",
 			"MU",
 			"EWIEGA46WW/moc_PositionalAudioViewer.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PositionalData.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PositionalData.h",
 			"MU",
 			"EWIEGA46WW/moc_PositionalData.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PulseAudio.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PulseAudio.h",
 			"MU",
 			"EWIEGA46WW/moc_PulseAudio.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/QtWidgetUtils.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/QtWidgetUtils.h",
 			"MU",
 			"EWIEGA46WW/moc_QtWidgetUtils.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/QuitBehavior.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/QuitBehavior.h",
 			"MU",
 			"EWIEGA46WW/moc_QuitBehavior.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/RichTextEditor.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/RichTextEditor.h",
 			"MU",
 			"EWIEGA46WW/moc_RichTextEditor.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Screen.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Screen.h",
 			"MU",
 			"EWIEGA46WW/moc_Screen.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/SearchDialog.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/SearchDialog.h",
 			"MU",
 			"EWIEGA46WW/moc_SearchDialog.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ServerHandler.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ServerHandler.h",
 			"MU",
 			"EWIEGA46WW/moc_ServerHandler.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ServerInformation.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ServerInformation.h",
 			"MU",
 			"EWIEGA46WW/moc_ServerInformation.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Settings.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Settings.h",
 			"MU",
 			"EWIEGA46WW/moc_Settings.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/SettingsKeys.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/SettingsKeys.h",
 			"MU",
 			"EWIEGA46WW/moc_SettingsKeys.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/SharedMemory.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/SharedMemory.h",
 			"MU",
 			"EWIEGA46WW/moc_SharedMemory.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/SocketRPC.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/SocketRPC.h",
 			"MU",
 			"EWIEGA46WW/moc_SocketRPC.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/SvgIcon.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/SvgIcon.h",
 			"MU",
 			"EWIEGA46WW/moc_SvgIcon.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/TalkingUI.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/TalkingUI.h",
 			"MU",
 			"EWIEGA46WW/moc_TalkingUI.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/TalkingUIContainer.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/TalkingUIContainer.h",
 			"MU",
 			"EWIEGA46WW/moc_TalkingUIContainer.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/TalkingUIEntry.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/TalkingUIEntry.h",
 			"MU",
 			"EWIEGA46WW/moc_TalkingUIEntry.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/TalkingUISelection.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/TalkingUISelection.h",
 			"MU",
 			"EWIEGA46WW/moc_TalkingUISelection.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/TextMessage.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/TextMessage.h",
 			"MU",
 			"EWIEGA46WW/moc_TextMessage.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/TextToSpeech.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/TextToSpeech.h",
 			"MU",
 			"EWIEGA46WW/moc_TextToSpeech.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ThemeInfo.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ThemeInfo.h",
 			"MU",
 			"EWIEGA46WW/moc_ThemeInfo.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Themes.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Themes.h",
 			"MU",
 			"EWIEGA46WW/moc_Themes.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Tokens.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Tokens.h",
 			"MU",
 			"EWIEGA46WW/moc_Tokens.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Translations.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Translations.h",
 			"MU",
 			"EWIEGA46WW/moc_Translations.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Usage.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Usage.h",
 			"MU",
 			"EWIEGA46WW/moc_Usage.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserEdit.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserEdit.h",
 			"MU",
 			"EWIEGA46WW/moc_UserEdit.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserInformation.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserInformation.h",
 			"MU",
 			"EWIEGA46WW/moc_UserInformation.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserListModel.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserListModel.h",
 			"MU",
 			"EWIEGA46WW/moc_UserListModel.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserLocalNicknameDialog.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserLocalNicknameDialog.h",
 			"MU",
 			"EWIEGA46WW/moc_UserLocalNicknameDialog.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserLocalVolumeSlider.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserLocalVolumeSlider.h",
 			"MU",
 			"EWIEGA46WW/moc_UserLocalVolumeSlider.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserModel.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserModel.h",
 			"MU",
 			"EWIEGA46WW/moc_UserModel.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserView.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserView.h",
 			"MU",
 			"EWIEGA46WW/moc_UserView.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/VersionCheck.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/VersionCheck.h",
 			"MU",
 			"EWIEGA46WW/moc_VersionCheck.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ViewCert.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ViewCert.h",
 			"MU",
 			"EWIEGA46WW/moc_ViewCert.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/VoiceRecorder.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/VoiceRecorder.h",
 			"MU",
 			"EWIEGA46WW/moc_VoiceRecorder.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/VoiceRecorderDialog.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/VoiceRecorderDialog.h",
 			"MU",
 			"EWIEGA46WW/moc_VoiceRecorderDialog.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/VolumeSliderWidgetAction.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/VolumeSliderWidgetAction.h",
 			"MU",
 			"EWIEGA46WW/moc_VolumeSliderWidgetAction.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/WebFetch.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/WebFetch.h",
 			"MU",
 			"EWIEGA46WW/moc_WebFetch.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/XMLTools.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/XMLTools.h",
 			"MU",
 			"EWIEGA46WW/moc_XMLTools.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Zeroconf.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Zeroconf.h",
 			"MU",
 			"EWIEGA46WW/moc_Zeroconf.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/widgets/CompletablePage.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets/CompletablePage.h",
 			"MU",
 			"IMAN36LHMA/moc_CompletablePage.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/widgets/MUComboBox.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets/MUComboBox.h",
 			"MU",
 			"IMAN36LHMA/moc_MUComboBox.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/widgets/MultiStyleWidgetWrapper.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets/MultiStyleWidgetWrapper.h",
 			"MU",
 			"IMAN36LHMA/moc_MultiStyleWidgetWrapper.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/widgets/RichTextItemDelegate.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets/RichTextItemDelegate.h",
 			"MU",
 			"IMAN36LHMA/moc_RichTextItemDelegate.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/widgets/SearchDialogItemDelegate.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets/SearchDialogItemDelegate.h",
 			"MU",
 			"IMAN36LHMA/moc_SearchDialogItemDelegate.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/widgets/SearchDialogTree.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets/SearchDialogTree.h",
 			"MU",
 			"IMAN36LHMA/moc_SearchDialogTree.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/mumble_client_object_lib_autogen/include",
-	"MOC_COMPILATION_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/mumble_client_object_lib_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/mumble_client_object_lib_autogen/include",
+	"MOC_COMPILATION_FILE" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/mumble_client_object_lib_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"DEBUG",
@@ -971,33 +971,33 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/widgets",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/smallft",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/plugins",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/opus/include",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/smallft",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/plugins",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/opus/include",
 		"/usr/include/avahi-compat-libdns_sd",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/qqbonjour",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/nlohmann_json/include",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/speexdsp-build/SYSTEM",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/speexdsp/include",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/speexdsp/include",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/rnnoise-build/SYSTEM",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/rnnoise-src/include",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/jack",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/pipewire",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/portaudio",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/pulseaudio",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/qqbonjour",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/nlohmann_json/include",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/speexdsp-build/SYSTEM",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/speexdsp/include",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/speexdsp/include",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/rnnoise-build/SYSTEM",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/rnnoise-src/include",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/jack",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/pipewire",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/portaudio",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/pulseaudio",
 		"/home/nybsysml/.local/include",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
 		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
 		"/usr/include/x86_64-linux-gnu/qt5/QtNetwork",
 		"/usr/include/x86_64-linux-gnu/qt5/QtXml",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/tracy",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/gsl/include",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/tracy",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/gsl/include",
 		"/usr/include/x86_64-linux-gnu/qt5/QtConcurrent",
 		"/usr/include/x86_64-linux-gnu/qt5/QtSql",
 		"/usr/include/x86_64-linux-gnu/qt5/QtSvg",
@@ -1023,631 +1023,631 @@
 		"-c",
 		"/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/mumble_client_object_lib_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/mumble_client_object_lib_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 12,
-	"PARSE_CACHE_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 12,
-	"SETTINGS_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/CMakeFiles/mumble_client_object_lib_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/qqbonjour/BonjourServiceBrowser.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/qqbonjour/BonjourServiceBrowser.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/qqbonjour/BonjourServiceResolver.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/qqbonjour/BonjourServiceResolver.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/smallft/smallft.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/smallft/smallft.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ACL.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ACL.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Channel.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Channel.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ChannelListenerManager.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ChannelListenerManager.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Connection.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Connection.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Group.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Group.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/User.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/User.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ACLEditor.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ACLEditor.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ALSAAudio.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ALSAAudio.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/API_v_1_x_x.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/API_v_1_x_x.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/About.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/About.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Audio.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Audio.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioConfigDialog.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioConfigDialog.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioInput.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioInput.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioOutput.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioOutput.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioOutputCache.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioOutputCache.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioOutputSample.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioOutputSample.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioOutputSpeech.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioOutputSpeech.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioOutputUser.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioOutputUser.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioStats.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioStats.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/AudioWizard.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/AudioWizard.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/BanEditor.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/BanEditor.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Cert.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Cert.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ClientUser.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ClientUser.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ConfigDialog.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ConfigDialog.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ConfigWidget.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ConfigWidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ConnectDialog.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ConnectDialog.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/CustomElements.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/CustomElements.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/DBus.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/DBus.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Database.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Database.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/DeveloperConsole.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/DeveloperConsole.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/EchoCancelOption.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/EchoCancelOption.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/EnumStringConversions.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/EnumStringConversions.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Global.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Global.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/GlobalShortcut.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/GlobalShortcut.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/GlobalShortcutButtons.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/GlobalShortcutButtons.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/GlobalShortcut_unix.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/GlobalShortcut_unix.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/JSONSerialization.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/JSONSerialization.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/JackAudio.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/JackAudio.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/LCD.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/LCD.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/LegacyPlugin.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/LegacyPlugin.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ListenerVolumeSlider.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ListenerVolumeSlider.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Log.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Log.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Log_unix.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Log_unix.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/LookConfig.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/LookConfig.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/MainWindow.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/MainWindow.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ManualPlugin.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ManualPlugin.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Markdown.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Markdown.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/MenuLabel.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/MenuLabel.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Messages.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Messages.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/MumbleApplication.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/MumbleApplication.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/NetworkConfig.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/NetworkConfig.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OpusCodec.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OpusCodec.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Overlay.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Overlay.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayClient.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayClient.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayConfig.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayConfig.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayEditor.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayEditor.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayEditorScene.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayEditorScene.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayPositionableItem.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayPositionableItem.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayText.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayText.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayUser.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayUser.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/OverlayUserGroup.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/OverlayUserGroup.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Overlay_unix.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Overlay_unix.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PAAudio.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PAAudio.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PTTButtonWidget.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PTTButtonWidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PathListWidget.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PathListWidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PipeWire.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PipeWire.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Plugin.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Plugin.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PluginConfig.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PluginConfig.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PluginInstaller.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PluginInstaller.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PluginManager.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PluginManager.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PluginManifest.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PluginManifest.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PluginUpdater.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PluginUpdater.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PositionalAudioViewer.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PositionalAudioViewer.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PositionalData.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PositionalData.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/PulseAudio.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/PulseAudio.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/QtWidgetUtils.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/QtWidgetUtils.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/RichTextEditor.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/RichTextEditor.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Screen.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Screen.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/SearchDialog.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/SearchDialog.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ServerHandler.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ServerHandler.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ServerInformation.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ServerInformation.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Settings.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Settings.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/SettingsKeys.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/SettingsKeys.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/SharedMemory.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/SharedMemory.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/SharedMemory_unix.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/SharedMemory_unix.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/SocketRPC.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/SocketRPC.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/SvgIcon.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/SvgIcon.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/TalkingUI.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/TalkingUI.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/TalkingUIContainer.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/TalkingUIContainer.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/TalkingUIEntry.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/TalkingUIEntry.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/TalkingUISelection.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/TalkingUISelection.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/TextMessage.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/TextMessage.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/TextToSpeech_unix.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/TextToSpeech_unix.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ThemeInfo.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ThemeInfo.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Themes.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Themes.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Tokens.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Tokens.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Translations.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Translations.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Usage.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Usage.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserEdit.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserEdit.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserInformation.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserInformation.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserListModel.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserListModel.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserLocalNicknameDialog.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserLocalNicknameDialog.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserLocalVolumeSlider.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserLocalVolumeSlider.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserModel.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserModel.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/UserView.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/UserView.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/VersionCheck.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/VersionCheck.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/ViewCert.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/ViewCert.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/VoiceRecorder.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/VoiceRecorder.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/VoiceRecorderDialog.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/VoiceRecorderDialog.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/VolumeSliderWidgetAction.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/VolumeSliderWidgetAction.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/WebFetch.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/WebFetch.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/XMLTools.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/XMLTools.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/Zeroconf.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/Zeroconf.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/os_unix.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/os_unix.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/widgets/CompletablePage.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets/CompletablePage.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/widgets/MUComboBox.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets/MUComboBox.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/widgets/MultiStyleWidgetWrapper.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets/MultiStyleWidgetWrapper.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/widgets/RichTextItemDelegate.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets/RichTextItemDelegate.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/widgets/SearchDialogItemDelegate.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets/SearchDialogItemDelegate.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/mumble/widgets/SearchDialogTree.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/mumble/widgets/SearchDialogTree.cpp",
 			"MU",
 			null
 		]

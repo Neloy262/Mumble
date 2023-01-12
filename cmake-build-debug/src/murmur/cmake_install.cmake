@@ -1,4 +1,4 @@
-# Install script for directory: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/murmur
+# Install script for directory: /media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_serverx" OR NOT CMAKE_INSTAL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/mumble-server"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/mumble-server")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/mumble-server")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/mumble-server" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/mumble-server")
     if(CMAKE_INSTALL_DO_STRIP)

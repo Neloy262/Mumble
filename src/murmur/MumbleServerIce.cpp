@@ -1540,6 +1540,31 @@ static void impl_Server_getUserIds(const ::MumbleServer::AMD_Server_getUserIdsPt
 	cb->ice_response(im);
 }
 
+static void impl_Server_AddUserToChannel(const ::MumbleServer::AMD_Server_AddUserToChannelPtr &cb,int server_id,const ::MumbleServer::UserList &p1, const ::MumbleServer::ChannelList &p2,const ::MumbleServer::ChannelIds &channelIds,int userid){
+	NEED_SERVER;
+	unsigned int vecSize = p1.size();
+	for(unsigned int i = 0; i < vecSize; i++)
+	{
+		std::cout<<"Name:"<< p1[i].name <<std::endl;
+	}
+
+	unsigned int vecSize2 = channelIds.size();
+
+	for(unsigned int i = 0; i < vecSize2; i++)
+	{
+//		std::cout<<"Channel name:" << p2[i].name<<std::endl;
+		server->createChannelAccess(channelIds[i],userid);
+	}
+
+//	std::cout<<server->qhUsers.find(userid).value()<<std::endl;
+
+//	server->createChannelAccess(channelid,userid);
+
+	std::cout<<server_id<<userid<<p2.size()<<std::endl;
+
+	cb->ice_response();
+}
+
 static void impl_Server_registerUser(const ::MumbleServer::AMD_Server_registerUserPtr cb, int server_id,
 									 const ::MumbleServer::UserInfoMap &im) {
 	NEED_SERVER;
@@ -1973,12 +1998,13 @@ static void impl_Meta_getVersion(const ::MumbleServer::AMD_Meta_getVersionPtr cb
 	cb->ice_response(major, minor, patch, iceString(txt));
 }
 
-static void impl_Server_helloIce(const ::MumbleServer::AMD_Server_helloIcePtr &cb, const ::Ice::Current &current){
+static void impl_Server_helloIce(const ::MumbleServer::AMD_Server_helloIcePtr &cb, int server_id){
 
-	int server_id = u8(current.id.name).toInt();
+
 	std::cout<<"HELLO ICE --------------"<<server_id<<std::endl;
 	cb->ice_response();
 }
+
 
 
 static void impl_Meta_addCallback(const MumbleServer::AMD_Meta_addCallbackPtr cb, const Ice::ObjectAdapterPtr,

@@ -1177,6 +1177,9 @@ if '_t_LogList' not in _M_MumbleServer.__dict__:
 if '_t_BanList' not in _M_MumbleServer.__dict__:
     _M_MumbleServer._t_BanList = IcePy.defineSequence('::MumbleServer::BanList', (), _M_MumbleServer._t_Ban)
 
+if '_t_ChannelIds' not in _M_MumbleServer.__dict__:
+    _M_MumbleServer._t_ChannelIds = IcePy.defineSequence('::MumbleServer::ChannelIds', (), IcePy._t_int)
+
 if '_t_IdList' not in _M_MumbleServer.__dict__:
     _M_MumbleServer._t_IdList = IcePy.defineSequence('::MumbleServer::IdList', (), IcePy._t_int)
 
@@ -2873,6 +2876,18 @@ if 'ServerPrx' not in _M_MumbleServer.__dict__:
 
         def end_helloIce(self, _r):
             return _M_MumbleServer.Server._op_helloIce.end(self, _r)
+
+        def AddUserToChannel(self, userlist, channellist, channelids, userid, context=None):
+            return _M_MumbleServer.Server._op_AddUserToChannel.invoke(self, ((userlist, channellist, channelids, userid), context))
+
+        def AddUserToChannelAsync(self, userlist, channellist, channelids, userid, context=None):
+            return _M_MumbleServer.Server._op_AddUserToChannel.invokeAsync(self, ((userlist, channellist, channelids, userid), context))
+
+        def begin_AddUserToChannel(self, userlist, channellist, channelids, userid, _response=None, _ex=None, _sent=None, context=None):
+            return _M_MumbleServer.Server._op_AddUserToChannel.begin(self, ((userlist, channellist, channelids, userid), _response, _ex, _sent, context))
+
+        def end_AddUserToChannel(self, _r):
+            return _M_MumbleServer.Server._op_AddUserToChannel.end(self, _r)
 
         """
         Stop server.
@@ -5376,6 +5391,9 @@ if 'ServerPrx' not in _M_MumbleServer.__dict__:
         def helloIce(self, current=None):
             raise NotImplementedError("servant method 'helloIce' not implemented")
 
+        def AddUserToChannel(self, userlist, channellist, channelids, userid, current=None):
+            raise NotImplementedError("servant method 'AddUserToChannel' not implemented")
+
         def stop(self, current=None):
             """
             Stop server.
@@ -5986,6 +6004,7 @@ if 'ServerPrx' not in _M_MumbleServer.__dict__:
     Server._op_isRunning = IcePy.Operation('isRunning', Ice.OperationMode.Idempotent, Ice.OperationMode.Idempotent, True, None, (), (), (), ((), IcePy._t_bool, False, 0), (_M_MumbleServer._t_InvalidSecretException,))
     Server._op_start = IcePy.Operation('start', Ice.OperationMode.Normal, Ice.OperationMode.Normal, True, None, (), (), (), None, (_M_MumbleServer._t_ServerBootedException, _M_MumbleServer._t_ServerFailureException, _M_MumbleServer._t_InvalidSecretException))
     Server._op_helloIce = IcePy.Operation('helloIce', Ice.OperationMode.Normal, Ice.OperationMode.Normal, True, None, (), (), (), None, ())
+    Server._op_AddUserToChannel = IcePy.Operation('AddUserToChannel', Ice.OperationMode.Normal, Ice.OperationMode.Normal, True, None, (), (((), _M_MumbleServer._t_UserList, False, 0), ((), _M_MumbleServer._t_ChannelList, False, 0), ((), _M_MumbleServer._t_ChannelIds, False, 0), ((), IcePy._t_int, False, 0)), (), None, ())
     Server._op_stop = IcePy.Operation('stop', Ice.OperationMode.Normal, Ice.OperationMode.Normal, True, None, (), (), (), None, (_M_MumbleServer._t_ServerBootedException, _M_MumbleServer._t_InvalidSecretException))
     Server._op_delete = IcePy.Operation('delete', Ice.OperationMode.Normal, Ice.OperationMode.Normal, True, None, (), (), (), None, (_M_MumbleServer._t_ServerBootedException, _M_MumbleServer._t_InvalidSecretException))
     Server._op_id = IcePy.Operation('id', Ice.OperationMode.Idempotent, Ice.OperationMode.Idempotent, True, None, (), (), (), ((), IcePy._t_int, False, 0), (_M_MumbleServer._t_InvalidSecretException,))
@@ -6826,6 +6845,7 @@ Ice.sliceChecksums["::MumbleServer::BanList"] = "e94e7a8b59e24ccc5ee2fbd41753a2a
 Ice.sliceChecksums["::MumbleServer::CertificateDer"] = "bda5350e8ec40eef1cae7c2b3c616cf"
 Ice.sliceChecksums["::MumbleServer::CertificateList"] = "9626e55ba4d813d9374b686dfb315e"
 Ice.sliceChecksums["::MumbleServer::Channel"] = "e7ae81e73bbf7fb4a575d8eedca8458"
+Ice.sliceChecksums["::MumbleServer::ChannelIds"] = "db8d2267d1070edc7bd6f38bdb76b1c"
 Ice.sliceChecksums["::MumbleServer::ChannelInfo"] = "1e1c915adb3475dd6aa6943aff139d7c"
 Ice.sliceChecksums["::MumbleServer::ChannelList"] = "a4e0625082768612d43fc41563533c8b"
 Ice.sliceChecksums["::MumbleServer::ChannelMap"] = "78fcab14097578194791985595a084"
@@ -6872,7 +6892,7 @@ Ice.sliceChecksums["::MumbleServer::PermissionTraverse"] = "37f12b9bb96c0d07a7c4
 Ice.sliceChecksums["::MumbleServer::PermissionWhisper"] = "dddf47c35e992f8cd868c4321f9bcb"
 Ice.sliceChecksums["::MumbleServer::PermissionWrite"] = "a939b87d29f9fff8b2f957b3e4b121c0"
 Ice.sliceChecksums["::MumbleServer::ResetUserContent"] = "144ba8653415acdee3d3f946a18058"
-Ice.sliceChecksums["::MumbleServer::Server"] = "f5d6c831997f62e503f14fdd6349f4"
+Ice.sliceChecksums["::MumbleServer::Server"] = "c5c24880638cb8f8909cb1e4586bed24"
 Ice.sliceChecksums["::MumbleServer::ServerAuthenticator"] = "588e4f7f6c31e7bebbc388b1343b86"
 Ice.sliceChecksums["::MumbleServer::ServerBootedException"] = "d5e3e6f31eb8dac43e36186f59f2b1f"
 Ice.sliceChecksums["::MumbleServer::ServerCallback"] = "c6925adf5c867863d8b1c11d6cc3"

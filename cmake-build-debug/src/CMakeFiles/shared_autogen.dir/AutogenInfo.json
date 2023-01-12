@@ -1,12 +1,12 @@
 {
-	"BUILD_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/shared_autogen",
-	"CMAKE_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src",
+	"BUILD_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen",
+	"CMAKE_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/src",
 	"CMAKE_EXECUTABLE" : "/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/CMakeLists.txt",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/CMakeLists.txt",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
@@ -49,219 +49,219 @@
 		"/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseArguments.cmake",
 		"/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseArguments.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code",
+	"CMAKE_SOURCE_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/arc4random/arc4random_uniform.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/arc4random/arc4random_uniform.h",
 			"Mu",
 			"DIHUR762KS/moc_arc4random_uniform.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/FFDHETable.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/FFDHETable.h",
 			"Mu",
 			"EJRQKI7XPS/moc_FFDHETable.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/Mumble.pb.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/Mumble.pb.h",
 			"Mu",
 			"EJRQKI7XPS/moc_Mumble.pb.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/MumbleUDP.pb.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/MumbleUDP.pb.h",
 			"Mu",
 			"EJRQKI7XPS/moc_MumbleUDP.pb.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Ban.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Ban.h",
 			"Mu",
 			"EWIEGA46WW/moc_Ban.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ByteSwap.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ByteSwap.h",
 			"Mu",
 			"EWIEGA46WW/moc_ByteSwap.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/EnvUtils.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/EnvUtils.h",
 			"Mu",
 			"EWIEGA46WW/moc_EnvUtils.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/FFDHE.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/FFDHE.h",
 			"Mu",
 			"EWIEGA46WW/moc_FFDHE.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/HTMLFilter.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/HTMLFilter.h",
 			"Mu",
 			"EWIEGA46WW/moc_HTMLFilter.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/HostAddress.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/HostAddress.h",
 			"Mu",
 			"EWIEGA46WW/moc_HostAddress.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/License.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/License.h",
 			"Mu",
 			"EWIEGA46WW/moc_License.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/LogEmitter.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/LogEmitter.h",
 			"Mu",
 			"EWIEGA46WW/moc_LogEmitter.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/MumbleProtocol.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/MumbleProtocol.h",
 			"Mu",
 			"EWIEGA46WW/moc_MumbleProtocol.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Net.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Net.h",
 			"Mu",
 			"EWIEGA46WW/moc_Net.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/OSInfo.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/OSInfo.h",
 			"Mu",
 			"EWIEGA46WW/moc_OSInfo.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/PasswordGenerator.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/PasswordGenerator.h",
 			"Mu",
 			"EWIEGA46WW/moc_PasswordGenerator.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/PlatformCheck.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/PlatformCheck.h",
 			"Mu",
 			"EWIEGA46WW/moc_PlatformCheck.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ProcessResolver.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ProcessResolver.h",
 			"Mu",
 			"EWIEGA46WW/moc_ProcessResolver.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ProtoUtils.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ProtoUtils.h",
 			"Mu",
 			"EWIEGA46WW/moc_ProtoUtils.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/QtUtils.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/QtUtils.h",
 			"Mu",
 			"EWIEGA46WW/moc_QtUtils.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/SSL.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/SSL.h",
 			"Mu",
 			"EWIEGA46WW/moc_SSL.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/SSLLocks.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/SSLLocks.h",
 			"Mu",
 			"EWIEGA46WW/moc_SSLLocks.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/SelfSignedCertificate.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/SelfSignedCertificate.h",
 			"Mu",
 			"EWIEGA46WW/moc_SelfSignedCertificate.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ServerAddress.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ServerAddress.h",
 			"Mu",
 			"EWIEGA46WW/moc_ServerAddress.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ServerResolver.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ServerResolver.h",
 			"Mu",
 			"EWIEGA46WW/moc_ServerResolver.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ServerResolverRecord.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ServerResolverRecord.h",
 			"Mu",
 			"EWIEGA46WW/moc_ServerResolverRecord.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Timer.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Timer.h",
 			"Mu",
 			"EWIEGA46WW/moc_Timer.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/UnresolvedServerAddress.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/UnresolvedServerAddress.h",
 			"Mu",
 			"EWIEGA46WW/moc_UnresolvedServerAddress.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Version.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Version.h",
 			"Mu",
 			"EWIEGA46WW/moc_Version.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/VolumeAdjustment.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/VolumeAdjustment.h",
 			"Mu",
 			"EWIEGA46WW/moc_VolumeAdjustment.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/crypto/CryptState.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/crypto/CryptState.h",
 			"Mu",
 			"ZMIDQXK3U3/moc_CryptState.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/crypto/CryptStateOCB2.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/crypto/CryptStateOCB2.h",
 			"Mu",
 			"ZMIDQXK3U3/moc_CryptStateOCB2.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/crypto/CryptographicHash.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/crypto/CryptographicHash.h",
 			"Mu",
 			"ZMIDQXK3U3/moc_CryptographicHash.cpp",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/crypto/CryptographicRandom.h",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/crypto/CryptographicRandom.h",
 			"Mu",
 			"ZMIDQXK3U3/moc_CryptographicRandom.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/shared_autogen/include",
-	"MOC_COMPILATION_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/include",
+	"MOC_COMPILATION_FILE" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"DEBUG",
@@ -292,18 +292,18 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/arc4random",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/arc4random",
 		"/home/nybsysml/.local/include",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
 		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
 		"/usr/include/x86_64-linux-gnu/qt5/QtNetwork",
 		"/usr/include/x86_64-linux-gnu/qt5/QtXml",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/tracy",
-		"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/gsl/include",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/tracy",
+		"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/gsl/include",
 		"/usr/include",
 		"/usr/include/c++/9",
 		"/usr/include/x86_64-linux-gnu/c++/9",
@@ -323,166 +323,166 @@
 		"-c",
 		"/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/shared_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 12,
-	"PARSE_CACHE_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/CMakeFiles/shared_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 12,
-	"SETTINGS_FILE" : "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/CMakeFiles/shared_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/arc4random/arc4random_uniform.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/arc4random/arc4random_uniform.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/Mumble.pb.cc",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/Mumble.pb.cc",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/MumbleUDP.pb.cc",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/MumbleUDP.pb.cc",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Ban.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Ban.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/EnvUtils.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/EnvUtils.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/FFDHE.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/FFDHE.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/HTMLFilter.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/HTMLFilter.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/HostAddress.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/HostAddress.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/License.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/License.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/LogEmitter.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/LogEmitter.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/MumbleProtocol.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/MumbleProtocol.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/OSInfo.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/OSInfo.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/PasswordGenerator.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/PasswordGenerator.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/PlatformCheck.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/PlatformCheck.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ProcessResolver.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ProcessResolver.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ProtoUtils.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ProtoUtils.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/QtUtils.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/QtUtils.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/SSL.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/SSL.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/SSLLocks.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/SSLLocks.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/SelfSignedCertificate.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/SelfSignedCertificate.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ServerAddress.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ServerAddress.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ServerResolver.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ServerResolver.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/ServerResolverRecord.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/ServerResolverRecord.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Timer.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Timer.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/UnresolvedServerAddress.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/UnresolvedServerAddress.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/Version.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/Version.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/VolumeAdjustment.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/VolumeAdjustment.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/crypto/CryptStateOCB2.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/crypto/CryptStateOCB2.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/crypto/CryptographicHash.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/crypto/CryptographicHash.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/src/crypto/CryptographicRandom.cpp",
+			"/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/crypto/CryptographicRandom.cpp",
 			"Mu",
 			null
 		]

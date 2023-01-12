@@ -1,4 +1,4 @@
-# Install script for directory: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/plugins/bf4_x86
+# Install script for directory: /media/nybsysml/New Volume/Niloy/Neloy_mumble/plugins/bf4_x86
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -559,6 +559,8 @@ using LogList = ::std::vector<LogEntry>;
 
 using BanList = ::std::vector<Ban>;
 
+using ChannelIds = ::std::vector<int>;
+
 using IdList = ::std::vector<int>;
 
 using NameList = ::std::vector<::std::string>;
@@ -1484,6 +1486,11 @@ public:
     virtual void helloIceAsync(::std::function<void()> response, ::std::function<void(::std::exception_ptr)> exception, const ::Ice::Current& current) = 0;
     /// \cond INTERNAL
     bool _iceD_helloIce(::IceInternal::Incoming&, const ::Ice::Current&);
+    /// \endcond
+
+    virtual void AddUserToChannelAsync(UserList userlist, ChannelList channellist, ChannelIds channelids, int userid, ::std::function<void()> response, ::std::function<void(::std::exception_ptr)> exception, const ::Ice::Current& current) = 0;
+    /// \cond INTERNAL
+    bool _iceD_AddUserToChannel(::IceInternal::Incoming&, const ::Ice::Current&);
     /// \endcond
 
     /**
@@ -3705,6 +3712,32 @@ public:
 
     /// \cond INTERNAL
     void _iceI_helloIce(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>&, const ::Ice::Context&);
+    /// \endcond
+
+    void AddUserToChannel(const UserList& userlist, const ChannelList& channellist, const ChannelIds& channelids, int userid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        _makePromiseOutgoing<void>(true, this, &ServerPrx::_iceI_AddUserToChannel, userlist, channellist, channelids, userid, context).get();
+    }
+
+    template<template<typename> class P = ::std::promise>
+    auto AddUserToChannelAsync(const UserList& userlist, const ChannelList& channellist, const ChannelIds& channelids, int userid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+        -> decltype(::std::declval<P<void>>().get_future())
+    {
+        return _makePromiseOutgoing<void, P>(false, this, &ServerPrx::_iceI_AddUserToChannel, userlist, channellist, channelids, userid, context);
+    }
+
+    ::std::function<void()>
+    AddUserToChannelAsync(const UserList& userlist, const ChannelList& channellist, const ChannelIds& channelids, int userid,
+                          ::std::function<void()> response,
+                          ::std::function<void(::std::exception_ptr)> ex = nullptr,
+                          ::std::function<void(bool)> sent = nullptr,
+                          const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        return _makeLamdaOutgoing<void>(std::move(response), std::move(ex), std::move(sent), this, &MumbleServer::ServerPrx::_iceI_AddUserToChannel, userlist, channellist, channelids, userid, context);
+    }
+
+    /// \cond INTERNAL
+    void _iceI_AddUserToChannel(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>&, const UserList&, const ChannelList&, const ChannelIds&, int, const ::Ice::Context&);
     /// \endcond
 
     /**
@@ -8068,6 +8101,8 @@ typedef ::std::vector<LogEntry> LogList;
 
 typedef ::std::vector<Ban> BanList;
 
+typedef ::std::vector< ::Ice::Int> ChannelIds;
+
 typedef ::std::vector< ::Ice::Int> IdList;
 
 typedef ::std::vector< ::std::string> NameList;
@@ -8679,6 +8714,25 @@ public:
 };
 
 typedef ::IceUtil::Handle< ::MumbleServer::AMD_Server_helloIce> AMD_Server_helloIcePtr;
+
+/**
+ * AMD callback class for MumbleServer::Server::AddUserToChannel_async.
+ * Call the ice_response method for a successful completion, or the ice_exception
+ * method in the case of an error.
+ */
+class AMD_Server_AddUserToChannel : public virtual ::Ice::AMDCallback
+{
+public:
+
+    virtual ~AMD_Server_AddUserToChannel();
+
+    /**
+     * Call ice_response for a successful completion.
+     */
+    virtual void ice_response() = 0;
+};
+
+typedef ::IceUtil::Handle< ::MumbleServer::AMD_Server_AddUserToChannel> AMD_Server_AddUserToChannelPtr;
 
 /**
  * AMD callback class for MumbleServer::Server::stop_async.
@@ -10050,6 +10104,24 @@ class AMD_Server_helloIce : public ::MumbleServer::AMD_Server_helloIce, public :
 public:
 
     AMD_Server_helloIce(::IceInternal::Incoming&);
+
+    virtual void ice_response();
+};
+
+#if defined(_MSC_VER) && (_MSC_VER >= 1900)
+#   pragma warning(pop)
+#endif
+
+#if defined(_MSC_VER) && (_MSC_VER >= 1900)
+#   pragma warning(push)
+#   pragma warning(disable:4239)
+#endif
+
+class AMD_Server_AddUserToChannel : public ::MumbleServer::AMD_Server_AddUserToChannel, public ::IceInternal::IncomingAsync
+{
+public:
+
+    AMD_Server_AddUserToChannel(::IceInternal::Incoming&);
 
     virtual void ice_response();
 };
@@ -11439,6 +11511,14 @@ typedef ::IceUtil::Handle< Callback_Server_start_Base> Callback_Server_startPtr;
  */
 class Callback_Server_helloIce_Base : public virtual ::IceInternal::CallbackBase { };
 typedef ::IceUtil::Handle< Callback_Server_helloIce_Base> Callback_Server_helloIcePtr;
+
+/**
+ * Base class for asynchronous callback wrapper classes used for calls to
+ * IceProxy::MumbleServer::Server::begin_AddUserToChannel.
+ * Create a wrapper instance by calling ::MumbleServer::newCallback_Server_AddUserToChannel.
+ */
+class Callback_Server_AddUserToChannel_Base : public virtual ::IceInternal::CallbackBase { };
+typedef ::IceUtil::Handle< Callback_Server_AddUserToChannel_Base> Callback_Server_AddUserToChannelPtr;
 
 /**
  * Base class for asynchronous callback wrapper classes used for calls to
@@ -13948,6 +14028,44 @@ public:
 private:
 
     ::Ice::AsyncResultPtr _iceI_begin_helloIce(const ::Ice::Context&, const ::IceInternal::CallbackBasePtr&, const ::Ice::LocalObjectPtr& cookie = 0, bool sync = false);
+
+public:
+
+    void AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelList& channellist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        end_AddUserToChannel(_iceI_begin_AddUserToChannel(userlist, channellist, channelids, userid, context, ::IceInternal::dummyCallback, 0, true));
+    }
+
+    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelList& channellist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        return _iceI_begin_AddUserToChannel(userlist, channellist, channelids, userid, context, ::IceInternal::dummyCallback, 0);
+    }
+
+    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelList& channellist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::CallbackPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_AddUserToChannel(userlist, channellist, channelids, userid, ::Ice::noExplicitContext, cb, cookie);
+    }
+
+    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelList& channellist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Context& context, const ::Ice::CallbackPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_AddUserToChannel(userlist, channellist, channelids, userid, context, cb, cookie);
+    }
+
+    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelList& channellist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::MumbleServer::Callback_Server_AddUserToChannelPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_AddUserToChannel(userlist, channellist, channelids, userid, ::Ice::noExplicitContext, cb, cookie);
+    }
+
+    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelList& channellist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Context& context, const ::MumbleServer::Callback_Server_AddUserToChannelPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_AddUserToChannel(userlist, channellist, channelids, userid, context, cb, cookie);
+    }
+
+    void end_AddUserToChannel(const ::Ice::AsyncResultPtr& result);
+
+private:
+
+    ::Ice::AsyncResultPtr _iceI_begin_AddUserToChannel(const ::MumbleServer::UserList&, const ::MumbleServer::ChannelList&, const ::MumbleServer::ChannelIds&, ::Ice::Int, const ::Ice::Context&, const ::IceInternal::CallbackBasePtr&, const ::Ice::LocalObjectPtr& cookie = 0, bool sync = false);
 
 public:
 
@@ -20806,6 +20924,11 @@ public:
     bool _iceD_helloIce(::IceInternal::Incoming&, const ::Ice::Current&);
     /// \endcond
 
+    virtual void AddUserToChannel_async(const ::MumbleServer::AMD_Server_AddUserToChannelPtr& cb, const UserList& userlist, const ChannelList& channellist, const ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Current& current = ::Ice::emptyCurrent) = 0;
+    /// \cond INTERNAL
+    bool _iceD_AddUserToChannel(::IceInternal::Incoming&, const ::Ice::Current&);
+    /// \endcond
+
     /**
      * Stop server.
      * Note: Server will be restarted on Murmur restart unless explicitly disabled
@@ -25483,6 +25606,162 @@ template<class T, typename CT> Callback_Server_helloIcePtr
 newCallback_Server_helloIce(T* instance, void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
 {
     return new Callback_Server_helloIce<T, CT>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Type-safe asynchronous callback wrapper class used for calls to
+ * IceProxy::MumbleServer::Server::begin_AddUserToChannel.
+ * Create a wrapper instance by calling ::MumbleServer::newCallback_Server_AddUserToChannel.
+ */
+template<class T>
+class CallbackNC_Server_AddUserToChannel : public Callback_Server_AddUserToChannel_Base, public ::IceInternal::OnewayCallbackNC<T>
+{
+public:
+
+    typedef IceUtil::Handle<T> TPtr;
+
+    typedef void (T::*Exception)(const ::Ice::Exception&);
+    typedef void (T::*Sent)(bool);
+    typedef void (T::*Response)();
+
+    CallbackNC_Server_AddUserToChannel(const TPtr& obj, Response cb, Exception excb, Sent sentcb)
+        : ::IceInternal::OnewayCallbackNC<T>(obj, cb, excb, sentcb)
+    {
+    }
+};
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_AddUserToChannel.
+ */
+template<class T> Callback_Server_AddUserToChannelPtr
+newCallback_Server_AddUserToChannel(const IceUtil::Handle<T>& instance, void (T::*cb)(), void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_AddUserToChannel<T>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_AddUserToChannel.
+ */
+template<class T> Callback_Server_AddUserToChannelPtr
+newCallback_Server_AddUserToChannel(const IceUtil::Handle<T>& instance, void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_AddUserToChannel<T>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_AddUserToChannel.
+ */
+template<class T> Callback_Server_AddUserToChannelPtr
+newCallback_Server_AddUserToChannel(T* instance, void (T::*cb)(), void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_AddUserToChannel<T>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_AddUserToChannel.
+ */
+template<class T> Callback_Server_AddUserToChannelPtr
+newCallback_Server_AddUserToChannel(T* instance, void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_AddUserToChannel<T>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Type-safe asynchronous callback wrapper class with cookie support used for calls to
+ * IceProxy::MumbleServer::Server::begin_AddUserToChannel.
+ * Create a wrapper instance by calling ::MumbleServer::newCallback_Server_AddUserToChannel.
+ */
+template<class T, typename CT>
+class Callback_Server_AddUserToChannel : public Callback_Server_AddUserToChannel_Base, public ::IceInternal::OnewayCallback<T, CT>
+{
+public:
+
+    typedef IceUtil::Handle<T> TPtr;
+
+    typedef void (T::*Exception)(const ::Ice::Exception& , const CT&);
+    typedef void (T::*Sent)(bool , const CT&);
+    typedef void (T::*Response)(const CT&);
+
+    Callback_Server_AddUserToChannel(const TPtr& obj, Response cb, Exception excb, Sent sentcb)
+        : ::IceInternal::OnewayCallback<T, CT>(obj, cb, excb, sentcb)
+    {
+    }
+};
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_AddUserToChannel.
+ */
+template<class T, typename CT> Callback_Server_AddUserToChannelPtr
+newCallback_Server_AddUserToChannel(const IceUtil::Handle<T>& instance, void (T::*cb)(const CT&), void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_AddUserToChannel<T, CT>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_AddUserToChannel.
+ */
+template<class T, typename CT> Callback_Server_AddUserToChannelPtr
+newCallback_Server_AddUserToChannel(const IceUtil::Handle<T>& instance, void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_AddUserToChannel<T, CT>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_AddUserToChannel.
+ */
+template<class T, typename CT> Callback_Server_AddUserToChannelPtr
+newCallback_Server_AddUserToChannel(T* instance, void (T::*cb)(const CT&), void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_AddUserToChannel<T, CT>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_AddUserToChannel.
+ */
+template<class T, typename CT> Callback_Server_AddUserToChannelPtr
+newCallback_Server_AddUserToChannel(T* instance, void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_AddUserToChannel<T, CT>(instance, 0, excb, sentcb);
 }
 
 /**

@@ -1,4 +1,4 @@
-# Install script for directory: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/plugins/l4d
+# Install script for directory: /media/nybsysml/New Volume/Niloy/Neloy_mumble/plugins/l4d
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

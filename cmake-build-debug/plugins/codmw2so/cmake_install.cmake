@@ -1,4 +1,4 @@
-# Install script for directory: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/plugins/codmw2so
+# Install script for directory: /media/nybsysml/New Volume/Niloy/Neloy_mumble/plugins/codmw2so
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

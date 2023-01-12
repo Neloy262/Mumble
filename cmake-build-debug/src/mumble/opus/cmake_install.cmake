@@ -1,4 +1,4 @@
-# Install script for directory: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/opus
+# Install script for directory: /media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/opus
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -55,8 +55,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/libopus.so.0.8.0"
-    "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/libopus.so.0"
+    "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/libopus.so.0.8.0"
+    "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/libopus.so.0"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopus.so.0.8.0"
@@ -78,7 +78,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopus.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/libopus.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/libopus.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopus.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopus.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -89,23 +89,23 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opus" TYPE FILE FILES
-    "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/opus/include/opus.h"
-    "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/opus/include/opus_defines.h"
-    "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/opus/include/opus_multistream.h"
-    "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/opus/include/opus_projection.h"
-    "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/3rdparty/opus/include/opus_types.h"
+    "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/opus/include/opus.h"
+    "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/opus/include/opus_defines.h"
+    "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/opus/include/opus_multistream.h"
+    "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/opus/include/opus_projection.h"
+    "/media/nybsysml/New Volume/Niloy/Neloy_mumble/3rdparty/opus/include/opus_types.h"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/opus/opus.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/opus/opus.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/Opus/OpusTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/Opus/OpusTargets.cmake"
-         "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/opus/CMakeFiles/Export/lib/cmake/Opus/OpusTargets.cmake")
+         "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/opus/CMakeFiles/Export/lib/cmake/Opus/OpusTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/Opus/OpusTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -114,16 +114,16 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/Opus" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/opus/CMakeFiles/Export/lib/cmake/Opus/OpusTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/Opus" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/opus/CMakeFiles/Export/lib/cmake/Opus/OpusTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/Opus" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/opus/CMakeFiles/Export/lib/cmake/Opus/OpusTargets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/Opus" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/opus/CMakeFiles/Export/lib/cmake/Opus/OpusTargets-debug.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/Opus" TYPE FILE FILES
-    "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/opus/OpusConfig.cmake"
-    "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/mumble/opus/OpusConfigVersion.cmake"
+    "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/opus/OpusConfig.cmake"
+    "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/opus/OpusConfigVersion.cmake"
     )
 endif()
 

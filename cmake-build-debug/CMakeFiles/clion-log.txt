@@ -1,4 +1,4 @@
-/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/ninja/linux/ninja -G Ninja -S "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code" -B "/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug"
+/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/ninja/linux/ninja -G Ninja -S "/media/nybsysml/New Volume/Niloy/Neloy_mumble" -B "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug"
 -- The C compiler identification is GNU 9.4.0
 -- The CXX compiler identification is GNU 9.4.0
 -- Detecting C compiler ABI info
@@ -179,7 +179,7 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 -- Qt5 component found: LinguistTools | Version: 5.12.8
 -- ALSA found
 -- Qt5 component found: Sql | Version: 5.12.8
--- File: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/murmur/murmur_autogen
+-- File: /media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/murmur_autogen
 -- Qt5 component found: DBus | Version: 5.12.8
 -- Ice component found: Ice | Version: 3.7.8
 -- Ice component found: IceSSL | Version: 3.7.8
@@ -194,4 +194,4 @@ If the 32 bit overlay library fails to compile, make sure the requirements are i
 Including TestPlugin in debug mode
 -- Configuring done
 -- Generating done
--- Build files have been written to: /media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug
+-- Build files have been written to: /media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug
