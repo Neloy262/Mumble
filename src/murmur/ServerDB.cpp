@@ -10,7 +10,7 @@
 #endif
 
 #include "ServerDB.h"
-
+#include <typeinfo>
 #include "ACL.h"
 #include "Channel.h"
 #include "Connection.h"
@@ -22,7 +22,7 @@
 #include "Server.h"
 #include "ServerUser.h"
 #include "User.h"
-
+#include "MumbleServer.h"
 #include <QtCore/QCoreApplication>
 #include <QtSql/QSqlError>
 #include <QtSql/QSqlQuery>
@@ -1927,7 +1927,58 @@ bool ServerDB::hasChannelAccess(int user_id, int channel_id) {
 
 
 }
+void ServerDB::addGroup(const QString &name) {
+	TransactionHolder th;
+	QSqlQuery &query = *th.qsqQuery;
 
+	SQLPREP("INSERT INTO `%1GROUP` (`GROUP_name`) VALUES (?)");
+	query.addBindValue(name);
+	SQLEXEC();
+}
+
+void ServerDB::addUserToGroup(int group_id,int user_id){
+	TransactionHolder th;
+	QSqlQuery &query = *th.qsqQuery;
+	std::cout<<group_id<<user_id<<std::endl;
+	SQLPREP("INSERT INTO `%1GROUP_users` (`GROUP_id`,`user_id`) VALUES (?,?)");
+	query.addBindValue(group_id);
+	query.addBindValue(user_id);
+	SQLEXEC();
+}
+
+std::vector<int> ServerDB::getGrpChannels(int group_id){
+	TransactionHolder th;
+	QSqlQuery &query = *th.qsqQuery;
+
+	SQLPREP("SELECT `channel_id` FROM `%1GROUP_access` WHERE `GROUP_id` = ?");
+	query.addBindValue(group_id);
+	SQLEXEC();
+
+	std::vector<int> channelid_list;
+
+	while(query.next()){
+		channelid_list.push_back(query.value(0).toInt());
+	}
+
+	return channelid_list;
+}
+
+
+void ServerDB::addChannelsToGroup(const ::MumbleServer::ChannelIds channel_id_list,int grp_id){
+	TransactionHolder th;
+
+	QSqlQuery &query = *th.qsqQuery;
+	int arr_len = sizeof(channel_id_list)/sizeof(channel_id_list[0]);
+
+	for(int i=0;i<arr_len;i++ ){
+		SQLPREP("INSERT INTO `%1GROUP_access` (`GROUP_id`, `channel_id`) VALUES (?,?)");
+		query.addBindValue(grp_id);
+		query.addBindValue(channel_id_list[i]);
+		SQLEXEC();
+	}
+
+
+}
 void Server::createChannelAccess(int channelId, int userId) {
 	TransactionHolder th;
 

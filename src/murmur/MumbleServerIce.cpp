@@ -2000,8 +2000,34 @@ static void impl_Meta_getVersion(const ::MumbleServer::AMD_Meta_getVersionPtr cb
 
 static void impl_Server_helloIce(const ::MumbleServer::AMD_Server_helloIcePtr &cb, int server_id){
 
-
+	ServerDB::getGrpChannels(3);
 	std::cout<<"HELLO ICE --------------"<<server_id<<std::endl;
+	cb->ice_response();
+}
+
+static void impl_Server_createGroup(const ::MumbleServer::AMD_Server_createGroupPtr &cb,int server_id, const ::std::string &name){
+	std::cout<<"server_id:"<<server_id<<std::endl;
+	QString str = QString::fromStdString(name);
+	ServerDB::addGroup(str);
+
+	cb->ice_response();
+}
+
+static void impl_Server_addChannelsToGroup(const ::MumbleServer::AMD_Server_addChannelsToGroupPtr &cb,int server_id,const ::MumbleServer::ChannelIds &p2,int group_id){
+	std::cout<<"server_id:"<<server_id<<std::endl;
+	std::vector<int> channelid_list;
+	ServerDB::addChannelsToGroup(p2,group_id);
+
+
+	cb->ice_response();
+}
+
+static void impl_Server_addUsersToGroup(const ::MumbleServer::AMD_Server_addUsersToGroupPtr &cb,int server_id,const ::MumbleServer::UserIdList &p1,int group_id){
+	std::cout<<server_id<<std::endl;
+
+	for(unsigned long i =0 ;i<p1.size();i++){
+		ServerDB::addUserToGroup(group_id,p1[i]);
+	}
 	cb->ice_response();
 }
 

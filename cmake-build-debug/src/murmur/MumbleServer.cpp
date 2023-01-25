@@ -181,8 +181,11 @@ const ::std::string iceC_MumbleServer_Server_ops[] =
     "AddUserToChannel",
     "addCallback",
     "addChannel",
+    "addChannelsToGroup",
     "addContextCallback",
     "addUserToGroup",
+    "addUsersToGroup",
+    "createGroup",
     "delete",
     "effectivePermissions",
     "getACL",
@@ -247,6 +250,9 @@ const ::std::string iceC_MumbleServer_Server_isRunning_name = "isRunning";
 const ::std::string iceC_MumbleServer_Server_start_name = "start";
 const ::std::string iceC_MumbleServer_Server_helloIce_name = "helloIce";
 const ::std::string iceC_MumbleServer_Server_AddUserToChannel_name = "AddUserToChannel";
+const ::std::string iceC_MumbleServer_Server_createGroup_name = "createGroup";
+const ::std::string iceC_MumbleServer_Server_addChannelsToGroup_name = "addChannelsToGroup";
+const ::std::string iceC_MumbleServer_Server_addUsersToGroup_name = "addUsersToGroup";
 const ::std::string iceC_MumbleServer_Server_stop_name = "stop";
 const ::std::string iceC_MumbleServer_Server_delete_name = "delete";
 const ::std::string iceC_MumbleServer_Server_id_name = "id";
@@ -1226,6 +1232,53 @@ MumbleServer::Server::_iceD_AddUserToChannel(::IceInternal::Incoming& inS, const
     inS.endReadParams();
     auto inA = ::IceInternal::IncomingAsync::create(inS);
     this->AddUserToChannelAsync(::std::move(iceP_userlist), ::std::move(iceP_channellist), ::std::move(iceP_channelids), iceP_userid, inA->response(), inA->exception(), current);
+    return false;
+}
+/// \endcond
+
+/// \cond INTERNAL
+bool
+MumbleServer::Server::_iceD_createGroup(::IceInternal::Incoming& inS, const ::Ice::Current& current)
+{
+    _iceCheckMode(::Ice::OperationMode::Normal, current.mode);
+    auto istr = inS.startReadParams();
+    ::std::string iceP_name;
+    istr->readAll(iceP_name);
+    inS.endReadParams();
+    auto inA = ::IceInternal::IncomingAsync::create(inS);
+    this->createGroupAsync(::std::move(iceP_name), inA->response(), inA->exception(), current);
+    return false;
+}
+/// \endcond
+
+/// \cond INTERNAL
+bool
+MumbleServer::Server::_iceD_addChannelsToGroup(::IceInternal::Incoming& inS, const ::Ice::Current& current)
+{
+    _iceCheckMode(::Ice::OperationMode::Normal, current.mode);
+    auto istr = inS.startReadParams();
+    ChannelIds iceP_channellist;
+    int iceP_groupid;
+    istr->readAll(iceP_channellist, iceP_groupid);
+    inS.endReadParams();
+    auto inA = ::IceInternal::IncomingAsync::create(inS);
+    this->addChannelsToGroupAsync(::std::move(iceP_channellist), iceP_groupid, inA->response(), inA->exception(), current);
+    return false;
+}
+/// \endcond
+
+/// \cond INTERNAL
+bool
+MumbleServer::Server::_iceD_addUsersToGroup(::IceInternal::Incoming& inS, const ::Ice::Current& current)
+{
+    _iceCheckMode(::Ice::OperationMode::Normal, current.mode);
+    auto istr = inS.startReadParams();
+    UserIdList iceP_useridlist;
+    int iceP_groupid;
+    istr->readAll(iceP_useridlist, iceP_groupid);
+    inS.endReadParams();
+    auto inA = ::IceInternal::IncomingAsync::create(inS);
+    this->addUsersToGroupAsync(::std::move(iceP_useridlist), iceP_groupid, inA->response(), inA->exception(), current);
     return false;
 }
 /// \endcond
@@ -2275,7 +2328,7 @@ MumbleServer::Server::_iceD_sendWelcomeMessage(::IceInternal::Incoming& inS, con
 bool
 MumbleServer::Server::_iceDispatch(::IceInternal::Incoming& in, const ::Ice::Current& current)
 {
-    ::std::pair<const ::std::string*, const ::std::string*> r = ::std::equal_range(iceC_MumbleServer_Server_ops, iceC_MumbleServer_Server_ops + 64, current.operation);
+    ::std::pair<const ::std::string*, const ::std::string*> r = ::std::equal_range(iceC_MumbleServer_Server_ops, iceC_MumbleServer_Server_ops + 67, current.operation);
     if(r.first == r.second)
     {
         throw ::Ice::OperationNotExistException(__FILE__, __LINE__, current.id, current.facet, current.operation);
@@ -2297,245 +2350,257 @@ MumbleServer::Server::_iceDispatch(::IceInternal::Incoming& in, const ::Ice::Cur
         }
         case 3:
         {
-            return _iceD_addContextCallback(in, current);
+            return _iceD_addChannelsToGroup(in, current);
         }
         case 4:
         {
-            return _iceD_addUserToGroup(in, current);
+            return _iceD_addContextCallback(in, current);
         }
         case 5:
         {
-            return _iceD_delete(in, current);
+            return _iceD_addUserToGroup(in, current);
         }
         case 6:
         {
-            return _iceD_effectivePermissions(in, current);
+            return _iceD_addUsersToGroup(in, current);
         }
         case 7:
         {
-            return _iceD_getACL(in, current);
+            return _iceD_createGroup(in, current);
         }
         case 8:
         {
-            return _iceD_getAllConf(in, current);
+            return _iceD_delete(in, current);
         }
         case 9:
         {
-            return _iceD_getBans(in, current);
+            return _iceD_effectivePermissions(in, current);
         }
         case 10:
         {
-            return _iceD_getCertificateList(in, current);
+            return _iceD_getACL(in, current);
         }
         case 11:
         {
-            return _iceD_getChannelState(in, current);
+            return _iceD_getAllConf(in, current);
         }
         case 12:
         {
-            return _iceD_getChannels(in, current);
+            return _iceD_getBans(in, current);
         }
         case 13:
         {
-            return _iceD_getConf(in, current);
+            return _iceD_getCertificateList(in, current);
         }
         case 14:
         {
-            return _iceD_getListenerVolumeAdjustment(in, current);
+            return _iceD_getChannelState(in, current);
         }
         case 15:
         {
-            return _iceD_getListeningChannels(in, current);
+            return _iceD_getChannels(in, current);
         }
         case 16:
         {
-            return _iceD_getListeningUsers(in, current);
+            return _iceD_getConf(in, current);
         }
         case 17:
         {
-            return _iceD_getLog(in, current);
+            return _iceD_getListenerVolumeAdjustment(in, current);
         }
         case 18:
         {
-            return _iceD_getLogLen(in, current);
+            return _iceD_getListeningChannels(in, current);
         }
         case 19:
         {
-            return _iceD_getRegisteredUsers(in, current);
+            return _iceD_getListeningUsers(in, current);
         }
         case 20:
         {
-            return _iceD_getRegistration(in, current);
+            return _iceD_getLog(in, current);
         }
         case 21:
         {
-            return _iceD_getState(in, current);
+            return _iceD_getLogLen(in, current);
         }
         case 22:
         {
-            return _iceD_getTexture(in, current);
+            return _iceD_getRegisteredUsers(in, current);
         }
         case 23:
         {
-            return _iceD_getTree(in, current);
+            return _iceD_getRegistration(in, current);
         }
         case 24:
         {
-            return _iceD_getUptime(in, current);
+            return _iceD_getState(in, current);
         }
         case 25:
         {
-            return _iceD_getUserIds(in, current);
+            return _iceD_getTexture(in, current);
         }
         case 26:
         {
-            return _iceD_getUserNames(in, current);
+            return _iceD_getTree(in, current);
         }
         case 27:
         {
-            return _iceD_getUsers(in, current);
+            return _iceD_getUptime(in, current);
         }
         case 28:
         {
-            return _iceD_hasPermission(in, current);
+            return _iceD_getUserIds(in, current);
         }
         case 29:
         {
-            return _iceD_helloIce(in, current);
+            return _iceD_getUserNames(in, current);
         }
         case 30:
         {
-            return _iceD_ice_id(in, current);
+            return _iceD_getUsers(in, current);
         }
         case 31:
         {
-            return _iceD_ice_ids(in, current);
+            return _iceD_hasPermission(in, current);
         }
         case 32:
         {
-            return _iceD_ice_isA(in, current);
+            return _iceD_helloIce(in, current);
         }
         case 33:
         {
-            return _iceD_ice_ping(in, current);
+            return _iceD_ice_id(in, current);
         }
         case 34:
         {
-            return _iceD_id(in, current);
+            return _iceD_ice_ids(in, current);
         }
         case 35:
         {
-            return _iceD_isListening(in, current);
+            return _iceD_ice_isA(in, current);
         }
         case 36:
         {
-            return _iceD_isRunning(in, current);
+            return _iceD_ice_ping(in, current);
         }
         case 37:
         {
-            return _iceD_kickUser(in, current);
+            return _iceD_id(in, current);
         }
         case 38:
         {
-            return _iceD_redirectWhisperGroup(in, current);
+            return _iceD_isListening(in, current);
         }
         case 39:
         {
-            return _iceD_registerUser(in, current);
+            return _iceD_isRunning(in, current);
         }
         case 40:
         {
-            return _iceD_removeCallback(in, current);
+            return _iceD_kickUser(in, current);
         }
         case 41:
         {
-            return _iceD_removeChannel(in, current);
+            return _iceD_redirectWhisperGroup(in, current);
         }
         case 42:
         {
-            return _iceD_removeContextCallback(in, current);
+            return _iceD_registerUser(in, current);
         }
         case 43:
         {
-            return _iceD_removeUserFromGroup(in, current);
+            return _iceD_removeCallback(in, current);
         }
         case 44:
         {
-            return _iceD_sendMessage(in, current);
+            return _iceD_removeChannel(in, current);
         }
         case 45:
         {
-            return _iceD_sendMessageChannel(in, current);
+            return _iceD_removeContextCallback(in, current);
         }
         case 46:
         {
-            return _iceD_sendWelcomeMessage(in, current);
+            return _iceD_removeUserFromGroup(in, current);
         }
         case 47:
         {
-            return _iceD_setACL(in, current);
+            return _iceD_sendMessage(in, current);
         }
         case 48:
         {
-            return _iceD_setAuthenticator(in, current);
+            return _iceD_sendMessageChannel(in, current);
         }
         case 49:
         {
-            return _iceD_setBans(in, current);
+            return _iceD_sendWelcomeMessage(in, current);
         }
         case 50:
         {
-            return _iceD_setChannelState(in, current);
+            return _iceD_setACL(in, current);
         }
         case 51:
         {
-            return _iceD_setConf(in, current);
+            return _iceD_setAuthenticator(in, current);
         }
         case 52:
         {
-            return _iceD_setListenerVolumeAdjustment(in, current);
+            return _iceD_setBans(in, current);
         }
         case 53:
         {
-            return _iceD_setState(in, current);
+            return _iceD_setChannelState(in, current);
         }
         case 54:
         {
-            return _iceD_setSuperuserPassword(in, current);
+            return _iceD_setConf(in, current);
         }
         case 55:
         {
-            return _iceD_setTexture(in, current);
+            return _iceD_setListenerVolumeAdjustment(in, current);
         }
         case 56:
         {
-            return _iceD_start(in, current);
+            return _iceD_setState(in, current);
         }
         case 57:
         {
-            return _iceD_startListening(in, current);
+            return _iceD_setSuperuserPassword(in, current);
         }
         case 58:
         {
-            return _iceD_stop(in, current);
+            return _iceD_setTexture(in, current);
         }
         case 59:
         {
-            return _iceD_stopListening(in, current);
+            return _iceD_start(in, current);
         }
         case 60:
         {
-            return _iceD_unregisterUser(in, current);
+            return _iceD_startListening(in, current);
         }
         case 61:
         {
-            return _iceD_updateCertificate(in, current);
+            return _iceD_stop(in, current);
         }
         case 62:
         {
-            return _iceD_updateRegistration(in, current);
+            return _iceD_stopListening(in, current);
         }
         case 63:
+        {
+            return _iceD_unregisterUser(in, current);
+        }
+        case 64:
+        {
+            return _iceD_updateCertificate(in, current);
+        }
+        case 65:
+        {
+            return _iceD_updateRegistration(in, current);
+        }
+        case 66:
         {
             return _iceD_verifyPassword(in, current);
         }
@@ -3355,6 +3420,45 @@ MumbleServer::ServerPrx::_iceI_AddUserToChannel(const ::std::shared_ptr<::IceInt
         [&](::Ice::OutputStream* ostr)
         {
             ostr->writeAll(iceP_userlist, iceP_channellist, iceP_channelids, iceP_userid);
+        },
+        nullptr);
+}
+/// \endcond
+
+/// \cond INTERNAL
+void
+MumbleServer::ServerPrx::_iceI_createGroup(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>& outAsync, const ::std::string& iceP_name, const ::Ice::Context& context)
+{
+    outAsync->invoke(iceC_MumbleServer_Server_createGroup_name, ::Ice::OperationMode::Normal, ::Ice::FormatType::DefaultFormat, context,
+        [&](::Ice::OutputStream* ostr)
+        {
+            ostr->writeAll(iceP_name);
+        },
+        nullptr);
+}
+/// \endcond
+
+/// \cond INTERNAL
+void
+MumbleServer::ServerPrx::_iceI_addChannelsToGroup(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>& outAsync, const ChannelIds& iceP_channellist, int iceP_groupid, const ::Ice::Context& context)
+{
+    outAsync->invoke(iceC_MumbleServer_Server_addChannelsToGroup_name, ::Ice::OperationMode::Normal, ::Ice::FormatType::DefaultFormat, context,
+        [&](::Ice::OutputStream* ostr)
+        {
+            ostr->writeAll(iceP_channellist, iceP_groupid);
+        },
+        nullptr);
+}
+/// \endcond
+
+/// \cond INTERNAL
+void
+MumbleServer::ServerPrx::_iceI_addUsersToGroup(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>& outAsync, const UserIdList& iceP_useridlist, int iceP_groupid, const ::Ice::Context& context)
+{
+    outAsync->invoke(iceC_MumbleServer_Server_addUsersToGroup_name, ::Ice::OperationMode::Normal, ::Ice::FormatType::DefaultFormat, context,
+        [&](::Ice::OutputStream* ostr)
+        {
+            ostr->writeAll(iceP_useridlist, iceP_groupid);
         },
         nullptr);
 }
@@ -5429,7 +5533,7 @@ const char* iceSliceChecksums[] =
     "::MumbleServer::PermissionWhisper", "dddf47c35e992f8cd868c4321f9bcb",
     "::MumbleServer::PermissionWrite", "a939b87d29f9fff8b2f957b3e4b121c0",
     "::MumbleServer::ResetUserContent", "144ba8653415acdee3d3f946a18058",
-    "::MumbleServer::Server", "c5c24880638cb8f8909cb1e4586bed24",
+    "::MumbleServer::Server", "7ae4b73021c0e1e8c04c165b0d58d",
     "::MumbleServer::ServerAuthenticator", "588e4f7f6c31e7bebbc388b1343b86",
     "::MumbleServer::ServerBootedException", "d5e3e6f31eb8dac43e36186f59f2b1f",
     "::MumbleServer::ServerCallback", "c6925adf5c867863d8b1c11d6cc3",
@@ -5442,6 +5546,7 @@ const char* iceSliceChecksums[] =
     "::MumbleServer::Tree", "c92169edbf14febef3dd4d11373c086",
     "::MumbleServer::TreeList", "54fb50b83cbdce3a46c86994acf62f",
     "::MumbleServer::User", "74ec7daea8b1c30f74cfaf08bd16b2",
+    "::MumbleServer::UserIdList", "c176ae9618fd37578063bfa8e51da3d4",
     "::MumbleServer::UserInfo", "3c1a3c8ac61325a80f23f21e5466294",
     "::MumbleServer::UserInfoMap", "4ec636e19df849d64563a9e836e2768",
     "::MumbleServer::UserList", "7274fcc9d23b31dfee87f56848e0ef",
@@ -5501,6 +5606,12 @@ const ::std::string iceC_MumbleServer_Server_start_name = "start";
 const ::std::string iceC_MumbleServer_Server_helloIce_name = "helloIce";
 
 const ::std::string iceC_MumbleServer_Server_AddUserToChannel_name = "AddUserToChannel";
+
+const ::std::string iceC_MumbleServer_Server_createGroup_name = "createGroup";
+
+const ::std::string iceC_MumbleServer_Server_addChannelsToGroup_name = "addChannelsToGroup";
+
+const ::std::string iceC_MumbleServer_Server_addUsersToGroup_name = "addUsersToGroup";
 
 const ::std::string iceC_MumbleServer_Server_stop_name = "stop";
 
@@ -6371,6 +6482,18 @@ MumbleServer::AMD_Server_AddUserToChannel::~AMD_Server_AddUserToChannel()
 {
 }
 
+MumbleServer::AMD_Server_createGroup::~AMD_Server_createGroup()
+{
+}
+
+MumbleServer::AMD_Server_addChannelsToGroup::~AMD_Server_addChannelsToGroup()
+{
+}
+
+MumbleServer::AMD_Server_addUsersToGroup::~AMD_Server_addUsersToGroup()
+{
+}
+
 MumbleServer::AMD_Server_stop::~AMD_Server_stop()
 {
 }
@@ -6691,6 +6814,48 @@ IceAsync::MumbleServer::AMD_Server_AddUserToChannel::AMD_Server_AddUserToChannel
 
 void
 IceAsync::MumbleServer::AMD_Server_AddUserToChannel::ice_response()
+{
+    writeEmptyParams();
+    completed();
+}
+/// \endcond
+
+/// \cond INTERNAL
+IceAsync::MumbleServer::AMD_Server_createGroup::AMD_Server_createGroup(::IceInternal::Incoming& in) :
+    ::IceInternal::IncomingAsync(in)
+{
+}
+
+void
+IceAsync::MumbleServer::AMD_Server_createGroup::ice_response()
+{
+    writeEmptyParams();
+    completed();
+}
+/// \endcond
+
+/// \cond INTERNAL
+IceAsync::MumbleServer::AMD_Server_addChannelsToGroup::AMD_Server_addChannelsToGroup(::IceInternal::Incoming& in) :
+    ::IceInternal::IncomingAsync(in)
+{
+}
+
+void
+IceAsync::MumbleServer::AMD_Server_addChannelsToGroup::ice_response()
+{
+    writeEmptyParams();
+    completed();
+}
+/// \endcond
+
+/// \cond INTERNAL
+IceAsync::MumbleServer::AMD_Server_addUsersToGroup::AMD_Server_addUsersToGroup(::IceInternal::Incoming& in) :
+    ::IceInternal::IncomingAsync(in)
+{
+}
+
+void
+IceAsync::MumbleServer::AMD_Server_addUsersToGroup::ice_response()
 {
     writeEmptyParams();
     completed();
@@ -8720,6 +8885,83 @@ void
 IceProxy::MumbleServer::Server::end_AddUserToChannel(const ::Ice::AsyncResultPtr& result)
 {
     _end(result, iceC_MumbleServer_Server_AddUserToChannel_name);
+}
+
+::Ice::AsyncResultPtr
+IceProxy::MumbleServer::Server::_iceI_begin_createGroup(const ::std::string& iceP_name, const ::Ice::Context& context, const ::IceInternal::CallbackBasePtr& del, const ::Ice::LocalObjectPtr& cookie, bool sync)
+{
+    ::IceInternal::OutgoingAsyncPtr result = new ::IceInternal::CallbackOutgoing(this, iceC_MumbleServer_Server_createGroup_name, del, cookie, sync);
+    try
+    {
+        result->prepare(iceC_MumbleServer_Server_createGroup_name, ::Ice::Normal, context);
+        ::Ice::OutputStream* ostr = result->startWriteParams(::Ice::DefaultFormat);
+        ostr->write(iceP_name);
+        result->endWriteParams();
+        result->invoke(iceC_MumbleServer_Server_createGroup_name);
+    }
+    catch(const ::Ice::Exception& ex)
+    {
+        result->abort(ex);
+    }
+    return result;
+}
+
+void
+IceProxy::MumbleServer::Server::end_createGroup(const ::Ice::AsyncResultPtr& result)
+{
+    _end(result, iceC_MumbleServer_Server_createGroup_name);
+}
+
+::Ice::AsyncResultPtr
+IceProxy::MumbleServer::Server::_iceI_begin_addChannelsToGroup(const ::MumbleServer::ChannelIds& iceP_channellist, ::Ice::Int iceP_groupid, const ::Ice::Context& context, const ::IceInternal::CallbackBasePtr& del, const ::Ice::LocalObjectPtr& cookie, bool sync)
+{
+    ::IceInternal::OutgoingAsyncPtr result = new ::IceInternal::CallbackOutgoing(this, iceC_MumbleServer_Server_addChannelsToGroup_name, del, cookie, sync);
+    try
+    {
+        result->prepare(iceC_MumbleServer_Server_addChannelsToGroup_name, ::Ice::Normal, context);
+        ::Ice::OutputStream* ostr = result->startWriteParams(::Ice::DefaultFormat);
+        ostr->write(iceP_channellist);
+        ostr->write(iceP_groupid);
+        result->endWriteParams();
+        result->invoke(iceC_MumbleServer_Server_addChannelsToGroup_name);
+    }
+    catch(const ::Ice::Exception& ex)
+    {
+        result->abort(ex);
+    }
+    return result;
+}
+
+void
+IceProxy::MumbleServer::Server::end_addChannelsToGroup(const ::Ice::AsyncResultPtr& result)
+{
+    _end(result, iceC_MumbleServer_Server_addChannelsToGroup_name);
+}
+
+::Ice::AsyncResultPtr
+IceProxy::MumbleServer::Server::_iceI_begin_addUsersToGroup(const ::MumbleServer::UserIdList& iceP_useridlist, ::Ice::Int iceP_groupid, const ::Ice::Context& context, const ::IceInternal::CallbackBasePtr& del, const ::Ice::LocalObjectPtr& cookie, bool sync)
+{
+    ::IceInternal::OutgoingAsyncPtr result = new ::IceInternal::CallbackOutgoing(this, iceC_MumbleServer_Server_addUsersToGroup_name, del, cookie, sync);
+    try
+    {
+        result->prepare(iceC_MumbleServer_Server_addUsersToGroup_name, ::Ice::Normal, context);
+        ::Ice::OutputStream* ostr = result->startWriteParams(::Ice::DefaultFormat);
+        ostr->write(iceP_useridlist);
+        ostr->write(iceP_groupid);
+        result->endWriteParams();
+        result->invoke(iceC_MumbleServer_Server_addUsersToGroup_name);
+    }
+    catch(const ::Ice::Exception& ex)
+    {
+        result->abort(ex);
+    }
+    return result;
+}
+
+void
+IceProxy::MumbleServer::Server::end_addUsersToGroup(const ::Ice::AsyncResultPtr& result)
+{
+    _end(result, iceC_MumbleServer_Server_addUsersToGroup_name);
 }
 
 ::Ice::AsyncResultPtr
@@ -13258,6 +13500,52 @@ MumbleServer::Server::_iceD_AddUserToChannel(::IceInternal::Incoming& inS, const
 
 /// \cond INTERNAL
 bool
+MumbleServer::Server::_iceD_createGroup(::IceInternal::Incoming& inS, const ::Ice::Current& current)
+{
+    _iceCheckMode(::Ice::Normal, current.mode);
+    ::Ice::InputStream* istr = inS.startReadParams();
+    ::std::string iceP_name;
+    istr->read(iceP_name);
+    inS.endReadParams();
+    this->createGroup_async(new IceAsync::MumbleServer::AMD_Server_createGroup(inS), iceP_name, current);
+    return false;
+}
+/// \endcond
+
+/// \cond INTERNAL
+bool
+MumbleServer::Server::_iceD_addChannelsToGroup(::IceInternal::Incoming& inS, const ::Ice::Current& current)
+{
+    _iceCheckMode(::Ice::Normal, current.mode);
+    ::Ice::InputStream* istr = inS.startReadParams();
+    ChannelIds iceP_channellist;
+    ::Ice::Int iceP_groupid;
+    istr->read(iceP_channellist);
+    istr->read(iceP_groupid);
+    inS.endReadParams();
+    this->addChannelsToGroup_async(new IceAsync::MumbleServer::AMD_Server_addChannelsToGroup(inS), iceP_channellist, iceP_groupid, current);
+    return false;
+}
+/// \endcond
+
+/// \cond INTERNAL
+bool
+MumbleServer::Server::_iceD_addUsersToGroup(::IceInternal::Incoming& inS, const ::Ice::Current& current)
+{
+    _iceCheckMode(::Ice::Normal, current.mode);
+    ::Ice::InputStream* istr = inS.startReadParams();
+    UserIdList iceP_useridlist;
+    ::Ice::Int iceP_groupid;
+    istr->read(iceP_useridlist);
+    istr->read(iceP_groupid);
+    inS.endReadParams();
+    this->addUsersToGroup_async(new IceAsync::MumbleServer::AMD_Server_addUsersToGroup(inS), iceP_useridlist, iceP_groupid, current);
+    return false;
+}
+/// \endcond
+
+/// \cond INTERNAL
+bool
 MumbleServer::Server::_iceD_stop(::IceInternal::Incoming& inS, const ::Ice::Current& current)
 {
     _iceCheckMode(::Ice::Normal, current.mode);
@@ -14085,8 +14373,11 @@ const ::std::string iceC_MumbleServer_Server_all[] =
     "AddUserToChannel",
     "addCallback",
     "addChannel",
+    "addChannelsToGroup",
     "addContextCallback",
     "addUserToGroup",
+    "addUsersToGroup",
+    "createGroup",
     "delete",
     "effectivePermissions",
     "getACL",
@@ -14154,7 +14445,7 @@ const ::std::string iceC_MumbleServer_Server_all[] =
 bool
 MumbleServer::Server::_iceDispatch(::IceInternal::Incoming& in, const ::Ice::Current& current)
 {
-    ::std::pair<const ::std::string*, const ::std::string*> r = ::std::equal_range(iceC_MumbleServer_Server_all, iceC_MumbleServer_Server_all + 64, current.operation);
+    ::std::pair<const ::std::string*, const ::std::string*> r = ::std::equal_range(iceC_MumbleServer_Server_all, iceC_MumbleServer_Server_all + 67, current.operation);
     if(r.first == r.second)
     {
         throw ::Ice::OperationNotExistException(__FILE__, __LINE__, current.id, current.facet, current.operation);
@@ -14176,245 +14467,257 @@ MumbleServer::Server::_iceDispatch(::IceInternal::Incoming& in, const ::Ice::Cur
         }
         case 3:
         {
-            return _iceD_addContextCallback(in, current);
+            return _iceD_addChannelsToGroup(in, current);
         }
         case 4:
         {
-            return _iceD_addUserToGroup(in, current);
+            return _iceD_addContextCallback(in, current);
         }
         case 5:
         {
-            return _iceD_delete(in, current);
+            return _iceD_addUserToGroup(in, current);
         }
         case 6:
         {
-            return _iceD_effectivePermissions(in, current);
+            return _iceD_addUsersToGroup(in, current);
         }
         case 7:
         {
-            return _iceD_getACL(in, current);
+            return _iceD_createGroup(in, current);
         }
         case 8:
         {
-            return _iceD_getAllConf(in, current);
+            return _iceD_delete(in, current);
         }
         case 9:
         {
-            return _iceD_getBans(in, current);
+            return _iceD_effectivePermissions(in, current);
         }
         case 10:
         {
-            return _iceD_getCertificateList(in, current);
+            return _iceD_getACL(in, current);
         }
         case 11:
         {
-            return _iceD_getChannelState(in, current);
+            return _iceD_getAllConf(in, current);
         }
         case 12:
         {
-            return _iceD_getChannels(in, current);
+            return _iceD_getBans(in, current);
         }
         case 13:
         {
-            return _iceD_getConf(in, current);
+            return _iceD_getCertificateList(in, current);
         }
         case 14:
         {
-            return _iceD_getListenerVolumeAdjustment(in, current);
+            return _iceD_getChannelState(in, current);
         }
         case 15:
         {
-            return _iceD_getListeningChannels(in, current);
+            return _iceD_getChannels(in, current);
         }
         case 16:
         {
-            return _iceD_getListeningUsers(in, current);
+            return _iceD_getConf(in, current);
         }
         case 17:
         {
-            return _iceD_getLog(in, current);
+            return _iceD_getListenerVolumeAdjustment(in, current);
         }
         case 18:
         {
-            return _iceD_getLogLen(in, current);
+            return _iceD_getListeningChannels(in, current);
         }
         case 19:
         {
-            return _iceD_getRegisteredUsers(in, current);
+            return _iceD_getListeningUsers(in, current);
         }
         case 20:
         {
-            return _iceD_getRegistration(in, current);
+            return _iceD_getLog(in, current);
         }
         case 21:
         {
-            return _iceD_getState(in, current);
+            return _iceD_getLogLen(in, current);
         }
         case 22:
         {
-            return _iceD_getTexture(in, current);
+            return _iceD_getRegisteredUsers(in, current);
         }
         case 23:
         {
-            return _iceD_getTree(in, current);
+            return _iceD_getRegistration(in, current);
         }
         case 24:
         {
-            return _iceD_getUptime(in, current);
+            return _iceD_getState(in, current);
         }
         case 25:
         {
-            return _iceD_getUserIds(in, current);
+            return _iceD_getTexture(in, current);
         }
         case 26:
         {
-            return _iceD_getUserNames(in, current);
+            return _iceD_getTree(in, current);
         }
         case 27:
         {
-            return _iceD_getUsers(in, current);
+            return _iceD_getUptime(in, current);
         }
         case 28:
         {
-            return _iceD_hasPermission(in, current);
+            return _iceD_getUserIds(in, current);
         }
         case 29:
         {
-            return _iceD_helloIce(in, current);
+            return _iceD_getUserNames(in, current);
         }
         case 30:
         {
-            return _iceD_ice_id(in, current);
+            return _iceD_getUsers(in, current);
         }
         case 31:
         {
-            return _iceD_ice_ids(in, current);
+            return _iceD_hasPermission(in, current);
         }
         case 32:
         {
-            return _iceD_ice_isA(in, current);
+            return _iceD_helloIce(in, current);
         }
         case 33:
         {
-            return _iceD_ice_ping(in, current);
+            return _iceD_ice_id(in, current);
         }
         case 34:
         {
-            return _iceD_id(in, current);
+            return _iceD_ice_ids(in, current);
         }
         case 35:
         {
-            return _iceD_isListening(in, current);
+            return _iceD_ice_isA(in, current);
         }
         case 36:
         {
-            return _iceD_isRunning(in, current);
+            return _iceD_ice_ping(in, current);
         }
         case 37:
         {
-            return _iceD_kickUser(in, current);
+            return _iceD_id(in, current);
         }
         case 38:
         {
-            return _iceD_redirectWhisperGroup(in, current);
+            return _iceD_isListening(in, current);
         }
         case 39:
         {
-            return _iceD_registerUser(in, current);
+            return _iceD_isRunning(in, current);
         }
         case 40:
         {
-            return _iceD_removeCallback(in, current);
+            return _iceD_kickUser(in, current);
         }
         case 41:
         {
-            return _iceD_removeChannel(in, current);
+            return _iceD_redirectWhisperGroup(in, current);
         }
         case 42:
         {
-            return _iceD_removeContextCallback(in, current);
+            return _iceD_registerUser(in, current);
         }
         case 43:
         {
-            return _iceD_removeUserFromGroup(in, current);
+            return _iceD_removeCallback(in, current);
         }
         case 44:
         {
-            return _iceD_sendMessage(in, current);
+            return _iceD_removeChannel(in, current);
         }
         case 45:
         {
-            return _iceD_sendMessageChannel(in, current);
+            return _iceD_removeContextCallback(in, current);
         }
         case 46:
         {
-            return _iceD_sendWelcomeMessage(in, current);
+            return _iceD_removeUserFromGroup(in, current);
         }
         case 47:
         {
-            return _iceD_setACL(in, current);
+            return _iceD_sendMessage(in, current);
         }
         case 48:
         {
-            return _iceD_setAuthenticator(in, current);
+            return _iceD_sendMessageChannel(in, current);
         }
         case 49:
         {
-            return _iceD_setBans(in, current);
+            return _iceD_sendWelcomeMessage(in, current);
         }
         case 50:
         {
-            return _iceD_setChannelState(in, current);
+            return _iceD_setACL(in, current);
         }
         case 51:
         {
-            return _iceD_setConf(in, current);
+            return _iceD_setAuthenticator(in, current);
         }
         case 52:
         {
-            return _iceD_setListenerVolumeAdjustment(in, current);
+            return _iceD_setBans(in, current);
         }
         case 53:
         {
-            return _iceD_setState(in, current);
+            return _iceD_setChannelState(in, current);
         }
         case 54:
         {
-            return _iceD_setSuperuserPassword(in, current);
+            return _iceD_setConf(in, current);
         }
         case 55:
         {
-            return _iceD_setTexture(in, current);
+            return _iceD_setListenerVolumeAdjustment(in, current);
         }
         case 56:
         {
-            return _iceD_start(in, current);
+            return _iceD_setState(in, current);
         }
         case 57:
         {
-            return _iceD_startListening(in, current);
+            return _iceD_setSuperuserPassword(in, current);
         }
         case 58:
         {
-            return _iceD_stop(in, current);
+            return _iceD_setTexture(in, current);
         }
         case 59:
         {
-            return _iceD_stopListening(in, current);
+            return _iceD_start(in, current);
         }
         case 60:
         {
-            return _iceD_unregisterUser(in, current);
+            return _iceD_startListening(in, current);
         }
         case 61:
         {
-            return _iceD_updateCertificate(in, current);
+            return _iceD_stop(in, current);
         }
         case 62:
         {
-            return _iceD_updateRegistration(in, current);
+            return _iceD_stopListening(in, current);
         }
         case 63:
+        {
+            return _iceD_unregisterUser(in, current);
+        }
+        case 64:
+        {
+            return _iceD_updateCertificate(in, current);
+        }
+        case 65:
+        {
+            return _iceD_updateRegistration(in, current);
+        }
+        case 66:
         {
             return _iceD_verifyPassword(in, current);
         }
@@ -14999,7 +15302,7 @@ const char* iceSliceChecksums[] =
     "::MumbleServer::PermissionWhisper", "dddf47c35e992f8cd868c4321f9bcb",
     "::MumbleServer::PermissionWrite", "a939b87d29f9fff8b2f957b3e4b121c0",
     "::MumbleServer::ResetUserContent", "144ba8653415acdee3d3f946a18058",
-    "::MumbleServer::Server", "c5c24880638cb8f8909cb1e4586bed24",
+    "::MumbleServer::Server", "7ae4b73021c0e1e8c04c165b0d58d",
     "::MumbleServer::ServerAuthenticator", "588e4f7f6c31e7bebbc388b1343b86",
     "::MumbleServer::ServerBootedException", "d5e3e6f31eb8dac43e36186f59f2b1f",
     "::MumbleServer::ServerCallback", "c6925adf5c867863d8b1c11d6cc3",
@@ -15012,6 +15315,7 @@ const char* iceSliceChecksums[] =
     "::MumbleServer::Tree", "c92169edbf14febef3dd4d11373c086",
     "::MumbleServer::TreeList", "54fb50b83cbdce3a46c86994acf62f",
     "::MumbleServer::User", "74ec7daea8b1c30f74cfaf08bd16b2",
+    "::MumbleServer::UserIdList", "c176ae9618fd37578063bfa8e51da3d4",
     "::MumbleServer::UserInfo", "3c1a3c8ac61325a80f23f21e5466294",
     "::MumbleServer::UserInfoMap", "4ec636e19df849d64563a9e836e2768",
     "::MumbleServer::UserList", "7274fcc9d23b31dfee87f56848e0ef",

@@ -174,7 +174,9 @@ public:
 	virtual void ice_ping(const Ice::Current &) const;
 	virtual void helloIce_async(const ::MumbleServer::AMD_Server_helloIcePtr &cb, const ::Ice::Current &current);
 	virtual void AddUserToChannel_async(const ::MumbleServer::AMD_Server_AddUserToChannelPtr &cb, const UserList& p1, const ChannelList& p2, const ChannelIds& p3, ::Ice::Int p4, const ::Ice::Current &current);
-
+	virtual void createGroup_async(const ::MumbleServer::AMD_Server_createGroupPtr &cb, const ::std::string& p1, const ::Ice::Current &current);
+	virtual void addChannelsToGroup_async(const ::MumbleServer::AMD_Server_addChannelsToGroupPtr &cb, const ChannelIds& p1, ::Ice::Int p2, const ::Ice::Current &current);
+	virtual void addUsersToGroup_async(const ::MumbleServer::AMD_Server_addUsersToGroupPtr &cb, const UserIdList& p1, ::Ice::Int p2, const ::Ice::Current &current);
 };
 
 class MetaI : virtual public Meta {

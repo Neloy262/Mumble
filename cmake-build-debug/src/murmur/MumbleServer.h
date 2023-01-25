@@ -551,6 +551,8 @@ using ChannelList = ::std::vector<Channel>;
 
 using UserList = ::std::vector<User>;
 
+using UserIdList = ::std::vector<int>;
+
 using GroupList = ::std::vector<Group>;
 
 using ACLList = ::std::vector<ACL>;
@@ -1491,6 +1493,21 @@ public:
     virtual void AddUserToChannelAsync(UserList userlist, ChannelList channellist, ChannelIds channelids, int userid, ::std::function<void()> response, ::std::function<void(::std::exception_ptr)> exception, const ::Ice::Current& current) = 0;
     /// \cond INTERNAL
     bool _iceD_AddUserToChannel(::IceInternal::Incoming&, const ::Ice::Current&);
+    /// \endcond
+
+    virtual void createGroupAsync(::std::string name, ::std::function<void()> response, ::std::function<void(::std::exception_ptr)> exception, const ::Ice::Current& current) = 0;
+    /// \cond INTERNAL
+    bool _iceD_createGroup(::IceInternal::Incoming&, const ::Ice::Current&);
+    /// \endcond
+
+    virtual void addChannelsToGroupAsync(ChannelIds channellist, int groupid, ::std::function<void()> response, ::std::function<void(::std::exception_ptr)> exception, const ::Ice::Current& current) = 0;
+    /// \cond INTERNAL
+    bool _iceD_addChannelsToGroup(::IceInternal::Incoming&, const ::Ice::Current&);
+    /// \endcond
+
+    virtual void addUsersToGroupAsync(UserIdList useridlist, int groupid, ::std::function<void()> response, ::std::function<void(::std::exception_ptr)> exception, const ::Ice::Current& current) = 0;
+    /// \cond INTERNAL
+    bool _iceD_addUsersToGroup(::IceInternal::Incoming&, const ::Ice::Current&);
     /// \endcond
 
     /**
@@ -3738,6 +3755,84 @@ public:
 
     /// \cond INTERNAL
     void _iceI_AddUserToChannel(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>&, const UserList&, const ChannelList&, const ChannelIds&, int, const ::Ice::Context&);
+    /// \endcond
+
+    void createGroup(const ::std::string& name, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        _makePromiseOutgoing<void>(true, this, &ServerPrx::_iceI_createGroup, name, context).get();
+    }
+
+    template<template<typename> class P = ::std::promise>
+    auto createGroupAsync(const ::std::string& name, const ::Ice::Context& context = ::Ice::noExplicitContext)
+        -> decltype(::std::declval<P<void>>().get_future())
+    {
+        return _makePromiseOutgoing<void, P>(false, this, &ServerPrx::_iceI_createGroup, name, context);
+    }
+
+    ::std::function<void()>
+    createGroupAsync(const ::std::string& name,
+                     ::std::function<void()> response,
+                     ::std::function<void(::std::exception_ptr)> ex = nullptr,
+                     ::std::function<void(bool)> sent = nullptr,
+                     const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        return _makeLamdaOutgoing<void>(std::move(response), std::move(ex), std::move(sent), this, &MumbleServer::ServerPrx::_iceI_createGroup, name, context);
+    }
+
+    /// \cond INTERNAL
+    void _iceI_createGroup(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>&, const ::std::string&, const ::Ice::Context&);
+    /// \endcond
+
+    void addChannelsToGroup(const ChannelIds& channellist, int groupid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        _makePromiseOutgoing<void>(true, this, &ServerPrx::_iceI_addChannelsToGroup, channellist, groupid, context).get();
+    }
+
+    template<template<typename> class P = ::std::promise>
+    auto addChannelsToGroupAsync(const ChannelIds& channellist, int groupid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+        -> decltype(::std::declval<P<void>>().get_future())
+    {
+        return _makePromiseOutgoing<void, P>(false, this, &ServerPrx::_iceI_addChannelsToGroup, channellist, groupid, context);
+    }
+
+    ::std::function<void()>
+    addChannelsToGroupAsync(const ChannelIds& channellist, int groupid,
+                            ::std::function<void()> response,
+                            ::std::function<void(::std::exception_ptr)> ex = nullptr,
+                            ::std::function<void(bool)> sent = nullptr,
+                            const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        return _makeLamdaOutgoing<void>(std::move(response), std::move(ex), std::move(sent), this, &MumbleServer::ServerPrx::_iceI_addChannelsToGroup, channellist, groupid, context);
+    }
+
+    /// \cond INTERNAL
+    void _iceI_addChannelsToGroup(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>&, const ChannelIds&, int, const ::Ice::Context&);
+    /// \endcond
+
+    void addUsersToGroup(const UserIdList& useridlist, int groupid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        _makePromiseOutgoing<void>(true, this, &ServerPrx::_iceI_addUsersToGroup, useridlist, groupid, context).get();
+    }
+
+    template<template<typename> class P = ::std::promise>
+    auto addUsersToGroupAsync(const UserIdList& useridlist, int groupid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+        -> decltype(::std::declval<P<void>>().get_future())
+    {
+        return _makePromiseOutgoing<void, P>(false, this, &ServerPrx::_iceI_addUsersToGroup, useridlist, groupid, context);
+    }
+
+    ::std::function<void()>
+    addUsersToGroupAsync(const UserIdList& useridlist, int groupid,
+                         ::std::function<void()> response,
+                         ::std::function<void(::std::exception_ptr)> ex = nullptr,
+                         ::std::function<void(bool)> sent = nullptr,
+                         const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        return _makeLamdaOutgoing<void>(std::move(response), std::move(ex), std::move(sent), this, &MumbleServer::ServerPrx::_iceI_addUsersToGroup, useridlist, groupid, context);
+    }
+
+    /// \cond INTERNAL
+    void _iceI_addUsersToGroup(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>&, const UserIdList&, int, const ::Ice::Context&);
     /// \endcond
 
     /**
@@ -8093,6 +8188,8 @@ typedef ::std::vector<Channel> ChannelList;
 
 typedef ::std::vector<User> UserList;
 
+typedef ::std::vector< ::Ice::Int> UserIdList;
+
 typedef ::std::vector<Group> GroupList;
 
 typedef ::std::vector<ACL> ACLList;
@@ -8733,6 +8830,63 @@ public:
 };
 
 typedef ::IceUtil::Handle< ::MumbleServer::AMD_Server_AddUserToChannel> AMD_Server_AddUserToChannelPtr;
+
+/**
+ * AMD callback class for MumbleServer::Server::createGroup_async.
+ * Call the ice_response method for a successful completion, or the ice_exception
+ * method in the case of an error.
+ */
+class AMD_Server_createGroup : public virtual ::Ice::AMDCallback
+{
+public:
+
+    virtual ~AMD_Server_createGroup();
+
+    /**
+     * Call ice_response for a successful completion.
+     */
+    virtual void ice_response() = 0;
+};
+
+typedef ::IceUtil::Handle< ::MumbleServer::AMD_Server_createGroup> AMD_Server_createGroupPtr;
+
+/**
+ * AMD callback class for MumbleServer::Server::addChannelsToGroup_async.
+ * Call the ice_response method for a successful completion, or the ice_exception
+ * method in the case of an error.
+ */
+class AMD_Server_addChannelsToGroup : public virtual ::Ice::AMDCallback
+{
+public:
+
+    virtual ~AMD_Server_addChannelsToGroup();
+
+    /**
+     * Call ice_response for a successful completion.
+     */
+    virtual void ice_response() = 0;
+};
+
+typedef ::IceUtil::Handle< ::MumbleServer::AMD_Server_addChannelsToGroup> AMD_Server_addChannelsToGroupPtr;
+
+/**
+ * AMD callback class for MumbleServer::Server::addUsersToGroup_async.
+ * Call the ice_response method for a successful completion, or the ice_exception
+ * method in the case of an error.
+ */
+class AMD_Server_addUsersToGroup : public virtual ::Ice::AMDCallback
+{
+public:
+
+    virtual ~AMD_Server_addUsersToGroup();
+
+    /**
+     * Call ice_response for a successful completion.
+     */
+    virtual void ice_response() = 0;
+};
+
+typedef ::IceUtil::Handle< ::MumbleServer::AMD_Server_addUsersToGroup> AMD_Server_addUsersToGroupPtr;
 
 /**
  * AMD callback class for MumbleServer::Server::stop_async.
@@ -10135,6 +10289,60 @@ public:
 #   pragma warning(disable:4239)
 #endif
 
+class AMD_Server_createGroup : public ::MumbleServer::AMD_Server_createGroup, public ::IceInternal::IncomingAsync
+{
+public:
+
+    AMD_Server_createGroup(::IceInternal::Incoming&);
+
+    virtual void ice_response();
+};
+
+#if defined(_MSC_VER) && (_MSC_VER >= 1900)
+#   pragma warning(pop)
+#endif
+
+#if defined(_MSC_VER) && (_MSC_VER >= 1900)
+#   pragma warning(push)
+#   pragma warning(disable:4239)
+#endif
+
+class AMD_Server_addChannelsToGroup : public ::MumbleServer::AMD_Server_addChannelsToGroup, public ::IceInternal::IncomingAsync
+{
+public:
+
+    AMD_Server_addChannelsToGroup(::IceInternal::Incoming&);
+
+    virtual void ice_response();
+};
+
+#if defined(_MSC_VER) && (_MSC_VER >= 1900)
+#   pragma warning(pop)
+#endif
+
+#if defined(_MSC_VER) && (_MSC_VER >= 1900)
+#   pragma warning(push)
+#   pragma warning(disable:4239)
+#endif
+
+class AMD_Server_addUsersToGroup : public ::MumbleServer::AMD_Server_addUsersToGroup, public ::IceInternal::IncomingAsync
+{
+public:
+
+    AMD_Server_addUsersToGroup(::IceInternal::Incoming&);
+
+    virtual void ice_response();
+};
+
+#if defined(_MSC_VER) && (_MSC_VER >= 1900)
+#   pragma warning(pop)
+#endif
+
+#if defined(_MSC_VER) && (_MSC_VER >= 1900)
+#   pragma warning(push)
+#   pragma warning(disable:4239)
+#endif
+
 class AMD_Server_stop : public ::MumbleServer::AMD_Server_stop, public ::IceInternal::IncomingAsync
 {
 public:
@@ -11519,6 +11727,30 @@ typedef ::IceUtil::Handle< Callback_Server_helloIce_Base> Callback_Server_helloI
  */
 class Callback_Server_AddUserToChannel_Base : public virtual ::IceInternal::CallbackBase { };
 typedef ::IceUtil::Handle< Callback_Server_AddUserToChannel_Base> Callback_Server_AddUserToChannelPtr;
+
+/**
+ * Base class for asynchronous callback wrapper classes used for calls to
+ * IceProxy::MumbleServer::Server::begin_createGroup.
+ * Create a wrapper instance by calling ::MumbleServer::newCallback_Server_createGroup.
+ */
+class Callback_Server_createGroup_Base : public virtual ::IceInternal::CallbackBase { };
+typedef ::IceUtil::Handle< Callback_Server_createGroup_Base> Callback_Server_createGroupPtr;
+
+/**
+ * Base class for asynchronous callback wrapper classes used for calls to
+ * IceProxy::MumbleServer::Server::begin_addChannelsToGroup.
+ * Create a wrapper instance by calling ::MumbleServer::newCallback_Server_addChannelsToGroup.
+ */
+class Callback_Server_addChannelsToGroup_Base : public virtual ::IceInternal::CallbackBase { };
+typedef ::IceUtil::Handle< Callback_Server_addChannelsToGroup_Base> Callback_Server_addChannelsToGroupPtr;
+
+/**
+ * Base class for asynchronous callback wrapper classes used for calls to
+ * IceProxy::MumbleServer::Server::begin_addUsersToGroup.
+ * Create a wrapper instance by calling ::MumbleServer::newCallback_Server_addUsersToGroup.
+ */
+class Callback_Server_addUsersToGroup_Base : public virtual ::IceInternal::CallbackBase { };
+typedef ::IceUtil::Handle< Callback_Server_addUsersToGroup_Base> Callback_Server_addUsersToGroupPtr;
 
 /**
  * Base class for asynchronous callback wrapper classes used for calls to
@@ -14066,6 +14298,120 @@ public:
 private:
 
     ::Ice::AsyncResultPtr _iceI_begin_AddUserToChannel(const ::MumbleServer::UserList&, const ::MumbleServer::ChannelList&, const ::MumbleServer::ChannelIds&, ::Ice::Int, const ::Ice::Context&, const ::IceInternal::CallbackBasePtr&, const ::Ice::LocalObjectPtr& cookie = 0, bool sync = false);
+
+public:
+
+    void createGroup(const ::std::string& name, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        end_createGroup(_iceI_begin_createGroup(name, context, ::IceInternal::dummyCallback, 0, true));
+    }
+
+    ::Ice::AsyncResultPtr begin_createGroup(const ::std::string& name, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        return _iceI_begin_createGroup(name, context, ::IceInternal::dummyCallback, 0);
+    }
+
+    ::Ice::AsyncResultPtr begin_createGroup(const ::std::string& name, const ::Ice::CallbackPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_createGroup(name, ::Ice::noExplicitContext, cb, cookie);
+    }
+
+    ::Ice::AsyncResultPtr begin_createGroup(const ::std::string& name, const ::Ice::Context& context, const ::Ice::CallbackPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_createGroup(name, context, cb, cookie);
+    }
+
+    ::Ice::AsyncResultPtr begin_createGroup(const ::std::string& name, const ::MumbleServer::Callback_Server_createGroupPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_createGroup(name, ::Ice::noExplicitContext, cb, cookie);
+    }
+
+    ::Ice::AsyncResultPtr begin_createGroup(const ::std::string& name, const ::Ice::Context& context, const ::MumbleServer::Callback_Server_createGroupPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_createGroup(name, context, cb, cookie);
+    }
+
+    void end_createGroup(const ::Ice::AsyncResultPtr& result);
+
+private:
+
+    ::Ice::AsyncResultPtr _iceI_begin_createGroup(const ::std::string&, const ::Ice::Context&, const ::IceInternal::CallbackBasePtr&, const ::Ice::LocalObjectPtr& cookie = 0, bool sync = false);
+
+public:
+
+    void addChannelsToGroup(const ::MumbleServer::ChannelIds& channellist, ::Ice::Int groupid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        end_addChannelsToGroup(_iceI_begin_addChannelsToGroup(channellist, groupid, context, ::IceInternal::dummyCallback, 0, true));
+    }
+
+    ::Ice::AsyncResultPtr begin_addChannelsToGroup(const ::MumbleServer::ChannelIds& channellist, ::Ice::Int groupid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        return _iceI_begin_addChannelsToGroup(channellist, groupid, context, ::IceInternal::dummyCallback, 0);
+    }
+
+    ::Ice::AsyncResultPtr begin_addChannelsToGroup(const ::MumbleServer::ChannelIds& channellist, ::Ice::Int groupid, const ::Ice::CallbackPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_addChannelsToGroup(channellist, groupid, ::Ice::noExplicitContext, cb, cookie);
+    }
+
+    ::Ice::AsyncResultPtr begin_addChannelsToGroup(const ::MumbleServer::ChannelIds& channellist, ::Ice::Int groupid, const ::Ice::Context& context, const ::Ice::CallbackPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_addChannelsToGroup(channellist, groupid, context, cb, cookie);
+    }
+
+    ::Ice::AsyncResultPtr begin_addChannelsToGroup(const ::MumbleServer::ChannelIds& channellist, ::Ice::Int groupid, const ::MumbleServer::Callback_Server_addChannelsToGroupPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_addChannelsToGroup(channellist, groupid, ::Ice::noExplicitContext, cb, cookie);
+    }
+
+    ::Ice::AsyncResultPtr begin_addChannelsToGroup(const ::MumbleServer::ChannelIds& channellist, ::Ice::Int groupid, const ::Ice::Context& context, const ::MumbleServer::Callback_Server_addChannelsToGroupPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_addChannelsToGroup(channellist, groupid, context, cb, cookie);
+    }
+
+    void end_addChannelsToGroup(const ::Ice::AsyncResultPtr& result);
+
+private:
+
+    ::Ice::AsyncResultPtr _iceI_begin_addChannelsToGroup(const ::MumbleServer::ChannelIds&, ::Ice::Int, const ::Ice::Context&, const ::IceInternal::CallbackBasePtr&, const ::Ice::LocalObjectPtr& cookie = 0, bool sync = false);
+
+public:
+
+    void addUsersToGroup(const ::MumbleServer::UserIdList& useridlist, ::Ice::Int groupid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        end_addUsersToGroup(_iceI_begin_addUsersToGroup(useridlist, groupid, context, ::IceInternal::dummyCallback, 0, true));
+    }
+
+    ::Ice::AsyncResultPtr begin_addUsersToGroup(const ::MumbleServer::UserIdList& useridlist, ::Ice::Int groupid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    {
+        return _iceI_begin_addUsersToGroup(useridlist, groupid, context, ::IceInternal::dummyCallback, 0);
+    }
+
+    ::Ice::AsyncResultPtr begin_addUsersToGroup(const ::MumbleServer::UserIdList& useridlist, ::Ice::Int groupid, const ::Ice::CallbackPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_addUsersToGroup(useridlist, groupid, ::Ice::noExplicitContext, cb, cookie);
+    }
+
+    ::Ice::AsyncResultPtr begin_addUsersToGroup(const ::MumbleServer::UserIdList& useridlist, ::Ice::Int groupid, const ::Ice::Context& context, const ::Ice::CallbackPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_addUsersToGroup(useridlist, groupid, context, cb, cookie);
+    }
+
+    ::Ice::AsyncResultPtr begin_addUsersToGroup(const ::MumbleServer::UserIdList& useridlist, ::Ice::Int groupid, const ::MumbleServer::Callback_Server_addUsersToGroupPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_addUsersToGroup(useridlist, groupid, ::Ice::noExplicitContext, cb, cookie);
+    }
+
+    ::Ice::AsyncResultPtr begin_addUsersToGroup(const ::MumbleServer::UserIdList& useridlist, ::Ice::Int groupid, const ::Ice::Context& context, const ::MumbleServer::Callback_Server_addUsersToGroupPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    {
+        return _iceI_begin_addUsersToGroup(useridlist, groupid, context, cb, cookie);
+    }
+
+    void end_addUsersToGroup(const ::Ice::AsyncResultPtr& result);
+
+private:
+
+    ::Ice::AsyncResultPtr _iceI_begin_addUsersToGroup(const ::MumbleServer::UserIdList&, ::Ice::Int, const ::Ice::Context&, const ::IceInternal::CallbackBasePtr&, const ::Ice::LocalObjectPtr& cookie = 0, bool sync = false);
 
 public:
 
@@ -20929,6 +21275,21 @@ public:
     bool _iceD_AddUserToChannel(::IceInternal::Incoming&, const ::Ice::Current&);
     /// \endcond
 
+    virtual void createGroup_async(const ::MumbleServer::AMD_Server_createGroupPtr& cb, const ::std::string& name, const ::Ice::Current& current = ::Ice::emptyCurrent) = 0;
+    /// \cond INTERNAL
+    bool _iceD_createGroup(::IceInternal::Incoming&, const ::Ice::Current&);
+    /// \endcond
+
+    virtual void addChannelsToGroup_async(const ::MumbleServer::AMD_Server_addChannelsToGroupPtr& cb, const ChannelIds& channellist, ::Ice::Int groupid, const ::Ice::Current& current = ::Ice::emptyCurrent) = 0;
+    /// \cond INTERNAL
+    bool _iceD_addChannelsToGroup(::IceInternal::Incoming&, const ::Ice::Current&);
+    /// \endcond
+
+    virtual void addUsersToGroup_async(const ::MumbleServer::AMD_Server_addUsersToGroupPtr& cb, const UserIdList& useridlist, ::Ice::Int groupid, const ::Ice::Current& current = ::Ice::emptyCurrent) = 0;
+    /// \cond INTERNAL
+    bool _iceD_addUsersToGroup(::IceInternal::Incoming&, const ::Ice::Current&);
+    /// \endcond
+
     /**
      * Stop server.
      * Note: Server will be restarted on Murmur restart unless explicitly disabled
@@ -25762,6 +26123,474 @@ template<class T, typename CT> Callback_Server_AddUserToChannelPtr
 newCallback_Server_AddUserToChannel(T* instance, void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
 {
     return new Callback_Server_AddUserToChannel<T, CT>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Type-safe asynchronous callback wrapper class used for calls to
+ * IceProxy::MumbleServer::Server::begin_createGroup.
+ * Create a wrapper instance by calling ::MumbleServer::newCallback_Server_createGroup.
+ */
+template<class T>
+class CallbackNC_Server_createGroup : public Callback_Server_createGroup_Base, public ::IceInternal::OnewayCallbackNC<T>
+{
+public:
+
+    typedef IceUtil::Handle<T> TPtr;
+
+    typedef void (T::*Exception)(const ::Ice::Exception&);
+    typedef void (T::*Sent)(bool);
+    typedef void (T::*Response)();
+
+    CallbackNC_Server_createGroup(const TPtr& obj, Response cb, Exception excb, Sent sentcb)
+        : ::IceInternal::OnewayCallbackNC<T>(obj, cb, excb, sentcb)
+    {
+    }
+};
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_createGroup.
+ */
+template<class T> Callback_Server_createGroupPtr
+newCallback_Server_createGroup(const IceUtil::Handle<T>& instance, void (T::*cb)(), void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_createGroup<T>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_createGroup.
+ */
+template<class T> Callback_Server_createGroupPtr
+newCallback_Server_createGroup(const IceUtil::Handle<T>& instance, void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_createGroup<T>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_createGroup.
+ */
+template<class T> Callback_Server_createGroupPtr
+newCallback_Server_createGroup(T* instance, void (T::*cb)(), void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_createGroup<T>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_createGroup.
+ */
+template<class T> Callback_Server_createGroupPtr
+newCallback_Server_createGroup(T* instance, void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_createGroup<T>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Type-safe asynchronous callback wrapper class with cookie support used for calls to
+ * IceProxy::MumbleServer::Server::begin_createGroup.
+ * Create a wrapper instance by calling ::MumbleServer::newCallback_Server_createGroup.
+ */
+template<class T, typename CT>
+class Callback_Server_createGroup : public Callback_Server_createGroup_Base, public ::IceInternal::OnewayCallback<T, CT>
+{
+public:
+
+    typedef IceUtil::Handle<T> TPtr;
+
+    typedef void (T::*Exception)(const ::Ice::Exception& , const CT&);
+    typedef void (T::*Sent)(bool , const CT&);
+    typedef void (T::*Response)(const CT&);
+
+    Callback_Server_createGroup(const TPtr& obj, Response cb, Exception excb, Sent sentcb)
+        : ::IceInternal::OnewayCallback<T, CT>(obj, cb, excb, sentcb)
+    {
+    }
+};
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_createGroup.
+ */
+template<class T, typename CT> Callback_Server_createGroupPtr
+newCallback_Server_createGroup(const IceUtil::Handle<T>& instance, void (T::*cb)(const CT&), void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_createGroup<T, CT>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_createGroup.
+ */
+template<class T, typename CT> Callback_Server_createGroupPtr
+newCallback_Server_createGroup(const IceUtil::Handle<T>& instance, void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_createGroup<T, CT>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_createGroup.
+ */
+template<class T, typename CT> Callback_Server_createGroupPtr
+newCallback_Server_createGroup(T* instance, void (T::*cb)(const CT&), void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_createGroup<T, CT>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_createGroup.
+ */
+template<class T, typename CT> Callback_Server_createGroupPtr
+newCallback_Server_createGroup(T* instance, void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_createGroup<T, CT>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Type-safe asynchronous callback wrapper class used for calls to
+ * IceProxy::MumbleServer::Server::begin_addChannelsToGroup.
+ * Create a wrapper instance by calling ::MumbleServer::newCallback_Server_addChannelsToGroup.
+ */
+template<class T>
+class CallbackNC_Server_addChannelsToGroup : public Callback_Server_addChannelsToGroup_Base, public ::IceInternal::OnewayCallbackNC<T>
+{
+public:
+
+    typedef IceUtil::Handle<T> TPtr;
+
+    typedef void (T::*Exception)(const ::Ice::Exception&);
+    typedef void (T::*Sent)(bool);
+    typedef void (T::*Response)();
+
+    CallbackNC_Server_addChannelsToGroup(const TPtr& obj, Response cb, Exception excb, Sent sentcb)
+        : ::IceInternal::OnewayCallbackNC<T>(obj, cb, excb, sentcb)
+    {
+    }
+};
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addChannelsToGroup.
+ */
+template<class T> Callback_Server_addChannelsToGroupPtr
+newCallback_Server_addChannelsToGroup(const IceUtil::Handle<T>& instance, void (T::*cb)(), void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_addChannelsToGroup<T>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addChannelsToGroup.
+ */
+template<class T> Callback_Server_addChannelsToGroupPtr
+newCallback_Server_addChannelsToGroup(const IceUtil::Handle<T>& instance, void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_addChannelsToGroup<T>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addChannelsToGroup.
+ */
+template<class T> Callback_Server_addChannelsToGroupPtr
+newCallback_Server_addChannelsToGroup(T* instance, void (T::*cb)(), void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_addChannelsToGroup<T>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addChannelsToGroup.
+ */
+template<class T> Callback_Server_addChannelsToGroupPtr
+newCallback_Server_addChannelsToGroup(T* instance, void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_addChannelsToGroup<T>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Type-safe asynchronous callback wrapper class with cookie support used for calls to
+ * IceProxy::MumbleServer::Server::begin_addChannelsToGroup.
+ * Create a wrapper instance by calling ::MumbleServer::newCallback_Server_addChannelsToGroup.
+ */
+template<class T, typename CT>
+class Callback_Server_addChannelsToGroup : public Callback_Server_addChannelsToGroup_Base, public ::IceInternal::OnewayCallback<T, CT>
+{
+public:
+
+    typedef IceUtil::Handle<T> TPtr;
+
+    typedef void (T::*Exception)(const ::Ice::Exception& , const CT&);
+    typedef void (T::*Sent)(bool , const CT&);
+    typedef void (T::*Response)(const CT&);
+
+    Callback_Server_addChannelsToGroup(const TPtr& obj, Response cb, Exception excb, Sent sentcb)
+        : ::IceInternal::OnewayCallback<T, CT>(obj, cb, excb, sentcb)
+    {
+    }
+};
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addChannelsToGroup.
+ */
+template<class T, typename CT> Callback_Server_addChannelsToGroupPtr
+newCallback_Server_addChannelsToGroup(const IceUtil::Handle<T>& instance, void (T::*cb)(const CT&), void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_addChannelsToGroup<T, CT>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addChannelsToGroup.
+ */
+template<class T, typename CT> Callback_Server_addChannelsToGroupPtr
+newCallback_Server_addChannelsToGroup(const IceUtil::Handle<T>& instance, void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_addChannelsToGroup<T, CT>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addChannelsToGroup.
+ */
+template<class T, typename CT> Callback_Server_addChannelsToGroupPtr
+newCallback_Server_addChannelsToGroup(T* instance, void (T::*cb)(const CT&), void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_addChannelsToGroup<T, CT>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addChannelsToGroup.
+ */
+template<class T, typename CT> Callback_Server_addChannelsToGroupPtr
+newCallback_Server_addChannelsToGroup(T* instance, void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_addChannelsToGroup<T, CT>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Type-safe asynchronous callback wrapper class used for calls to
+ * IceProxy::MumbleServer::Server::begin_addUsersToGroup.
+ * Create a wrapper instance by calling ::MumbleServer::newCallback_Server_addUsersToGroup.
+ */
+template<class T>
+class CallbackNC_Server_addUsersToGroup : public Callback_Server_addUsersToGroup_Base, public ::IceInternal::OnewayCallbackNC<T>
+{
+public:
+
+    typedef IceUtil::Handle<T> TPtr;
+
+    typedef void (T::*Exception)(const ::Ice::Exception&);
+    typedef void (T::*Sent)(bool);
+    typedef void (T::*Response)();
+
+    CallbackNC_Server_addUsersToGroup(const TPtr& obj, Response cb, Exception excb, Sent sentcb)
+        : ::IceInternal::OnewayCallbackNC<T>(obj, cb, excb, sentcb)
+    {
+    }
+};
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addUsersToGroup.
+ */
+template<class T> Callback_Server_addUsersToGroupPtr
+newCallback_Server_addUsersToGroup(const IceUtil::Handle<T>& instance, void (T::*cb)(), void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_addUsersToGroup<T>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addUsersToGroup.
+ */
+template<class T> Callback_Server_addUsersToGroupPtr
+newCallback_Server_addUsersToGroup(const IceUtil::Handle<T>& instance, void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_addUsersToGroup<T>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addUsersToGroup.
+ */
+template<class T> Callback_Server_addUsersToGroupPtr
+newCallback_Server_addUsersToGroup(T* instance, void (T::*cb)(), void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_addUsersToGroup<T>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addUsersToGroup.
+ */
+template<class T> Callback_Server_addUsersToGroupPtr
+newCallback_Server_addUsersToGroup(T* instance, void (T::*excb)(const ::Ice::Exception&), void (T::*sentcb)(bool) = 0)
+{
+    return new CallbackNC_Server_addUsersToGroup<T>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Type-safe asynchronous callback wrapper class with cookie support used for calls to
+ * IceProxy::MumbleServer::Server::begin_addUsersToGroup.
+ * Create a wrapper instance by calling ::MumbleServer::newCallback_Server_addUsersToGroup.
+ */
+template<class T, typename CT>
+class Callback_Server_addUsersToGroup : public Callback_Server_addUsersToGroup_Base, public ::IceInternal::OnewayCallback<T, CT>
+{
+public:
+
+    typedef IceUtil::Handle<T> TPtr;
+
+    typedef void (T::*Exception)(const ::Ice::Exception& , const CT&);
+    typedef void (T::*Sent)(bool , const CT&);
+    typedef void (T::*Response)(const CT&);
+
+    Callback_Server_addUsersToGroup(const TPtr& obj, Response cb, Exception excb, Sent sentcb)
+        : ::IceInternal::OnewayCallback<T, CT>(obj, cb, excb, sentcb)
+    {
+    }
+};
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addUsersToGroup.
+ */
+template<class T, typename CT> Callback_Server_addUsersToGroupPtr
+newCallback_Server_addUsersToGroup(const IceUtil::Handle<T>& instance, void (T::*cb)(const CT&), void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_addUsersToGroup<T, CT>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addUsersToGroup.
+ */
+template<class T, typename CT> Callback_Server_addUsersToGroupPtr
+newCallback_Server_addUsersToGroup(const IceUtil::Handle<T>& instance, void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_addUsersToGroup<T, CT>(instance, 0, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param cb The success method of the callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addUsersToGroup.
+ */
+template<class T, typename CT> Callback_Server_addUsersToGroupPtr
+newCallback_Server_addUsersToGroup(T* instance, void (T::*cb)(const CT&), void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_addUsersToGroup<T, CT>(instance, cb, excb, sentcb);
+}
+
+/**
+ * Creates a callback wrapper instance that delegates to your object.
+ * Use this overload when your callback methods receive a cookie value.
+ * @param instance The callback object.
+ * @param excb The exception method of the callback object.
+ * @param sentcb The sent method of the callback object.
+ * @return An object that can be passed to an asynchronous invocation of IceProxy::MumbleServer::Server::begin_addUsersToGroup.
+ */
+template<class T, typename CT> Callback_Server_addUsersToGroupPtr
+newCallback_Server_addUsersToGroup(T* instance, void (T::*excb)(const ::Ice::Exception&, const CT&), void (T::*sentcb)(bool, const CT&) = 0)
+{
+    return new Callback_Server_addUsersToGroup<T, CT>(instance, 0, excb, sentcb);
 }
 
 /**

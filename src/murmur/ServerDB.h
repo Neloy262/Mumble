@@ -7,7 +7,7 @@
 #define MUMBLE_MURMUR_DATABASE_H_
 
 #include <QtCore/QVariant>
-
+#include "MumbleServer.h"
 #include "Timer.h"
 
 class Server;
@@ -65,6 +65,10 @@ public:
 	static bool execBatch(QSqlQuery &, const QString &str = QString(), bool fatal = true);
 	static void addChannelAccess(int server_id,int user_id, int channel_id);
 	static bool hasChannelAccess(int user_id, int channel_id);
+	static void addGroup(const QString &name);
+	static void addChannelsToGroup(const ::MumbleServer::ChannelIds channel_id_list,int grp_id);
+	static void addUserToGroup(int group_id,int user_id);
+	static std::vector<int> getGrpChannels(int group_id);
 	// No copy; private declaration without implementation
 	ServerDB(const ServerDB &);
 
