@@ -1490,7 +1490,7 @@ public:
     bool _iceD_helloIce(::IceInternal::Incoming&, const ::Ice::Current&);
     /// \endcond
 
-    virtual void AddUserToChannelAsync(UserList userlist, ChannelList channellist, ChannelIds channelids, int userid, ::std::function<void()> response, ::std::function<void(::std::exception_ptr)> exception, const ::Ice::Current& current) = 0;
+    virtual void AddUserToChannelAsync(UserList userlist, ChannelIds channelids, int userid, ::std::function<void()> response, ::std::function<void(::std::exception_ptr)> exception, const ::Ice::Current& current) = 0;
     /// \cond INTERNAL
     bool _iceD_AddUserToChannel(::IceInternal::Incoming&, const ::Ice::Current&);
     /// \endcond
@@ -3731,30 +3731,30 @@ public:
     void _iceI_helloIce(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>&, const ::Ice::Context&);
     /// \endcond
 
-    void AddUserToChannel(const UserList& userlist, const ChannelList& channellist, const ChannelIds& channelids, int userid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    void AddUserToChannel(const UserList& userlist, const ChannelIds& channelids, int userid, const ::Ice::Context& context = ::Ice::noExplicitContext)
     {
-        _makePromiseOutgoing<void>(true, this, &ServerPrx::_iceI_AddUserToChannel, userlist, channellist, channelids, userid, context).get();
+        _makePromiseOutgoing<void>(true, this, &ServerPrx::_iceI_AddUserToChannel, userlist, channelids, userid, context).get();
     }
 
     template<template<typename> class P = ::std::promise>
-    auto AddUserToChannelAsync(const UserList& userlist, const ChannelList& channellist, const ChannelIds& channelids, int userid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    auto AddUserToChannelAsync(const UserList& userlist, const ChannelIds& channelids, int userid, const ::Ice::Context& context = ::Ice::noExplicitContext)
         -> decltype(::std::declval<P<void>>().get_future())
     {
-        return _makePromiseOutgoing<void, P>(false, this, &ServerPrx::_iceI_AddUserToChannel, userlist, channellist, channelids, userid, context);
+        return _makePromiseOutgoing<void, P>(false, this, &ServerPrx::_iceI_AddUserToChannel, userlist, channelids, userid, context);
     }
 
     ::std::function<void()>
-    AddUserToChannelAsync(const UserList& userlist, const ChannelList& channellist, const ChannelIds& channelids, int userid,
+    AddUserToChannelAsync(const UserList& userlist, const ChannelIds& channelids, int userid,
                           ::std::function<void()> response,
                           ::std::function<void(::std::exception_ptr)> ex = nullptr,
                           ::std::function<void(bool)> sent = nullptr,
                           const ::Ice::Context& context = ::Ice::noExplicitContext)
     {
-        return _makeLamdaOutgoing<void>(std::move(response), std::move(ex), std::move(sent), this, &MumbleServer::ServerPrx::_iceI_AddUserToChannel, userlist, channellist, channelids, userid, context);
+        return _makeLamdaOutgoing<void>(std::move(response), std::move(ex), std::move(sent), this, &MumbleServer::ServerPrx::_iceI_AddUserToChannel, userlist, channelids, userid, context);
     }
 
     /// \cond INTERNAL
-    void _iceI_AddUserToChannel(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>&, const UserList&, const ChannelList&, const ChannelIds&, int, const ::Ice::Context&);
+    void _iceI_AddUserToChannel(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>&, const UserList&, const ChannelIds&, int, const ::Ice::Context&);
     /// \endcond
 
     void createGroup(const ::std::string& name, const ::Ice::Context& context = ::Ice::noExplicitContext)
@@ -14263,41 +14263,41 @@ private:
 
 public:
 
-    void AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelList& channellist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    void AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Context& context = ::Ice::noExplicitContext)
     {
-        end_AddUserToChannel(_iceI_begin_AddUserToChannel(userlist, channellist, channelids, userid, context, ::IceInternal::dummyCallback, 0, true));
+        end_AddUserToChannel(_iceI_begin_AddUserToChannel(userlist, channelids, userid, context, ::IceInternal::dummyCallback, 0, true));
     }
 
-    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelList& channellist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Context& context = ::Ice::noExplicitContext)
+    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Context& context = ::Ice::noExplicitContext)
     {
-        return _iceI_begin_AddUserToChannel(userlist, channellist, channelids, userid, context, ::IceInternal::dummyCallback, 0);
+        return _iceI_begin_AddUserToChannel(userlist, channelids, userid, context, ::IceInternal::dummyCallback, 0);
     }
 
-    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelList& channellist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::CallbackPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::CallbackPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
     {
-        return _iceI_begin_AddUserToChannel(userlist, channellist, channelids, userid, ::Ice::noExplicitContext, cb, cookie);
+        return _iceI_begin_AddUserToChannel(userlist, channelids, userid, ::Ice::noExplicitContext, cb, cookie);
     }
 
-    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelList& channellist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Context& context, const ::Ice::CallbackPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Context& context, const ::Ice::CallbackPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
     {
-        return _iceI_begin_AddUserToChannel(userlist, channellist, channelids, userid, context, cb, cookie);
+        return _iceI_begin_AddUserToChannel(userlist, channelids, userid, context, cb, cookie);
     }
 
-    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelList& channellist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::MumbleServer::Callback_Server_AddUserToChannelPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::MumbleServer::Callback_Server_AddUserToChannelPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
     {
-        return _iceI_begin_AddUserToChannel(userlist, channellist, channelids, userid, ::Ice::noExplicitContext, cb, cookie);
+        return _iceI_begin_AddUserToChannel(userlist, channelids, userid, ::Ice::noExplicitContext, cb, cookie);
     }
 
-    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelList& channellist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Context& context, const ::MumbleServer::Callback_Server_AddUserToChannelPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
+    ::Ice::AsyncResultPtr begin_AddUserToChannel(const ::MumbleServer::UserList& userlist, const ::MumbleServer::ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Context& context, const ::MumbleServer::Callback_Server_AddUserToChannelPtr& cb, const ::Ice::LocalObjectPtr& cookie = 0)
     {
-        return _iceI_begin_AddUserToChannel(userlist, channellist, channelids, userid, context, cb, cookie);
+        return _iceI_begin_AddUserToChannel(userlist, channelids, userid, context, cb, cookie);
     }
 
     void end_AddUserToChannel(const ::Ice::AsyncResultPtr& result);
 
 private:
 
-    ::Ice::AsyncResultPtr _iceI_begin_AddUserToChannel(const ::MumbleServer::UserList&, const ::MumbleServer::ChannelList&, const ::MumbleServer::ChannelIds&, ::Ice::Int, const ::Ice::Context&, const ::IceInternal::CallbackBasePtr&, const ::Ice::LocalObjectPtr& cookie = 0, bool sync = false);
+    ::Ice::AsyncResultPtr _iceI_begin_AddUserToChannel(const ::MumbleServer::UserList&, const ::MumbleServer::ChannelIds&, ::Ice::Int, const ::Ice::Context&, const ::IceInternal::CallbackBasePtr&, const ::Ice::LocalObjectPtr& cookie = 0, bool sync = false);
 
 public:
 
@@ -21270,7 +21270,7 @@ public:
     bool _iceD_helloIce(::IceInternal::Incoming&, const ::Ice::Current&);
     /// \endcond
 
-    virtual void AddUserToChannel_async(const ::MumbleServer::AMD_Server_AddUserToChannelPtr& cb, const UserList& userlist, const ChannelList& channellist, const ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Current& current = ::Ice::emptyCurrent) = 0;
+    virtual void AddUserToChannel_async(const ::MumbleServer::AMD_Server_AddUserToChannelPtr& cb, const UserList& userlist, const ChannelIds& channelids, ::Ice::Int userid, const ::Ice::Current& current = ::Ice::emptyCurrent) = 0;
     /// \cond INTERNAL
     bool _iceD_AddUserToChannel(::IceInternal::Incoming&, const ::Ice::Current&);
     /// \endcond

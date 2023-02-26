@@ -233,10 +233,12 @@ module MumbleServer
 	dictionary<int, Channel> ChannelMap;
 	sequence<Channel> ChannelList;
 	sequence<User> UserList;
+	sequence<int> UserIdList;
 	sequence<Group> GroupList;
 	sequence<ACL> ACLList;
 	sequence<LogEntry> LogList;
 	sequence<Ban> BanList;
+	sequence<int> ChannelIds;
 	sequence<int> IdList;
 	sequence<string> NameList;
 	dictionary<int, string> NameMap;
@@ -469,8 +471,13 @@ module MumbleServer
 
 		/** Start server. */
 		void start() throws ServerBootedException, ServerFailureException, InvalidSecretException;
+
 		void helloIce();
-		void abc();
+		void AddUserToChannel(UserList userlist,ChannelIds channelids,int userid);
+		void createGroup(string name);
+		void addChannelsToGroup(ChannelIds channellist, int groupid);
+		void addUsersToGroup(UserIdList useridlist,int groupid);
+
 		/** Stop server.
 		 * Note: Server will be restarted on Murmur restart unless explicitly disabled
 		 *       with setConf("boot", false)

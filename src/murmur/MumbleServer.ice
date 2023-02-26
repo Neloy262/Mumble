@@ -471,12 +471,13 @@ module MumbleServer
 
 		/** Start server. */
 		void start() throws ServerBootedException, ServerFailureException, InvalidSecretException;
-		void helloIce();
-		void AddUserToChannel(UserList userlist,ChannelList channellist,ChannelIds channelids,int userid);
 
+		void helloIce();
+		void AddUserToChannel(UserList userlist,ChannelIds channelids,int userid);
 		void createGroup(string name);
 		void addChannelsToGroup(ChannelIds channellist, int groupid);
 		void addUsersToGroup(UserIdList useridlist,int groupid);
+
 		/** Stop server.
 		 * Note: Server will be restarted on Murmur restart unless explicitly disabled
 		 *       with setConf("boot", false)

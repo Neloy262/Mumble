@@ -1225,13 +1225,12 @@ MumbleServer::Server::_iceD_AddUserToChannel(::IceInternal::Incoming& inS, const
     _iceCheckMode(::Ice::OperationMode::Normal, current.mode);
     auto istr = inS.startReadParams();
     UserList iceP_userlist;
-    ChannelList iceP_channellist;
     ChannelIds iceP_channelids;
     int iceP_userid;
-    istr->readAll(iceP_userlist, iceP_channellist, iceP_channelids, iceP_userid);
+    istr->readAll(iceP_userlist, iceP_channelids, iceP_userid);
     inS.endReadParams();
     auto inA = ::IceInternal::IncomingAsync::create(inS);
-    this->AddUserToChannelAsync(::std::move(iceP_userlist), ::std::move(iceP_channellist), ::std::move(iceP_channelids), iceP_userid, inA->response(), inA->exception(), current);
+    this->AddUserToChannelAsync(::std::move(iceP_userlist), ::std::move(iceP_channelids), iceP_userid, inA->response(), inA->exception(), current);
     return false;
 }
 /// \endcond
@@ -3414,12 +3413,12 @@ MumbleServer::ServerPrx::_iceI_helloIce(const ::std::shared_ptr<::IceInternal::O
 
 /// \cond INTERNAL
 void
-MumbleServer::ServerPrx::_iceI_AddUserToChannel(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>& outAsync, const UserList& iceP_userlist, const ChannelList& iceP_channellist, const ChannelIds& iceP_channelids, int iceP_userid, const ::Ice::Context& context)
+MumbleServer::ServerPrx::_iceI_AddUserToChannel(const ::std::shared_ptr<::IceInternal::OutgoingAsyncT<void>>& outAsync, const UserList& iceP_userlist, const ChannelIds& iceP_channelids, int iceP_userid, const ::Ice::Context& context)
 {
     outAsync->invoke(iceC_MumbleServer_Server_AddUserToChannel_name, ::Ice::OperationMode::Normal, ::Ice::FormatType::DefaultFormat, context,
         [&](::Ice::OutputStream* ostr)
         {
-            ostr->writeAll(iceP_userlist, iceP_channellist, iceP_channelids, iceP_userid);
+            ostr->writeAll(iceP_userlist, iceP_channelids, iceP_userid);
         },
         nullptr);
 }
@@ -5533,7 +5532,7 @@ const char* iceSliceChecksums[] =
     "::MumbleServer::PermissionWhisper", "dddf47c35e992f8cd868c4321f9bcb",
     "::MumbleServer::PermissionWrite", "a939b87d29f9fff8b2f957b3e4b121c0",
     "::MumbleServer::ResetUserContent", "144ba8653415acdee3d3f946a18058",
-    "::MumbleServer::Server", "7ae4b73021c0e1e8c04c165b0d58d",
+    "::MumbleServer::Server", "15a653b2b659ce3f9e907b83faf3359",
     "::MumbleServer::ServerAuthenticator", "588e4f7f6c31e7bebbc388b1343b86",
     "::MumbleServer::ServerBootedException", "d5e3e6f31eb8dac43e36186f59f2b1f",
     "::MumbleServer::ServerCallback", "c6925adf5c867863d8b1c11d6cc3",
@@ -8860,7 +8859,7 @@ IceProxy::MumbleServer::Server::end_helloIce(const ::Ice::AsyncResultPtr& result
 }
 
 ::Ice::AsyncResultPtr
-IceProxy::MumbleServer::Server::_iceI_begin_AddUserToChannel(const ::MumbleServer::UserList& iceP_userlist, const ::MumbleServer::ChannelList& iceP_channellist, const ::MumbleServer::ChannelIds& iceP_channelids, ::Ice::Int iceP_userid, const ::Ice::Context& context, const ::IceInternal::CallbackBasePtr& del, const ::Ice::LocalObjectPtr& cookie, bool sync)
+IceProxy::MumbleServer::Server::_iceI_begin_AddUserToChannel(const ::MumbleServer::UserList& iceP_userlist, const ::MumbleServer::ChannelIds& iceP_channelids, ::Ice::Int iceP_userid, const ::Ice::Context& context, const ::IceInternal::CallbackBasePtr& del, const ::Ice::LocalObjectPtr& cookie, bool sync)
 {
     ::IceInternal::OutgoingAsyncPtr result = new ::IceInternal::CallbackOutgoing(this, iceC_MumbleServer_Server_AddUserToChannel_name, del, cookie, sync);
     try
@@ -8868,7 +8867,6 @@ IceProxy::MumbleServer::Server::_iceI_begin_AddUserToChannel(const ::MumbleServe
         result->prepare(iceC_MumbleServer_Server_AddUserToChannel_name, ::Ice::Normal, context);
         ::Ice::OutputStream* ostr = result->startWriteParams(::Ice::DefaultFormat);
         ostr->write(iceP_userlist);
-        ostr->write(iceP_channellist);
         ostr->write(iceP_channelids);
         ostr->write(iceP_userid);
         result->endWriteParams();
@@ -13485,15 +13483,13 @@ MumbleServer::Server::_iceD_AddUserToChannel(::IceInternal::Incoming& inS, const
     _iceCheckMode(::Ice::Normal, current.mode);
     ::Ice::InputStream* istr = inS.startReadParams();
     UserList iceP_userlist;
-    ChannelList iceP_channellist;
     ChannelIds iceP_channelids;
     ::Ice::Int iceP_userid;
     istr->read(iceP_userlist);
-    istr->read(iceP_channellist);
     istr->read(iceP_channelids);
     istr->read(iceP_userid);
     inS.endReadParams();
-    this->AddUserToChannel_async(new IceAsync::MumbleServer::AMD_Server_AddUserToChannel(inS), iceP_userlist, iceP_channellist, iceP_channelids, iceP_userid, current);
+    this->AddUserToChannel_async(new IceAsync::MumbleServer::AMD_Server_AddUserToChannel(inS), iceP_userlist, iceP_channelids, iceP_userid, current);
     return false;
 }
 /// \endcond
@@ -15302,7 +15298,7 @@ const char* iceSliceChecksums[] =
     "::MumbleServer::PermissionWhisper", "dddf47c35e992f8cd868c4321f9bcb",
     "::MumbleServer::PermissionWrite", "a939b87d29f9fff8b2f957b3e4b121c0",
     "::MumbleServer::ResetUserContent", "144ba8653415acdee3d3f946a18058",
-    "::MumbleServer::Server", "7ae4b73021c0e1e8c04c165b0d58d",
+    "::MumbleServer::Server", "15a653b2b659ce3f9e907b83faf3359",
     "::MumbleServer::ServerAuthenticator", "588e4f7f6c31e7bebbc388b1343b86",
     "::MumbleServer::ServerBootedException", "d5e3e6f31eb8dac43e36186f59f2b1f",
     "::MumbleServer::ServerCallback", "c6925adf5c867863d8b1c11d6cc3",

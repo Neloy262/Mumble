@@ -42,55 +42,55 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/metainfo" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/auxiliary_files/info.mumble.Mumble.appdata.xml")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/auxiliary_files/info.mumble.Mumble.desktop")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdocx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "doc" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/auxiliary_files/man_files/mumble.1")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/auxiliary_files/mumble-overlay")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdocx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "doc" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/auxiliary_files/man_files/mumble-overlay.1")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdocx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "doc" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/auxiliary_files/man_files/mumble-server.1")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdocx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "doc" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/auxiliary_files/man_files/mumble-server-user-wrapper.1")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_serverx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "mumble_server" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/etc/mumble" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/auxiliary_files/mumble-server.ini")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_serverx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "mumble_server" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/etc/sysconfig.d" TYPE FILE RENAME "mumble-server.conf" FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/auxiliary_files/config_files/mumble-server.sysusers")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_serverx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "mumble_server" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/etc/systemd/system" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/auxiliary_files/mumble-server.service")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_serverx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "mumble_server" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/auxiliary_files/mumble-server-user-wrapper")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_serverx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "mumble_server" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dbus-1/system.d" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/auxiliary_files/config_files/mumble-server.conf")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmumble_serverx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "mumble_server" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/etc/mumble" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/src/murmur/MumbleServer.ice")
 endif()
 

@@ -1,9 +1,9 @@
 Performing C++ SOURCE FILE Test COMPILER_HAS_MBIG_OBJ failed with the following output:
 Change Dir: /media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/ninja/linux/ninja cmTC_ac833 && [1/2] Building CXX object CMakeFiles/cmTC_ac833.dir/src.cxx.o
-FAILED: CMakeFiles/cmTC_ac833.dir/src.cxx.o 
-/usr/bin/c++ -DCOMPILER_HAS_MBIG_OBJ  -fPIE   -Wa,-mbig-obj -o CMakeFiles/cmTC_ac833.dir/src.cxx.o -c '/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx'
+Run Build Command(s):/snap/clion/222/bin/ninja/linux/x64/ninja cmTC_39c55 && [1/2] Building CXX object CMakeFiles/cmTC_39c55.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_39c55.dir/src.cxx.o 
+/usr/bin/c++ -DCOMPILER_HAS_MBIG_OBJ  -fPIE -fdiagnostics-color=always   -Wa,-mbig-obj -o CMakeFiles/cmTC_39c55.dir/src.cxx.o -c '/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx'
 as: unrecognized option '-mbig-obj'
 ninja: build stopped: subcommand failed.
 
@@ -13,11 +13,11 @@ int main() { return 0; }
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/ninja/linux/ninja cmTC_d3b02 && [1/2] Building C object CMakeFiles/cmTC_d3b02.dir/src.c.o
-[2/2] Linking C executable cmTC_d3b02
-FAILED: cmTC_d3b02 
-: && /usr/bin/cc   CMakeFiles/cmTC_d3b02.dir/src.c.o -o cmTC_d3b02   && :
-/usr/bin/ld: CMakeFiles/cmTC_d3b02.dir/src.c.o: in function `main':
+Run Build Command(s):/snap/clion/222/bin/ninja/linux/x64/ninja cmTC_4f7fa && [1/2] Building C object CMakeFiles/cmTC_4f7fa.dir/src.c.o
+[2/2] Linking C executable cmTC_4f7fa
+FAILED: cmTC_4f7fa 
+: && /usr/bin/cc   CMakeFiles/cmTC_4f7fa.dir/src.c.o -o cmTC_4f7fa   && :
+/usr/bin/ld: CMakeFiles/cmTC_4f7fa.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
@@ -50,10 +50,10 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/ninja/linux/ninja cmTC_988bc && [1/2] Building C object CMakeFiles/cmTC_988bc.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_988bc
-FAILED: cmTC_988bc 
-: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_988bc.dir/CheckFunctionExists.c.o -o cmTC_988bc  -lpthreads && :
+Run Build Command(s):/snap/clion/222/bin/ninja/linux/x64/ninja cmTC_9a336 && [1/2] Building C object CMakeFiles/cmTC_9a336.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_9a336
+FAILED: cmTC_9a336 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_9a336.dir/CheckFunctionExists.c.o -o cmTC_9a336  -lpthreads && :
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.
@@ -63,18 +63,18 @@ ninja: build stopped: subcommand failed.
 Determining if the function lrintf exists failed with the following output:
 Change Dir: /media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/ninja/linux/ninja cmTC_ba9d0 && [1/2] Building C object CMakeFiles/cmTC_ba9d0.dir/CheckFunctionExists.c.o
+Run Build Command(s):/snap/clion/222/bin/ninja/linux/x64/ninja cmTC_63952 && [1/2] Building C object CMakeFiles/cmTC_63952.dir/CheckFunctionExists.c.o
 <command-line>: warning: conflicting types for built-in function ‘lrintf’; expected ‘long int(float)’ [-Wbuiltin-declaration-mismatch]
-/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+/snap/clion/222/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
       |   ^~~~~~~~~~~~~~~~~~~~~
-/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/CheckFunctionExists.c:1:1: note: ‘lrintf’ is declared in header ‘<math.h>’
+/snap/clion/222/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckFunctionExists.c:1:1: note: ‘lrintf’ is declared in header ‘<math.h>’
   +++ |+#include <math.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-[2/2] Linking C executable cmTC_ba9d0
-FAILED: cmTC_ba9d0 
-: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=lrintf  CMakeFiles/cmTC_ba9d0.dir/CheckFunctionExists.c.o -o cmTC_ba9d0   && :
-/usr/bin/ld: CMakeFiles/cmTC_ba9d0.dir/CheckFunctionExists.c.o: in function `main':
+[2/2] Linking C executable cmTC_63952
+FAILED: cmTC_63952 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=lrintf  CMakeFiles/cmTC_63952.dir/CheckFunctionExists.c.o -o cmTC_63952   && :
+/usr/bin/ld: CMakeFiles/cmTC_63952.dir/CheckFunctionExists.c.o: in function `main':
 CheckFunctionExists.c:(.text+0x14): undefined reference to `lrintf'
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.
@@ -84,18 +84,18 @@ ninja: build stopped: subcommand failed.
 Determining if the function lrint exists failed with the following output:
 Change Dir: /media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/ninja/linux/ninja cmTC_abeaf && [1/2] Building C object CMakeFiles/cmTC_abeaf.dir/CheckFunctionExists.c.o
+Run Build Command(s):/snap/clion/222/bin/ninja/linux/x64/ninja cmTC_52d4a && [1/2] Building C object CMakeFiles/cmTC_52d4a.dir/CheckFunctionExists.c.o
 <command-line>: warning: conflicting types for built-in function ‘lrint’; expected ‘long int(double)’ [-Wbuiltin-declaration-mismatch]
-/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+/snap/clion/222/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
       |   ^~~~~~~~~~~~~~~~~~~~~
-/home/nybsysml/Downloads/CLion-2022.2.4/clion-2022.2.4/bin/cmake/linux/share/cmake-3.23/Modules/CheckFunctionExists.c:1:1: note: ‘lrint’ is declared in header ‘<math.h>’
+/snap/clion/222/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckFunctionExists.c:1:1: note: ‘lrint’ is declared in header ‘<math.h>’
   +++ |+#include <math.h>
     1 | #ifdef CHECK_FUNCTION_EXISTS
-[2/2] Linking C executable cmTC_abeaf
-FAILED: cmTC_abeaf 
-: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=lrint  CMakeFiles/cmTC_abeaf.dir/CheckFunctionExists.c.o -o cmTC_abeaf   && :
-/usr/bin/ld: CMakeFiles/cmTC_abeaf.dir/CheckFunctionExists.c.o: in function `main':
+[2/2] Linking C executable cmTC_52d4a
+FAILED: cmTC_52d4a 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=lrint  CMakeFiles/cmTC_52d4a.dir/CheckFunctionExists.c.o -o cmTC_52d4a   && :
+/usr/bin/ld: CMakeFiles/cmTC_52d4a.dir/CheckFunctionExists.c.o: in function `main':
 CheckFunctionExists.c:(.text+0x14): undefined reference to `lrint'
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.

@@ -1001,7 +1001,30 @@ bool Server::checkDecrypt(ServerUser *u, const unsigned char *encrypt, unsigned 
 	}
 	return false;
 }
+void Server::AddUserToChannel(const ::MumbleServer::ChannelIds &channelIds,int userid){
 
+	unsigned int vecSize2 = channelIds.size();
+
+	for(unsigned int i = 0; i < vecSize2; i++)
+	{
+		//		std::cout<<"Channel name:" << p2[i].name<<std::endl;
+		Server::createChannelAccess(channelIds[i],userid);
+	}
+}
+void Server::createGroup(const ::std::string &name){
+	QString str = QString::fromStdString(name);
+	ServerDB::addGroup(str);
+}
+void Server::addChannelsToGroup(const ::MumbleServer::ChannelIds &p2,int group_id){
+	ServerDB::addChannelsToGroup(p2,group_id);
+}
+
+void Server::addUsersToGroup(const ::MumbleServer::UserIdList &p1,int group_id){
+
+	for(unsigned long i =0 ;i<p1.size();i++){
+		ServerDB::addUserToGroup(group_id,p1[i]);
+	}
+}
 void Server::sendMessage(ServerUser &u, const unsigned char *data, int len, QByteArray &cache, bool force) {
 	ZoneScoped;
 

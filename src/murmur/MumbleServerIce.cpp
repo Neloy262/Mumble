@@ -1540,13 +1540,10 @@ static void impl_Server_getUserIds(const ::MumbleServer::AMD_Server_getUserIdsPt
 	cb->ice_response(im);
 }
 
-static void impl_Server_AddUserToChannel(const ::MumbleServer::AMD_Server_AddUserToChannelPtr &cb,int server_id,const ::MumbleServer::UserList &p1, const ::MumbleServer::ChannelList &p2,const ::MumbleServer::ChannelIds &channelIds,int userid){
+static void impl_Server_AddUserToChannel(const ::MumbleServer::AMD_Server_AddUserToChannelPtr &cb,int server_id,const ::MumbleServer::UserList &p1,const ::MumbleServer::ChannelIds &channelIds,int userid){
 	NEED_SERVER;
 	unsigned int vecSize = p1.size();
-	for(unsigned int i = 0; i < vecSize; i++)
-	{
-		std::cout<<"Name:"<< p1[i].name <<std::endl;
-	}
+
 
 	unsigned int vecSize2 = channelIds.size();
 
@@ -1556,11 +1553,13 @@ static void impl_Server_AddUserToChannel(const ::MumbleServer::AMD_Server_AddUse
 		server->createChannelAccess(channelIds[i],userid);
 	}
 
+
+
 //	std::cout<<server->qhUsers.find(userid).value()<<std::endl;
 
 //	server->createChannelAccess(channelid,userid);
 
-	std::cout<<server_id<<userid<<p2.size()<<std::endl;
+	std::cout<<server_id<<userid<<vecSize<<std::endl;
 
 	cb->ice_response();
 }

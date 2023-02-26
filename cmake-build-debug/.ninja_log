@@ -17,7 +17,7 @@
 4186	7312	1673408946017884100	src/murmur/CMakeFiles/mumble-server.dir/AudioReceiverBuffer.cpp.o	eb1bde3af6495dfd
 5513	5758	1672729485837986500	src/mumble/opus/CMakeFiles/opus.dir/silk/x86/x86_silk_map.c.o	80a7f0781af32f42
 550	757	1672729480838188900	/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/Mumble.pb.cc	7dc7c5fdd8441b2
-264	3850	1674638603024656400	src/murmur/CMakeFiles/mumble-server.dir/RPC.cpp.o	879f349ebf480450
+1009	5450	1674967067262489800	src/murmur/CMakeFiles/mumble-server.dir/RPC.cpp.o	879f349ebf480450
 5705	5862	1672729485941359200	src/mumble/rnnoise/CMakeFiles/rnnoise.dir/__/rnnoise-src/src/rnn.c.o	2d29089ece8e1e53
 6716	7627	1672729487706629900	plugins/bf4/CMakeFiles/bf4.dir/bf4.cpp.o	b47173f88352c4e8
 1456	1779	1672729481858521200	src/mumble/opus/CMakeFiles/opus.dir/silk/NLSF2A.c.o	5f2d4b492a5c040c
@@ -35,15 +35,15 @@
 10251	11272	1672729491352452200	plugins/wow_x64/CMakeFiles/wow_x64.dir/wow_x64.cpp.o	2e9303e769a48ddb
 4789	5080	1672729485161013200	src/mumble/opus/CMakeFiles/opus.dir/silk/float/noise_shape_analysis_FLP.c.o	2a06b715b1e4fa67
 6624	6716	1672729486795414000	plugins/libtestPlugin.so	7787ebc30b3599a7
-263	4152	1674638603325708700	src/murmur/CMakeFiles/mumble-server.dir/mumble-server_autogen/mocs_compilation.cpp.o	4194607da474a63e
+1009	5639	1674967067450584400	src/murmur/CMakeFiles/mumble-server.dir/mumble-server_autogen/mocs_compilation.cpp.o	4194607da474a63e
 1667	2933	1673408941640085000	src/CMakeFiles/shared.dir/SSLLocks.cpp.o	55d08ea2283d72ae
-3239	4971	1674640381491583200	mumble-server	f4146565db2a7347
+7884	9533	1674968076895120800	mumble-server	f4146565db2a7347
 7139	7922	1672729488002282800	plugins/cod2/CMakeFiles/cod2.dir/cod2.cpp.o	23b7188a93a1c65d
 371	1621	1673408940327532200	src/CMakeFiles/shared.dir/QtUtils.cpp.o	cc8b8862848d4cfd
 5352	5639	1672729485719560500	src/mumble/opus/CMakeFiles/opus.dir/celt/x86/pitch_sse2.c.o	f5868fec3c2cd59c
 92	635	1672729480691361200	src/mumble/opus/CMakeFiles/opus.dir/src/opus_projection_encoder.c.o	351640d4f5ae80b4
 4587	4851	1672729484931998700	src/mumble/opus/CMakeFiles/opus.dir/silk/float/wrappers_FLP.c.o	9d304d981927dff
-263	3845	1674638603019419800	src/murmur/CMakeFiles/mumble-server.dir/main.cpp.o	ed596bbc09040354
+1009	5431	1674967067244082900	src/murmur/CMakeFiles/mumble-server.dir/main.cpp.o	ed596bbc09040354
 8449	22732	0	src/mumble/mumble_client_object_lib_autogen/mocs_compilation.cpp	6da775390408ce38
 5642	5873	1672729485942884300	src/mumble/speexdsp/CMakeFiles/speexdsp.dir/__/speexdsp/libspeexdsp/resample.c.o	3f5b8346a447038c
 4640	4916	1672729484996820400	src/mumble/opus/CMakeFiles/opus.dir/silk/float/LPC_analysis_filter_FLP.c.o	eb7b4fd25b98e267
@@ -62,7 +62,7 @@
 1926	2421	1672729482501489800	src/mumble/opus/CMakeFiles/opus.dir/celt/celt_encoder.c.o	bba77d0c65249353
 91	613	1672729480691203800	src/mumble/opus/CMakeFiles/opus.dir/src/repacketizer.c.o	4251774a6e0f948b
 4880	5102	1672729485183332300	src/mumble/opus/CMakeFiles/opus.dir/silk/float/regularize_correlations_FLP.c.o	37de748c296c39ec
-14	21	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
+14	18	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
 6776	6900	1672729486980580600	link_tester	1aa8f9b38b9ac357
 5951	6166	1672729486245338500	overlay_gl/CMakeFiles/overlay_gl_x86.dir/overlay.c.o	173cfaf7d3f90d5d
 92	611	1672729480690853200	src/mumble/opus/CMakeFiles/opus.dir/src/opus_projection_decoder.c.o	3e1fb942a9fd7cfd
@@ -91,7 +91,7 @@
 84	174	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/Mumble.pb.h	3ee326eb6c3588b4
 370	2609	1673408941315987800	src/CMakeFiles/shared.dir/MumbleProtocol.cpp.o	14102e9e2e70def
 22758	23285	1672729503092430800	src/mumble/mumble_es.qm	cc56f5418847225c
-13	898	1674636285135821700	src/murmur/MumbleServer.h	429b9d90f36d199d
+10	903	1674967062719182400	src/murmur/MumbleServer.h	429b9d90f36d199d
 6872	7626	1672729487706455700	plugins/bfbc2/CMakeFiles/bfbc2.dir/bfbc2.cpp.o	427af897cef41c00
 2024	2384	1672729482460165100	src/mumble/opus/CMakeFiles/opus.dir/celt/kiss_fft.c.o	9cf8c31cfc30de84
 407	740	1672729480818946100	src/mumble/opus/CMakeFiles/opus.dir/silk/decode_indices.c.o	6f6c13b70e039f1f
@@ -112,7 +112,7 @@
 4187	8464	1673408947170265600	src/murmur/CMakeFiles/mumble-server.dir/Register.cpp.o	b4aa735ca5af92a
 2050	2452	1672729482530877300	src/mumble/opus/CMakeFiles/opus.dir/celt/modes.c.o	f39700edcd108ccc
 1556	1884	1672729481964717100	src/mumble/opus/CMakeFiles/opus.dir/silk/NLSF_VQ_weights_laroia.c.o	1ff0cd3334eca1b6
-970	4752	1674636288984335000	src/murmur/CMakeFiles/mumble-server.dir/MumbleServer.cpp.o	fb221c2598de2053
+1010	5518	1674967067326320300	src/murmur/CMakeFiles/mumble-server.dir/MumbleServer.cpp.o	fb221c2598de2053
 4401	4639	1672729484719827600	src/mumble/opus/CMakeFiles/opus.dir/silk/float/encode_frame_FLP.c.o	b876a6faf05779d
 1946	2272	1672729482351492200	src/mumble/opus/CMakeFiles/opus.dir/celt/entdec.c.o	ad9df246a589fc12
 7063	7201	1672729487281023700	plugins/libarma2.so	5402f5418488f9a5
@@ -129,7 +129,7 @@
 2027	2319	1672729482398018500	src/mumble/opus/CMakeFiles/opus.dir/celt/laplace.c.o	b91b26e8ac92e3d1
 5320	5512	1672729485593021700	src/mumble/opus/CMakeFiles/opus.dir/celt/x86/x86_celt_map.c.o	b81c2def4704d53f
 1935	2420	1672729482500121400	src/mumble/opus/CMakeFiles/opus.dir/celt/celt_decoder.c.o	5c880bd62de3e304
-264	4696	1674638603868951100	src/murmur/CMakeFiles/mumble-server.dir/Server.cpp.o	ecfceb48c72abeae
+1009	6177	1674967067989031600	src/murmur/CMakeFiles/mumble-server.dir/Server.cpp.o	ecfceb48c72abeae
 1198	1823	1672729481900039900	src/mumble/opus/CMakeFiles/opus.dir/silk/control_codec.c.o	78018056f2d3b205
 5863	6238	1672729486315154800	src/mumble/speexdsp/CMakeFiles/speexdsp.dir/__/speexdsp/libspeexdsp/mdf.c.o	83d3f4e170b5e845
 8872	10243	1672729490322800200	plugins/sr/CMakeFiles/sr.dir/sr.cpp.o	fbc74e54f781486f
@@ -140,17 +140,17 @@
 1321	1434	1672729481472502800	src/mumble/opus/CMakeFiles/opus.dir/silk/debug.c.o	fd8fc09c1c614197
 4931	5152	1672729485232947500	src/mumble/opus/CMakeFiles/opus.dir/silk/float/energy_FLP.c.o	dfa81608b89541cd
 1393	1692	1672729481772191900	src/mumble/opus/CMakeFiles/opus.dir/silk/lin2log.c.o	91874b2c429501ac
-13	898	1674636285135821700	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServer.cpp	429b9d90f36d199d
 5120	5318	1672729485399317500	src/mumble/opus/CMakeFiles/opus.dir/silk/float/inner_product_FLP.c.o	ac66a8ebd57380b8
 8449	22732	0	src/mumble/mumble_client_object_lib_autogen/include/ui_GlobalShortcutTarget.h	6da775390408ce38
+10	903	1674967062719182400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServer.cpp	429b9d90f36d199d
 4714	4989	1672729485069542800	src/mumble/opus/CMakeFiles/opus.dir/silk/float/LTP_scale_ctrl_FLP.c.o	c46fb77afa0fa4b3
 5946	6060	1672729486140946900	src/mumble/rnnoise/CMakeFiles/rnnoise.dir/__/rnnoise-src/src/celt_lpc.c.o	372c2121f110ae6d
 2133	2516	1672729482592252700	src/mumble/opus/CMakeFiles/opus.dir/celt/rate.c.o	4533963233ae0a20
-8	14	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-14	21	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
+9	14	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
+14	18	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
 6900	7681	1672729487762031600	plugins/bfheroes/CMakeFiles/bfheroes.dir/bfheroes.cpp.o	49fa75efc13da3e4
 22758	22996	1672729503040680000	src/mumble/mumble_en_GB.qm	3159f29079e7428a
-21	3238	1674640379766859800	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	7349c7e834ef9def
+1010	5979	1674967067791635300	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	7349c7e834ef9def
 22990	23313	1672729503334550500	src/mumble/mumble_he.qm	697906a39c1fbc7c
 7628	7767	1672729487846834800	plugins/libbf4.so	d7d5e7f92cec694e
 370	1732	1673408940438345900	src/CMakeFiles/shared.dir/PlatformCheck.cpp.o	1ef2d85310f1cc55
@@ -171,7 +171,7 @@
 7339	7458	1672729487538107400	plugins/libbf1942.so	73ccd9f1d8fc7a67
 1921	2810	1673408941517530000	src/CMakeFiles/shared.dir/crypto/CryptographicHash.cpp.o	457cc0c4ab8c949d
 8710	9182	1672729489261246100	plugins/se/CMakeFiles/se.dir/__/Module.cpp.o	18d724acfd7711d4
-13	898	1674636285135821700	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServer.h	429b9d90f36d199d
+10	903	1674967062719182400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServer.h	429b9d90f36d199d
 22740	22956	1672729502966245900	src/mumble/mumble_ar.qm	c2a9bc1b06828fd
 8025	8396	1672729488467962800	plugins/gtav/CMakeFiles/gtav.dir/__/Module.cpp.o	c0ceb0a6b3ec63cb
 4971	5214	1672729485294829200	src/mumble/opus/CMakeFiles/opus.dir/silk/float/autocorrelation_FLP.c.o	9b26d83dd1abd507
@@ -183,7 +183,7 @@
 6162	6248	1672729486329199100	libmumbleoverlay.x86_64.so.1.5.0	2b947589b5b1a701
 1036	1390	1672729481467073700	src/mumble/opus/CMakeFiles/opus.dir/silk/NLSF_unpack.c.o	c19ed02b810aedab
 368	3408	1673408942112181400	src/CMakeFiles/shared.dir/Mumble.pb.cc.o	6afdc471fa5d6258
-14	21	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
+14	18	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
 11	38	1673408938744168900	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/licenses.h	1b295eb3335babed
 8449	22732	0	src/mumble/mumble_client_object_lib_autogen/include/ui_AudioWizard.h	6da775390408ce38
 998	1392	1672729481467427000	src/mumble/opus/CMakeFiles/opus.dir/silk/NLSF_encode.c.o	d2412ab27deeae87
@@ -198,8 +198,8 @@
 5318	5575	1672729485655461800	src/mumble/opus/CMakeFiles/opus.dir/celt/x86/x86cpu.c.o	8ab3e7824aa9a564
 4465	4714	1672729484794811400	src/mumble/opus/CMakeFiles/opus.dir/silk/float/find_LTP_FLP.c.o	8fa1652309659f26
 5421	5799	1672729485878674300	src/mumble/opus/CMakeFiles/opus.dir/silk/x86/NSQ_sse4_1.c.o	ad3dc762e0a2c47b
-85	95	1673408938803547100	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/MumbleUDP.pb.h	c896efdc67c28c6d
 1780	2132	1672729482208646800	src/mumble/opus/CMakeFiles/opus.dir/silk/stereo_quant_pred.c.o	acc1dd4827149ed3
+85	95	1673408938803547100	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/MumbleUDP.pb.h	c896efdc67c28c6d
 22740	22885	1672729502966118000	src/mumble/mumble_br.qm	11324ab5bd43bf8a
 10616	11128	1672729491207579000	plugins/libse.so	2b00fe98f56657e9
 1494	1827	1672729481899170600	src/mumble/opus/CMakeFiles/opus.dir/silk/NLSF_stabilize.c.o	af207e1d3ba8d30d
@@ -229,12 +229,12 @@
 7488	7570	1672729487649762500	plugins/libbf3.so	8729d42ebb0ed1c3
 8449	22732	0	src/mumble/mumble_client_object_lib_autogen/include/ui_AudioOutput.h	6da775390408ce38
 22741	22962	1672729503018878900	src/mumble/mumble_cy.qm	77a5e30b17cb1d1c
-13	898	1674636285135821700	src/murmur/MumbleServer.cpp	429b9d90f36d199d
+10	903	1674967062719182400	src/murmur/MumbleServer.cpp	429b9d90f36d199d
 637	961	1672729481035409800	src/mumble/opus/CMakeFiles/opus.dir/silk/interpolate.c.o	1ea23288d582a35
 1071	1439	1672729481517539300	src/mumble/opus/CMakeFiles/opus.dir/silk/NLSF_del_dec_quant.c.o	233e117f5f74a55
 23071	23315	1672729503374679000	src/mumble/mumble_ko.qm	99c1faadb4fa814b
 1577	1927	1672729481997214900	src/mumble/opus/CMakeFiles/opus.dir/silk/resampler.c.o	598c79ce9574b207
-898	962	1674636285198507700	src/murmur/MumbleServerIceWrapper.cpp	6438b3df08a9241c
+903	1001	1674967062813943800	src/murmur/MumbleServerIceWrapper.cpp	6438b3df08a9241c
 1351	1682	1672729481754590500	src/mumble/opus/CMakeFiles/opus.dir/silk/decode_pitch.c.o	57b1917c30716aec
 369	2113	1673408940819548300	src/CMakeFiles/shared.dir/MumbleUDP.pb.cc.o	bb84cea24b6eba0e
 10244	10719	1672729490799692300	plugins/libsr.so	da2353c9e239d16f
@@ -245,7 +245,7 @@
 370	1622	1673408940328013900	src/CMakeFiles/shared.dir/PasswordGenerator.cpp.o	b2dc3e31da4469e8
 1922	2205	1673408940911927100	src/CMakeFiles/shared.dir/VolumeAdjustment.cpp.o	25c31797e2228ac5
 4187	7088	1673408945794069100	src/murmur/CMakeFiles/mumble-server.dir/__/ACL.cpp.o	43ddd0f37f6697da
-263	4572	1674638603744361100	src/murmur/CMakeFiles/mumble-server.dir/Messages.cpp.o	b58dce12e515203b
+1009	6315	1674967068126336100	src/murmur/CMakeFiles/mumble-server.dir/Messages.cpp.o	b58dce12e515203b
 1570	3190	1673408941897336700	src/CMakeFiles/shared.dir/ServerResolver.cpp.o	2e648c8b05015b72
 1317	1606	1672729481687077400	src/mumble/opus/CMakeFiles/opus.dir/silk/bwexpander_32.c.o	8417d99548271635
 8449	22732	0	src/mumble/mumble_client_object_lib_autogen/include/ui_RichTextEditorLink.h	6da775390408ce38
@@ -258,7 +258,7 @@
 370	1985	1673408940691139800	src/CMakeFiles/shared.dir/OSInfo.cpp.o	3090467556b183d
 1154	1672	1672729481741250200	src/mumble/opus/CMakeFiles/opus.dir/silk/init_encoder.c.o	ed5bc37f41ca07b9
 23023	23315	1672729503351817200	src/mumble/mumble_ja.qm	f606beb0134f1d59
-8	14	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
+9	14	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
 22828	23300	1672729503105415000	src/mumble/mumble_pt_BR.qm	e6b033d4bfae304b
 7957	8698	1672729488777410100	plugins/gtav/CMakeFiles/gtav.dir/Game.cpp.o	219011d26d3a6904
 8843	10250	1672729490328338300	plugins/se/CMakeFiles/se.dir/__/ProcessWindows.cpp.o	a0794fec01795d24
@@ -290,7 +290,7 @@
 8449	22732	0	src/mumble/CMakeFiles/mumble_client_object_lib_autogen	6da775390408ce38
 299	637	1672729480716129700	src/mumble/opus/CMakeFiles/opus.dir/silk/decode_core.c.o	2f77ebae5a62c5b2
 22828	23189	1672729503043586100	src/mumble/mumble_et.qm	20487efd102a6618
-263	4173	1674638603347685500	src/murmur/CMakeFiles/mumble-server.dir/Meta.cpp.o	fabe70bfd026983f
+1009	5605	1674967067414751900	src/murmur/CMakeFiles/mumble-server.dir/Meta.cpp.o	fabe70bfd026983f
 368	1921	1673408940627214300	src/CMakeFiles/shared.dir/shared_autogen/mocs_compilation.cpp.o	8286e1586c46bc33
 553	638	1672729480716515800	/media/nybsysml/New Volume/Niloy/sentra_dev/mumble-source-code/cmake-build-debug/src/MumbleUDP.pb.cc	7fc26b7860b5453
 4188	5492	1673408944198267400	src/murmur/CMakeFiles/mumble-server.dir/__/__/3rdparty/qqbonjour/BonjourServiceRegister.cpp.o	26c6a5108a789f6e
@@ -348,7 +348,7 @@
 5555	5949	1672729486026676800	src/mumble/opus/CMakeFiles/opus.dir/silk/x86/VAD_sse4_1.c.o	9c83fae0730c55a8
 1227	1576	1672729481655308000	src/mumble/opus/CMakeFiles/opus.dir/silk/A2NLSF.c.o	2267ceaa08c000e7
 11273	11372	1672729491452087100	plugins/libwow_x64.so	2367db3d578b37d0
-264	8219	1674638607384150700	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
+26	7884	1674968075247418300	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
 5799	6124	1672729486204029900	src/mumble/speexdsp/CMakeFiles/speexdsp.dir/__/speexdsp/libspeexdsp/jitter.c.o	dcb48b455a8e8647
 8699	10236	1672729490314769500	plugins/rl/CMakeFiles/rl.dir/rl.cpp.o	afafec7b9bed4035
 8449	22732	0	src/mumble/mumble_client_object_lib_autogen/include/ui_Tokens.h	6da775390408ce38
@@ -408,7 +408,7 @@
 90	385	1672729480464274600	src/mumble/rnnoise/CMakeFiles/rnnoise.dir/__/rnnoise-src/src/denoise.c.o	6ba98fd2d44bb3b5
 1943	2167	1672729482247714400	src/mumble/opus/CMakeFiles/opus.dir/celt/entcode.c.o	a93bd31eb55cf056
 635	959	1672729481035392800	src/mumble/opus/CMakeFiles/opus.dir/silk/gain_quant.c.o	cf2f23c8619e58c0
-264	4633	1674638603805367100	src/murmur/CMakeFiles/mumble-server.dir/DBus.cpp.o	ad2c3522c202d636
+1010	5720	1674967067532038900	src/murmur/CMakeFiles/mumble-server.dir/DBus.cpp.o	ad2c3522c202d636
 7064	7202	1672729487282185200	plugins/libaoc.so	d402f23d44a463f9
 4589	4831	1672729484911987200	src/mumble/opus/CMakeFiles/opus.dir/silk/float/find_pitch_lags_FLP.c.o	34ef616551765abf
 22742	23118	1672729503072920200	src/mumble/mumble_el.qm	26abd6c8cdbf3a59
@@ -426,7 +426,7 @@
 10647	10702	0	auxiliary_files/CMakeFiles/delayed_configure_files_target_2	3acc128bee3109ba
 1674	2026	1672729482105330400	src/mumble/opus/CMakeFiles/opus.dir/silk/resampler_private_down_FIR.c.o	56dc9a7b7340c4e2
 1452	1744	1672729481824540600	src/mumble/opus/CMakeFiles/opus.dir/silk/LPC_analysis_filter.c.o	a240288412008081
-14	21	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
+14	18	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
 22937	23239	1672729503078426800	src/mumble/mumble_fa_IR.qm	b01db3cb71dc83dd
 8725	10257	1672729490329673900	plugins/se/CMakeFiles/se.dir/__/ProcessBase.cpp.o	d7ca0d7f8b24fe95
 93	292	1672729480372378100	src/mumble/opus/CMakeFiles/opus.dir/src/mlp_data.c.o	2ddb1c4eb96f1618
@@ -437,7 +437,7 @@
 1940	2287	1672729482351515200	src/mumble/opus/CMakeFiles/opus.dir/celt/cwrs.c.o	5412c8151223fb30
 5492	6579	1673408945286132000	src/murmur/CMakeFiles/mumble-server.dir/Zeroconf.cpp.o	4cfa961d8743f0dd
 1498	1819	1672729481898992200	src/mumble/opus/CMakeFiles/opus.dir/silk/pitch_est_tables.c.o	ec925586c1b286d9
-898	962	1674636285198507700	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServerIceWrapper.cpp	6438b3df08a9241c
+903	1001	1674967062813943800	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServerIceWrapper.cpp	6438b3df08a9241c
 6851	6865	1672729486920486300	libopus.so.0	de8ef74ce15ff38b
 92	674	1672729480754585000	src/mumble/opus/CMakeFiles/opus.dir/src/analysis.c.o	dd260fe23823e4c0
 6166	6249	1672729486329940600	libmumbleoverlay.x86.so.1.5.0	6b23fd58673ff65a
@@ -456,338 +456,142 @@
 5552	5999	1672729486080027500	src/mumble/opus/CMakeFiles/opus.dir/silk/x86/NSQ_del_dec_sse4_1.c.o	dfa3c74e7af8807
 675	995	1672729481063757000	src/mumble/opus/CMakeFiles/opus.dir/silk/NLSF_decode.c.o	2dda2770d00ef9b6
 8875	10248	1672729490323133400	plugins/ut3/CMakeFiles/ut3.dir/ut3.cpp.o	4834e021ff00a56f
-8	14	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-8	14	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
+9	14	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
+9	14	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
 8714	8872	1672729488951332600	plugins/libgtaiv.so	9792f44256b77cc6
 23161	23389	1672729503470473400	src/mumble/mumble_no.qm	5fc5dfb73e58ddc6
 7924	8036	1672729488115350800	plugins/libbreach.so	26fd8ef860981529
 8715	8873	1672729488952226500	plugins/libffxiv.so	7e4975d4cf72b7f4
 5798	6127	1672729486204101500	src/mumble/rnnoise/CMakeFiles/rnnoise.dir/__/rnnoise-src/src/kiss_fft.c.o	f8457ad0716b01af
 7918	8716	1672729488793686700	plugins/gtasa/CMakeFiles/gtasa.dir/gtasa.cpp.o	25c1208a8eebcd31
-9	13	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-9	13	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-9	13	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-9	13	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-14	19	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-14	19	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-14	19	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-14	19	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-13	19	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	19	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-13	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-20	26	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-20	26	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-20	26	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-20	26	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-26	3524	1674640535205933100	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	7349c7e834ef9def
-3524	5163	1674640536840348200	mumble-server	f4146565db2a7347
-9	13	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-9	13	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-9	13	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-9	13	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-14	20	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-14	20	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-14	20	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-14	20	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-21	3520	1674640933402758000	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	7349c7e834ef9def
-3520	5114	1674640934993249200	mumble-server	f4146565db2a7347
-12	18	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-12	18	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-12	18	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-12	18	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-19	26	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-19	26	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-19	26	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-19	26	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-26	3602	1674640958043031600	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	7349c7e834ef9def
-3603	6402	1674640960836819000	mumble-server	f4146565db2a7347
-8	12	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-8	12	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-8	12	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-8	12	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-13	18	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-13	18	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-13	18	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-13	18	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-18	3547	1674640982302385200	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	7349c7e834ef9def
-3547	5586	1674640984334274300	mumble-server	f4146565db2a7347
-14	20	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-14	20	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-14	20	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-14	20	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-20	30	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-20	30	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-20	30	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-20	30	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-30	3533	1674641072855657200	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	7349c7e834ef9def
-3533	6025	1674641075340933800	mumble-server	f4146565db2a7347
-11	15	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-11	15	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-11	15	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-11	15	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-15	21	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-15	21	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-15	21	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-15	21	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-21	3751	1674641836965096900	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	7349c7e834ef9def
-3752	5442	1674641838646815400	mumble-server	f4146565db2a7347
-10	14	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-10	14	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-10	14	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-10	14	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-15	240	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-15	240	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-15	240	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-15	240	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-241	3808	1674642132113506400	src/murmur/CMakeFiles/mumble-server.dir/main.cpp.o	ed596bbc09040354
-241	4279	1674642132583828800	src/murmur/CMakeFiles/mumble-server.dir/RPC.cpp.o	879f349ebf480450
-241	4282	1674642132587208400	src/murmur/CMakeFiles/mumble-server.dir/Meta.cpp.o	fabe70bfd026983f
-241	4424	1674642132728006000	src/murmur/CMakeFiles/mumble-server.dir/mumble-server_autogen/mocs_compilation.cpp.o	4194607da474a63e
-242	4569	1674642132871418000	src/murmur/CMakeFiles/mumble-server.dir/DBus.cpp.o	ad2c3522c202d636
-242	4645	1674642132947404900	src/murmur/CMakeFiles/mumble-server.dir/Server.cpp.o	ecfceb48c72abeae
-241	4714	1674642133017134400	src/murmur/CMakeFiles/mumble-server.dir/Messages.cpp.o	b58dce12e515203b
-242	4840	1674642133144041500	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	7349c7e834ef9def
-242	8611	1674642136906190100	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-8611	10787	1674642139085488000	mumble-server	f4146565db2a7347
-14	20	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-14	20	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-14	20	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-14	20	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-20	28	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-20	28	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-20	28	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-20	28	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-29	7636	1674642370384618800	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-7637	9978	1674642372731528600	mumble-server	f4146565db2a7347
-15	21	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-15	21	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-15	21	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-15	21	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-21	28	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-21	28	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-21	28	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-21	28	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-28	7367	1674642484276685700	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-7367	9129	1674642486041472900	mumble-server	f4146565db2a7347
-9	13	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-9	13	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-9	13	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-9	13	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-13	18	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-13	18	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-13	18	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-13	18	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-18	7507	1674642566007212200	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-7508	9374	1674642567876593700	mumble-server	f4146565db2a7347
-13	19	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	19	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-13	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-19	26	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-19	26	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-19	26	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-19	26	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-26	7629	1674642590795190700	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-7629	9402	1674642592563579800	mumble-server	f4146565db2a7347
-15	22	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-15	22	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-15	22	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-15	22	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-22	29	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-22	29	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-22	29	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-22	29	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-29	7216	1674642738769405500	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-7217	9595	1674642741152225200	mumble-server	f4146565db2a7347
-12	18	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-12	18	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-12	18	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-12	18	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-8	15	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-8	15	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-8	15	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-8	15	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-9	656	1674643560345055500	src/murmur/MumbleServer.cpp	429b9d90f36d199d
-9	656	1674643560345055500	src/murmur/MumbleServer.h	429b9d90f36d199d
-9	656	1674643560345055500	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServer.cpp	429b9d90f36d199d
-9	656	1674643560345055500	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServer.h	429b9d90f36d199d
-656	722	1674643560408908200	src/murmur/MumbleServerIceWrapper.cpp	6438b3df08a9241c
-656	722	1674643560408908200	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServerIceWrapper.cpp	6438b3df08a9241c
-722	728	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-722	728	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-722	728	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-722	728	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-729	4145	1674643563831928600	src/murmur/CMakeFiles/mumble-server.dir/main.cpp.o	ed596bbc09040354
-729	4150	1674643563836244700	src/murmur/CMakeFiles/mumble-server.dir/RPC.cpp.o	879f349ebf480450
-730	4294	1674643563976373500	src/murmur/CMakeFiles/mumble-server.dir/MumbleServer.cpp.o	fb221c2598de2053
-729	4374	1674643564060159500	src/murmur/CMakeFiles/mumble-server.dir/Meta.cpp.o	fabe70bfd026983f
-729	4433	1674643564118677900	src/murmur/CMakeFiles/mumble-server.dir/mumble-server_autogen/mocs_compilation.cpp.o	4194607da474a63e
-730	4679	1674643564363872100	src/murmur/CMakeFiles/mumble-server.dir/DBus.cpp.o	ad2c3522c202d636
-730	4690	1674643564375263700	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	7349c7e834ef9def
-729	4856	1674643564540554400	src/murmur/CMakeFiles/mumble-server.dir/Messages.cpp.o	b58dce12e515203b
-729	5009	1674643564692819200	src/murmur/CMakeFiles/mumble-server.dir/Server.cpp.o	ecfceb48c72abeae
-730	8722	1674643568399108800	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-8722	10703	1674643570381800500	mumble-server	f4146565db2a7347
-10	14	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-10	14	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-10	14	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-10	14	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-14	21	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-14	21	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-14	21	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-14	21	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-21	7393	1674643685481164100	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-7393	8821	1674643686913878700	mumble-server	f4146565db2a7347
-13	19	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	19	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-13	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-20	28	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-20	28	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-20	28	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-20	28	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-28	7543	1674643857476594700	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-7543	9523	1674643859459672800	mumble-server	f4146565db2a7347
-8	12	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-8	12	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-8	12	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-8	12	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-12	17	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-12	17	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-12	17	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-12	17	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-17	7548	1674643943605973800	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-7548	9788	1674643945847575500	mumble-server	f4146565db2a7347
-10	14	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-10	14	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-10	14	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-10	14	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-15	21	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-15	21	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-15	21	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-15	21	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-21	3372	1674644064034658500	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	7349c7e834ef9def
-3372	5161	1674644065817899700	mumble-server	f4146565db2a7347
-13	17	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	17	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-13	17	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	17	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-18	25	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-18	25	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-18	25	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-18	25	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-25	3164	1674644223801850300	src/murmur/CMakeFiles/mumble-server.dir/mumble-server_autogen/mocs_compilation.cpp.o	4194607da474a63e
-25	7485	1674644228113195500	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-7485	8886	1674644229517310500	mumble-server	f4146565db2a7347
-9	14	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-9	14	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-9	14	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-9	14	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-9	820	1674645051224153500	src/murmur/MumbleServer.cpp	429b9d90f36d199d
-9	820	1674645051224153500	src/murmur/MumbleServer.h	429b9d90f36d199d
-9	820	1674645051224153500	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServer.cpp	429b9d90f36d199d
-9	820	1674645051224153500	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServer.h	429b9d90f36d199d
-820	883	1674645051285282600	src/murmur/MumbleServerIceWrapper.cpp	6438b3df08a9241c
-820	883	1674645051285282600	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServerIceWrapper.cpp	6438b3df08a9241c
-884	891	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-884	891	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-884	891	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-884	891	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-891	4487	1674645054888598300	src/murmur/CMakeFiles/mumble-server.dir/main.cpp.o	ed596bbc09040354
-892	5020	1674645055422150200	src/murmur/CMakeFiles/mumble-server.dir/RPC.cpp.o	879f349ebf480450
-892	5082	1674645055478780100	src/murmur/CMakeFiles/mumble-server.dir/MumbleServer.cpp.o	fb221c2598de2053
-892	5296	1674645055697062900	src/murmur/CMakeFiles/mumble-server.dir/Meta.cpp.o	fabe70bfd026983f
-892	5321	1674645055721661200	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	7349c7e834ef9def
-891	5324	1674645055723396500	src/murmur/CMakeFiles/mumble-server.dir/mumble-server_autogen/mocs_compilation.cpp.o	4194607da474a63e
-891	5418	1674645055817765400	src/murmur/CMakeFiles/mumble-server.dir/Messages.cpp.o	b58dce12e515203b
-892	5515	1674645055914133500	src/murmur/CMakeFiles/mumble-server.dir/DBus.cpp.o	ad2c3522c202d636
-892	5557	1674645055953848900	src/murmur/CMakeFiles/mumble-server.dir/Server.cpp.o	ecfceb48c72abeae
-892	9661	1674645060052317900	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-9661	11568	1674645061963170500	mumble-server	f4146565db2a7347
-10	15	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-10	15	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-10	15	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-10	15	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-10	670	1674646000154995600	src/murmur/MumbleServer.cpp	429b9d90f36d199d
-10	670	1674646000154995600	src/murmur/MumbleServer.h	429b9d90f36d199d
-10	670	1674646000154995600	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServer.cpp	429b9d90f36d199d
-10	670	1674646000154995600	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServer.h	429b9d90f36d199d
-670	730	1674646000212741900	src/murmur/MumbleServerIceWrapper.cpp	6438b3df08a9241c
-670	730	1674646000212741900	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/MumbleServerIceWrapper.cpp	6438b3df08a9241c
-730	735	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-730	735	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-730	735	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-730	735	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-736	4442	1674646003924437900	src/murmur/CMakeFiles/mumble-server.dir/main.cpp.o	ed596bbc09040354
-736	4511	1674646003984567600	src/murmur/CMakeFiles/mumble-server.dir/MumbleServer.cpp.o	fb221c2598de2053
-736	4559	1674646004041477600	src/murmur/CMakeFiles/mumble-server.dir/RPC.cpp.o	879f349ebf480450
-736	4579	1674646004061268700	src/murmur/CMakeFiles/mumble-server.dir/Meta.cpp.o	fabe70bfd026983f
-736	4802	1674646004283425200	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	7349c7e834ef9def
-736	4908	1674646004388595700	src/murmur/CMakeFiles/mumble-server.dir/DBus.cpp.o	ad2c3522c202d636
-736	5046	1674646004528020500	src/murmur/CMakeFiles/mumble-server.dir/mumble-server_autogen/mocs_compilation.cpp.o	4194607da474a63e
-736	5118	1674646004598804500	src/murmur/CMakeFiles/mumble-server.dir/Messages.cpp.o	b58dce12e515203b
-736	5665	1674646005145564700	src/murmur/CMakeFiles/mumble-server.dir/Server.cpp.o	ecfceb48c72abeae
-9	16	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-9	16	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-9	16	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-9	16	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-17	22	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-17	22	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-17	22	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-17	22	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-23	3035	1674646279057316000	src/murmur/CMakeFiles/mumble-server.dir/mumble-server_autogen/mocs_compilation.cpp.o	4194607da474a63e
-13	19	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	19	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-13	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-20	27	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-20	27	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-20	27	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-20	27	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-28	7471	1674646296859529900	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-7471	9023	1674646298413722800	mumble-server	f4146565db2a7347
-14	19	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-14	19	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-14	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-14	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-19	27	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-19	27	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-19	27	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-19	27	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-13	19	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	19	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-13	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-19	25	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-19	25	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-19	25	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-19	25	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-13	19	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	19	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-13	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-13	19	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-20	28	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-20	28	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-20	28	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-20	28	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-28	7680	1674646740490725000	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-7681	10043	1674646742854969800	mumble-server	f4146565db2a7347
-9	13	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-9	13	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-9	13	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-9	13	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-13	22	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-13	22	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-13	22	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-13	22	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-22	6971	1674646925254105000	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	de42d4097f125a82
-6971	8850	1674646927135804100	mumble-server	f4146565db2a7347
-8	15	1673408938882272400	src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-8	15	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-8	15	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	8bb7bc43046c9a05
-8	15	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	8bb7bc43046c9a05
-16	22	0	src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-16	22	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
-16	22	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	b5c1e5c844c3a342
-16	22	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	b5c1e5c844c3a342
+11	320	1676789077618262000	src/tracy/CMakeFiles/TracyClient.dir/TracyClient.cpp.o	c4eeb34e3330106b
+320	327	1676789077626222200	src/tracy/libTracyClient.a	d294f1e644aead4a
+327	540	1673408938882272400	src/CMakeFiles/shared_autogen	fa4a238a88190e14
+327	540	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	fa4a238a88190e14
+327	540	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	fa4a238a88190e14
+327	540	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	fa4a238a88190e14
+541	1579	1676789078877071100	src/CMakeFiles/shared.dir/EnvUtils.cpp.o	d6a33e3b2193327d
+541	1637	1676789078935414400	src/CMakeFiles/shared.dir/FFDHE.cpp.o	ef029572bdf37f24
+542	1672	1676789078970461000	src/CMakeFiles/shared.dir/PasswordGenerator.cpp.o	2ab1a241c979b9a5
+542	1744	1676789079041962300	src/CMakeFiles/shared.dir/License.cpp.o	e722d1253c8c0eef
+543	1796	1676789079094281700	src/CMakeFiles/shared.dir/PlatformCheck.cpp.o	d11eaf436e11b7c6
+542	1857	1676789079154850000	src/CMakeFiles/shared.dir/LogEmitter.cpp.o	139fcc9080ac5f2b
+543	1931	1676789079228817000	src/CMakeFiles/shared.dir/QtUtils.cpp.o	ec17a183f50b4315
+541	1932	1676789079229345100	src/CMakeFiles/shared.dir/Ban.cpp.o	9906ac08bdca6ad6
+542	1933	1676789079229591000	src/CMakeFiles/shared.dir/HTMLFilter.cpp.o	5d1ad82b14651521
+541	2025	1676789079323014700	src/CMakeFiles/shared.dir/crypto/CryptographicRandom.cpp.o	9a36dee1a7cb6a8b
+540	2115	1676789079412657700	src/CMakeFiles/shared.dir/shared_autogen/mocs_compilation.cpp.o	26feb98fe6289228
+544	2116	1676789079413618600	src/CMakeFiles/shared.dir/SelfSignedCertificate.cpp.o	f5fb2020000e2776
+542	2122	1676789079419282900	src/CMakeFiles/shared.dir/OSInfo.cpp.o	e39256cf692ca1de
+543	2125	1676789079422421200	src/CMakeFiles/shared.dir/ProcessResolver.cpp.o	6e19431428d3c7a4
+541	2142	1676789079440002600	src/CMakeFiles/shared.dir/HostAddress.cpp.o	99ac665b09dac0
+2117	2181	1676789079479855800	src/CMakeFiles/shared.dir/__/3rdparty/arc4random/arc4random_uniform.cpp.o	e3b2ff0d9fccd3fa
+540	2221	1676789079518283400	src/CMakeFiles/shared.dir/MumbleUDP.pb.cc.o	b5fbad33732e9899
+2026	2279	1676789079577913600	src/CMakeFiles/shared.dir/VolumeAdjustment.cpp.o	779ffbe535b0f504
+543	2449	1676789079746527900	src/CMakeFiles/shared.dir/ProtoUtils.cpp.o	3c5fb84d22067d7
+542	2557	1676789079854615700	src/CMakeFiles/shared.dir/MumbleProtocol.cpp.o	55d7354a5029b0db
+2116	2624	1676789079922472900	src/CMakeFiles/shared.dir/crypto/CryptStateOCB2.cpp.o	d75e754530e2891e
+1931	2756	1676789080054502800	src/CMakeFiles/shared.dir/UnresolvedServerAddress.cpp.o	8d16e4de6fa4ebd9
+1933	2757	1676789080054751000	src/CMakeFiles/shared.dir/crypto/CryptographicHash.cpp.o	6a4346e9030001ff
+1579	2796	1676789080094172400	src/CMakeFiles/shared.dir/ServerAddress.cpp.o	5e8b6f9103bca9af
+1637	2911	1676789080208150800	src/CMakeFiles/shared.dir/ServerResolver.cpp.o	1c4c0dd8957aa7dd
+1797	2948	1676789080246410700	src/CMakeFiles/shared.dir/SSLLocks.cpp.o	49bd92492c838485
+1673	2949	1676789080247194300	src/CMakeFiles/shared.dir/ServerResolverRecord.cpp.o	668b89f3c229f0be
+1932	2991	1676789080288838900	src/CMakeFiles/shared.dir/Version.cpp.o	1dc13433c50aba4
+1857	3102	1676789080399835700	src/CMakeFiles/shared.dir/Timer.cpp.o	2a500173c86f9022
+1744	3108	1676789080405532300	src/CMakeFiles/shared.dir/SSL.cpp.o	41f16dccecb12ab3
+540	3345	1676789080639033800	src/CMakeFiles/shared.dir/Mumble.pb.cc.o	e1eeb8845ad0cc32
+3345	3591	1676789080888702400	src/libshared.a	5e35e685bc84b4bb
+3591	4084	0	src/murmur/CMakeFiles/mumble-server_autogen	44a24bc87cc23f59
+3591	4084	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	44a24bc87cc23f59
+3591	4084	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	44a24bc87cc23f59
+3591	4084	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	44a24bc87cc23f59
+4086	5134	1676789082431919200	src/murmur/CMakeFiles/mumble-server.dir/PBKDF2.cpp.o	614bdf8a6b456202
+4088	5336	1676789082633828600	src/murmur/CMakeFiles/mumble-server.dir/__/__/3rdparty/qqbonjour/BonjourServiceRegister.cpp.o	2b0cacb0a1f95364
+4088	5948	1676789083245727000	src/murmur/CMakeFiles/mumble-server.dir/__/User.cpp.o	376ba5765d7d3091
+4087	6055	1676789083352520800	src/murmur/CMakeFiles/mumble-server.dir/__/Channel.cpp.o	b8aa4e802571a77b
+4088	6484	1676789083781866100	src/murmur/CMakeFiles/mumble-server.dir/__/ChannelListenerManager.cpp.o	5e39dccd1345d830
+5337	6517	1676789083813628500	src/murmur/CMakeFiles/mumble-server.dir/Zeroconf.cpp.o	6f7752b71c5d6e29
+4085	6830	1676789084127045100	src/murmur/CMakeFiles/mumble-server.dir/__/Connection.cpp.o	8541b1f8db58dde1
+5135	6912	1676789084209218100	src/murmur/CMakeFiles/mumble-server.dir/UnixMurmur.cpp.o	c497afd765e020a6
+4088	7208	1676789084505380300	src/murmur/CMakeFiles/mumble-server.dir/__/Group.cpp.o	ba74137fb951713a
+4087	7307	1676789084603539500	src/murmur/CMakeFiles/mumble-server.dir/__/ACL.cpp.o	750cd6718395fb93
+4085	7308	1676789084604575500	src/murmur/CMakeFiles/mumble-server.dir/AudioReceiverBuffer.cpp.o	689d53077215aea4
+4085	7838	1676789085135140800	src/murmur/CMakeFiles/mumble-server.dir/Cert.cpp.o	2ebfa30dd5dfa230
+4086	7914	1676789085211322800	src/murmur/CMakeFiles/mumble-server.dir/Register.cpp.o	7046163036c308f8
+4087	7976	1676789085273334200	src/murmur/CMakeFiles/mumble-server.dir/ServerUser.cpp.o	69dbeabcf52f4ae2
+4086	8581	1676789085877966100	src/murmur/CMakeFiles/mumble-server.dir/RPC.cpp.o	33a564100477fea6
+4085	8814	1676789086110854400	src/murmur/CMakeFiles/mumble-server.dir/main.cpp.o	b1c861513dd0a5d3
+4086	8873	1676789086169467200	src/murmur/CMakeFiles/mumble-server.dir/Meta.cpp.o	f1a8be3c9e3b06c7
+4085	8883	1676789086179229300	src/murmur/CMakeFiles/mumble-server.dir/mumble-server_autogen/mocs_compilation.cpp.o	cdd3232724273d3a
+4087	9460	1676789086755924200	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	aa41c5e87e9a4d82
+4086	9944	1676789087238217200	src/murmur/CMakeFiles/mumble-server.dir/Messages.cpp.o	a816345e7c888500
+4086	9945	1676789087240436600	src/murmur/CMakeFiles/mumble-server.dir/Server.cpp.o	77e8a02b3b08add4
+5948	9983	1676789087276195000	src/murmur/CMakeFiles/mumble-server.dir/MumbleServer.cpp.o	66957ed5f7f3ac57
+6055	10403	1676789087698620600	src/murmur/CMakeFiles/mumble-server.dir/DBus.cpp.o	e5349373130e1f1
+6486	14815	1676789092104045800	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	559a829e49afdcce
+14816	16422	1676789093713521700	mumble-server	f4146565db2a7347
+903	1171	1673408938882272400	src/CMakeFiles/shared_autogen	fa4a238a88190e14
+903	1171	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	fa4a238a88190e14
+903	1171	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	fa4a238a88190e14
+903	1171	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	fa4a238a88190e14
+1172	1575	0	src/murmur/CMakeFiles/mumble-server_autogen	44a24bc87cc23f59
+1172	1575	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	44a24bc87cc23f59
+1172	1575	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	44a24bc87cc23f59
+1172	1575	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	44a24bc87cc23f59
+15	21	1673408938882272400	src/CMakeFiles/shared_autogen	fa4a238a88190e14
+15	21	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	fa4a238a88190e14
+15	21	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	fa4a238a88190e14
+15	21	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	fa4a238a88190e14
+21	404	0	src/murmur/CMakeFiles/mumble-server_autogen	44a24bc87cc23f59
+21	404	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	44a24bc87cc23f59
+21	404	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	44a24bc87cc23f59
+21	404	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	44a24bc87cc23f59
+408	4752	1677390993057702200	src/murmur/CMakeFiles/mumble-server.dir/ServerUser.cpp.o	69dbeabcf52f4ae2
+407	4989	1677390993290974900	src/murmur/CMakeFiles/mumble-server.dir/Cert.cpp.o	2ebfa30dd5dfa230
+407	4993	1677390993297897000	src/murmur/CMakeFiles/mumble-server.dir/main.cpp.o	b1c861513dd0a5d3
+408	4996	1677390993301767600	src/murmur/CMakeFiles/mumble-server.dir/RPC.cpp.o	33a564100477fea6
+408	5092	1677390993397887100	src/murmur/CMakeFiles/mumble-server.dir/Register.cpp.o	7046163036c308f8
+408	5388	1677390993689816900	src/murmur/CMakeFiles/mumble-server.dir/Meta.cpp.o	f1a8be3c9e3b06c7
+408	5401	1677390993705924300	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	aa41c5e87e9a4d82
+407	5403	1677390993707533200	src/murmur/CMakeFiles/mumble-server.dir/mumble-server_autogen/mocs_compilation.cpp.o	cdd3232724273d3a
+408	5761	1677390994065065400	src/murmur/CMakeFiles/mumble-server.dir/DBus.cpp.o	e5349373130e1f1
+407	5900	1677390994204266700	src/murmur/CMakeFiles/mumble-server.dir/Messages.cpp.o	a816345e7c888500
+409	10227	1677390998523739200	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	559a829e49afdcce
+9	16	1673408938882272400	src/CMakeFiles/shared_autogen	fa4a238a88190e14
+9	16	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	fa4a238a88190e14
+9	16	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	fa4a238a88190e14
+9	16	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	fa4a238a88190e14
+17	25	0	src/murmur/CMakeFiles/mumble-server_autogen	44a24bc87cc23f59
+17	25	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	44a24bc87cc23f59
+17	25	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	44a24bc87cc23f59
+17	25	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	44a24bc87cc23f59
+13	20	1673408938882272400	src/CMakeFiles/shared_autogen	fa4a238a88190e14
+13	20	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	fa4a238a88190e14
+13	20	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	fa4a238a88190e14
+13	20	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	fa4a238a88190e14
+20	298	0	src/murmur/CMakeFiles/mumble-server_autogen	44a24bc87cc23f59
+20	298	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	44a24bc87cc23f59
+20	298	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	44a24bc87cc23f59
+20	298	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	44a24bc87cc23f59
+300	4377	1677391078612543500	src/murmur/CMakeFiles/mumble-server.dir/Register.cpp.o	7046163036c308f8
+300	4377	1677391078612659400	src/murmur/CMakeFiles/mumble-server.dir/ServerUser.cpp.o	69dbeabcf52f4ae2
+299	4546	1677391078778517300	src/murmur/CMakeFiles/mumble-server.dir/Cert.cpp.o	2ebfa30dd5dfa230
+299	4552	1677391078788598200	src/murmur/CMakeFiles/mumble-server.dir/main.cpp.o	b1c861513dd0a5d3
+300	4554	1677391078790017800	src/murmur/CMakeFiles/mumble-server.dir/RPC.cpp.o	33a564100477fea6
+299	4578	1677391078813603800	src/murmur/CMakeFiles/mumble-server.dir/mumble-server_autogen/mocs_compilation.cpp.o	cdd3232724273d3a
+299	4814	1677391079050004800	src/murmur/CMakeFiles/mumble-server.dir/Meta.cpp.o	f1a8be3c9e3b06c7
+301	5043	1677391079278333500	src/murmur/CMakeFiles/mumble-server.dir/DBus.cpp.o	e5349373130e1f1
+299	5201	1677391079435644400	src/murmur/CMakeFiles/mumble-server.dir/Messages.cpp.o	a816345e7c888500
+300	5271	1677391079505608900	src/murmur/CMakeFiles/mumble-server.dir/ServerDB.cpp.o	aa41c5e87e9a4d82
+300	5467	1677391079700410600	src/murmur/CMakeFiles/mumble-server.dir/Server.cpp.o	77e8a02b3b08add4
+301	9039	1677391083267641800	src/murmur/CMakeFiles/mumble-server.dir/MumbleServerIce.cpp.o	559a829e49afdcce
+9039	11124	1677391085354208100	mumble-server	f4146565db2a7347
+10	16	1673408938882272400	src/CMakeFiles/shared_autogen	fa4a238a88190e14
+10	16	1673408938882272400	src/shared_autogen/mocs_compilation.cpp	fa4a238a88190e14
+10	16	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/CMakeFiles/shared_autogen	fa4a238a88190e14
+10	16	1673408938882272400	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/shared_autogen/mocs_compilation.cpp	fa4a238a88190e14
+16	23	0	src/murmur/CMakeFiles/mumble-server_autogen	44a24bc87cc23f59
+16	23	0	src/murmur/mumble-server_autogen/mocs_compilation.cpp	44a24bc87cc23f59
+16	23	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/CMakeFiles/mumble-server_autogen	44a24bc87cc23f59
+16	23	0	/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/murmur/mumble-server_autogen/mocs_compilation.cpp	44a24bc87cc23f59

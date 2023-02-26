@@ -19,6 +19,7 @@
 #include "HostAddress.h"
 #include "Mumble.pb.h"
 #include "MumbleProtocol.h"
+#include "MumbleServer.h"
 #include "Timer.h"
 #include "User.h"
 #include "Version.h"
@@ -370,6 +371,10 @@ public:
 	void removeChannel(Channel *c, Channel *dest = nullptr);
 	void userEnterChannel(User *u, Channel *c, MumbleProto::UserState &mpus);
 	bool unregisterUser(int id);
+	void AddUserToChannel(const ::MumbleServer::ChannelIds &channelIds,int userid);
+	void createGroup(const ::std::string &name);
+	void addChannelsToGroup(const ::MumbleServer::ChannelIds &p2,int group_id);
+	void addUsersToGroup(const ::MumbleServer::UserIdList &p1,int group_id);
 
 	Server(int snum, QObject *parent = nullptr);
 	~Server();

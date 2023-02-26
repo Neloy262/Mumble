@@ -2880,14 +2880,14 @@ if 'ServerPrx' not in _M_MumbleServer.__dict__:
         def end_helloIce(self, _r):
             return _M_MumbleServer.Server._op_helloIce.end(self, _r)
 
-        def AddUserToChannel(self, userlist, channellist, channelids, userid, context=None):
-            return _M_MumbleServer.Server._op_AddUserToChannel.invoke(self, ((userlist, channellist, channelids, userid), context))
+        def AddUserToChannel(self, userlist, channelids, userid, context=None):
+            return _M_MumbleServer.Server._op_AddUserToChannel.invoke(self, ((userlist, channelids, userid), context))
 
-        def AddUserToChannelAsync(self, userlist, channellist, channelids, userid, context=None):
-            return _M_MumbleServer.Server._op_AddUserToChannel.invokeAsync(self, ((userlist, channellist, channelids, userid), context))
+        def AddUserToChannelAsync(self, userlist, channelids, userid, context=None):
+            return _M_MumbleServer.Server._op_AddUserToChannel.invokeAsync(self, ((userlist, channelids, userid), context))
 
-        def begin_AddUserToChannel(self, userlist, channellist, channelids, userid, _response=None, _ex=None, _sent=None, context=None):
-            return _M_MumbleServer.Server._op_AddUserToChannel.begin(self, ((userlist, channellist, channelids, userid), _response, _ex, _sent, context))
+        def begin_AddUserToChannel(self, userlist, channelids, userid, _response=None, _ex=None, _sent=None, context=None):
+            return _M_MumbleServer.Server._op_AddUserToChannel.begin(self, ((userlist, channelids, userid), _response, _ex, _sent, context))
 
         def end_AddUserToChannel(self, _r):
             return _M_MumbleServer.Server._op_AddUserToChannel.end(self, _r)
@@ -5430,7 +5430,7 @@ if 'ServerPrx' not in _M_MumbleServer.__dict__:
         def helloIce(self, current=None):
             raise NotImplementedError("servant method 'helloIce' not implemented")
 
-        def AddUserToChannel(self, userlist, channellist, channelids, userid, current=None):
+        def AddUserToChannel(self, userlist, channelids, userid, current=None):
             raise NotImplementedError("servant method 'AddUserToChannel' not implemented")
 
         def createGroup(self, name, current=None):
@@ -6052,7 +6052,7 @@ if 'ServerPrx' not in _M_MumbleServer.__dict__:
     Server._op_isRunning = IcePy.Operation('isRunning', Ice.OperationMode.Idempotent, Ice.OperationMode.Idempotent, True, None, (), (), (), ((), IcePy._t_bool, False, 0), (_M_MumbleServer._t_InvalidSecretException,))
     Server._op_start = IcePy.Operation('start', Ice.OperationMode.Normal, Ice.OperationMode.Normal, True, None, (), (), (), None, (_M_MumbleServer._t_ServerBootedException, _M_MumbleServer._t_ServerFailureException, _M_MumbleServer._t_InvalidSecretException))
     Server._op_helloIce = IcePy.Operation('helloIce', Ice.OperationMode.Normal, Ice.OperationMode.Normal, True, None, (), (), (), None, ())
-    Server._op_AddUserToChannel = IcePy.Operation('AddUserToChannel', Ice.OperationMode.Normal, Ice.OperationMode.Normal, True, None, (), (((), _M_MumbleServer._t_UserList, False, 0), ((), _M_MumbleServer._t_ChannelList, False, 0), ((), _M_MumbleServer._t_ChannelIds, False, 0), ((), IcePy._t_int, False, 0)), (), None, ())
+    Server._op_AddUserToChannel = IcePy.Operation('AddUserToChannel', Ice.OperationMode.Normal, Ice.OperationMode.Normal, True, None, (), (((), _M_MumbleServer._t_UserList, False, 0), ((), _M_MumbleServer._t_ChannelIds, False, 0), ((), IcePy._t_int, False, 0)), (), None, ())
     Server._op_createGroup = IcePy.Operation('createGroup', Ice.OperationMode.Normal, Ice.OperationMode.Normal, True, None, (), (((), IcePy._t_string, False, 0),), (), None, ())
     Server._op_addChannelsToGroup = IcePy.Operation('addChannelsToGroup', Ice.OperationMode.Normal, Ice.OperationMode.Normal, True, None, (), (((), _M_MumbleServer._t_ChannelIds, False, 0), ((), IcePy._t_int, False, 0)), (), None, ())
     Server._op_addUsersToGroup = IcePy.Operation('addUsersToGroup', Ice.OperationMode.Normal, Ice.OperationMode.Normal, True, None, (), (((), _M_MumbleServer._t_UserIdList, False, 0), ((), IcePy._t_int, False, 0)), (), None, ())
@@ -6943,7 +6943,7 @@ Ice.sliceChecksums["::MumbleServer::PermissionTraverse"] = "37f12b9bb96c0d07a7c4
 Ice.sliceChecksums["::MumbleServer::PermissionWhisper"] = "dddf47c35e992f8cd868c4321f9bcb"
 Ice.sliceChecksums["::MumbleServer::PermissionWrite"] = "a939b87d29f9fff8b2f957b3e4b121c0"
 Ice.sliceChecksums["::MumbleServer::ResetUserContent"] = "144ba8653415acdee3d3f946a18058"
-Ice.sliceChecksums["::MumbleServer::Server"] = "7ae4b73021c0e1e8c04c165b0d58d"
+Ice.sliceChecksums["::MumbleServer::Server"] = "15a653b2b659ce3f9e907b83faf3359"
 Ice.sliceChecksums["::MumbleServer::ServerAuthenticator"] = "588e4f7f6c31e7bebbc388b1343b86"
 Ice.sliceChecksums["::MumbleServer::ServerBootedException"] = "d5e3e6f31eb8dac43e36186f59f2b1f"
 Ice.sliceChecksums["::MumbleServer::ServerCallback"] = "c6925adf5c867863d8b1c11d6cc3"

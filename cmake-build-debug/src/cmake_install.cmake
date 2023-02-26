@@ -47,11 +47,11 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/media/nybsysml/New Volume/Niloy/Neloy_mumble/cmake-build-debug/src/mumble/cmake_install.cmake")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps" TYPE FILE FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/icons/mumble.svg")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/256x256/apps" TYPE FILE RENAME "mumble.png" FILES "/media/nybsysml/New Volume/Niloy/Neloy_mumble/icons/mumble_256x256.png")
 endif()
 
